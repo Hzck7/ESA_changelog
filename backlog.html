@@ -23,6 +23,7 @@
     --status-encours: #3452eb;
     --status-planifie: #6b7078;
     --status-idee: #9a9ea5;
+    --status-termine: #45b645;
   }
 
   * { box-sizing: border-box; }
@@ -141,6 +142,7 @@
   .section-dot.encours { background: var(--status-encours); }
   .section-dot.planifie { background: var(--status-planifie); }
   .section-dot.idee { background: var(--status-idee); }
+  .section-dot.termine { background: var(--status-termine); }
 
   .section-title {
     font-weight: 600;
@@ -271,14 +273,14 @@
 <script>
   // ------------------------------------------------------------------
   // Pour ajouter un élément : ajoute une entrée dans le tableau `backlog`.
-  // status possibles : "encours", "planifie", "idee"
+  // status possibles : "encours", "planifie", "idee","termine"
   // priority possibles : "haute", "moyenne", "basse"
   // targetVersion est optionnel
   // ------------------------------------------------------------------
   let backlog = [];
 
-  const statusLabels = { encours: "En cours", planifie: "Planifié", idee: "Idée" };
-  const statusOrder = ["encours", "planifie", "idee"];
+  const statusLabels = { encours: "En cours", planifie: "Planifié", idee: "Idée", termine: "Terminé" };
+  const statusOrder = ["encours", "planifie", "idee", "termine"];
   const prioLabels = { haute: "Priorité haute", moyenne: "Priorité moyenne", basse: "Priorité basse" };
 
   const sectionsEl = document.getElementById("sections");
