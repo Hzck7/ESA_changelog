@@ -1,0 +1,77 @@
+{
+  "changelog": [
+    {
+      "version": "v3.4.0",
+      "date": "2026-07-08",
+      "title": "Amélioration des exports Crystal Reports",
+      "changes": [
+        { "type": "added", "text": "Nouveau modèle d'export PDF avec en-tête personnalisable par client." },
+        { "type": "changed", "text": "Refonte de l'écran de configuration de la chaîne de connexion." },
+        { "type": "fixed", "text": "Correction d'un plantage lors de l'ouverture d'un rapport sans données." }
+      ]
+    },
+    {
+      "version": "v3.3.2",
+      "date": "2026-06-14",
+      "title": "Correctifs de stabilité",
+      "changes": [
+        { "type": "fixed", "text": "Résolution d'un blocage à la fermeture sur certains postes Windows 11." },
+        { "type": "security", "text": "Mise à jour de la validation de licence en ligne." }
+      ]
+    },
+    {
+      "version": "v3.3.0",
+      "date": "2026-05-02",
+      "title": "Migration de l'interface principale",
+      "changes": [
+        { "type": "added", "text": "Nouvelle grille de saisie avec tri et filtres multi-colonnes." },
+        { "type": "added", "text": "Recherche instantanée dans le module client." },
+        { "type": "changed", "text": "Passage du moteur de base de données vers SQL Server Express." }
+      ]
+    }
+  ],
+  "backlog": [
+    {
+      "status": "encours",
+      "priority": "haute",
+      "title": "Export multi-format des rapports",
+      "desc": "Ajouter l'export Excel et CSV en plus du PDF existant, depuis le même écran.",
+      "targetVersion": "v3.5.0"
+    },
+    {
+      "status": "encours",
+      "priority": "moyenne",
+      "title": "Journal des versions intégré",
+      "desc": "Afficher automatiquement les nouveautés à chaque mise à jour via une fenêtre dédiée.",
+      "targetVersion": "v3.5.0"
+    },
+    {
+      "status": "planifie",
+      "priority": "haute",
+      "title": "Authentification à deux facteurs",
+      "desc": "Sécuriser l'accès aux comptes administrateurs avec un code temporaire.",
+      "targetVersion": "v3.6.0"
+    },
+    {
+      "status": "planifie",
+      "priority": "basse",
+      "title": "Thème sombre",
+      "desc": "Ajouter un mode sombre pour l'ensemble de l'interface.",
+      "targetVersion": null
+    },
+    {
+      "status": "idee",
+      "priority": "moyenne",
+      "title": "Synchronisation multi-poste",
+      "desc": "Explorer une synchronisation des paramètres utilisateur entre plusieurs postes de travail.",
+      "targetVersion": null
+    },
+    {
+      "status": "idee",
+      "priority": "basse",
+      "title": "Application mobile compagnon",
+      "desc": "Étudier la faisabilité d'une app de consultation rapide sur mobile.",
+      "targetVersion": null
+    }
+  ]
+}

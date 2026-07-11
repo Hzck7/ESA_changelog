@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Backlog</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #ffffff;
+    --ink: #111114;
+    --muted: #6b7078;
+    --faint: #9a9ea5;
+    --line: #e8e8ea;
+    --accent: #3452eb;
+    --accent-soft: #eef1fd;
+
+    --prio-haute: #d64545;
+    --prio-moyenne: #c2790f;
+    --prio-basse: #6b7078;
+
+    --status-encours: #3452eb;
+    --status-planifie: #6b7078;
+    --status-idee: #9a9ea5;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 88px 24px 140px;
+  }
+
+  header.page-head {
+    margin-bottom: 56px;
+  }
+
+  .eyebrow {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 16px;
+  }
+
+  h1 {
+    font-weight: 700;
+    font-size: 34px;
+    margin: 0 0 14px;
+    letter-spacing: -0.02em;
+  }
+
+  .subtitle {
+    color: var(--muted);
+    font-size: 15.5px;
+    max-width: 50ch;
+  }
+
+  /* Filter bar */
+  .filters {
+    display: flex;
+    gap: 8px;
+    margin: 36px 0 8px;
+    flex-wrap: wrap;
+  }
+
+  .filter-btn {
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--muted);
+    background: none;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 6px 14px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+  }
+
+  .filter-btn:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+
+  .filter-btn.active {
+    background: var(--ink);
+    border-color: var(--ink);
+    color: #fff;
+  }
+
+  /* Sections */
+  .section {
+    margin-top: 48px;
+  }
+
+  .section-head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 4px;
+  }
+
+  .section-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+  }
+
+  .section-dot.encours { background: var(--status-encours); }
+  .section-dot.planifie { background: var(--status-planifie); }
+  .section-dot.idee { background: var(--status-idee); }
+
+  .section-title {
+    font-weight: 600;
+    font-size: 15px;
+  }
+
+  .section-count {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    color: var(--faint);
+  }
+
+  .items {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .item {
+    padding: 22px 0;
+    border-top: 1px solid var(--line);
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 16px;
+    align-items: start;
+  }
+
+  .item.hidden { display: none; }
+
+  .item-title {
+    font-weight: 600;
+    font-size: 15px;
+    margin: 0 0 6px;
+    letter-spacing: -0.005em;
+  }
+
+  .item-desc {
+    font-size: 13.5px;
+    color: var(--muted);
+    margin: 0;
+    max-width: 46ch;
+  }
+
+  .item-tags {
+    display: flex;
+    gap: 6px;
+    margin-top: 10px;
+  }
+
+  .prio {
+    font-size: 11px;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .prio::before {
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+  }
+
+  .prio.haute { color: #a52f2f; background: #fdeceb; }
+  .prio.haute::before { background: var(--prio-haute); }
+  .prio.moyenne { color: #8a5a04; background: #fdf3e2; }
+  .prio.moyenne::before { background: var(--prio-moyenne); }
+  .prio.basse { color: var(--muted); background: #f2f2f3; }
+  .prio.basse::before { background: var(--prio-basse); }
+
+  .item-meta {
+    text-align: right;
+    white-space: nowrap;
+  }
+
+  .item-version {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    color: var(--faint);
+  }
+
+  footer {
+    margin-top: 64px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11.5px;
+    color: var(--faint);
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .empty-state {
+    color: var(--faint);
+    font-size: 13.5px;
+    padding: 24px 0;
+  }
+
+  @media (max-width: 560px) {
+    .wrap { padding: 56px 18px 90px; }
+    h1 { font-size: 27px; }
+    .item { grid-template-columns: 1fr; gap: 8px; }
+    .item-meta { text-align: left; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="page-head">
+      <div class="eyebrow">Feuille de route</div>
+      <h1>Backlog</h1>
+      <p class="subtitle">Ce qui est en cours et ce qui arrive — fonctionnalités et corrections à venir, par ordre de priorité.</p>
+    </header>
+
+    <div class="filters" id="filters"></div>
+
+    <div id="sections"></div>
+
+    <footer>
+      <span id="footer-count"></span>
+      <span id="footer-date"></span>
+    </footer>
+  </div>
+
+<script>
+  // ------------------------------------------------------------------
+  // Pour ajouter un élément : ajoute une entrée dans le tableau `backlog`.
+  // status possibles : "encours", "planifie", "idee"
+  // priority possibles : "haute", "moyenne", "basse"
+  // targetVersion est optionnel
+  // ------------------------------------------------------------------
+  let backlog = [];
+
+  const statusLabels = { encours: "En cours", planifie: "Planifié", idee: "Idée" };
+  const statusOrder = ["encours", "planifie", "idee"];
+  const prioLabels = { haute: "Priorité haute", moyenne: "Priorité moyenne", basse: "Priorité basse" };
+
+  const sectionsEl = document.getElementById("sections");
+  const filtersEl = document.getElementById("filters");
+
+  let activeFilter = "all";
+
+  function render() {
+    sectionsEl.innerHTML = "";
+
+    statusOrder.forEach(status => {
+      const items = backlog.filter(b => b.status === status);
+      if (items.length === 0) return;
+
+      const visibleItems = activeFilter === "all"
+        ? items
+        : items.filter(i => i.priority === activeFilter);
+
+      const section = document.createElement("div");
+      section.className = "section";
+
+      const head = document.createElement("div");
+      head.className = "section-head";
+      head.innerHTML = `
+        <span class="section-dot ${status}"></span>
+        <span class="section-title">${statusLabels[status]}</span>
+        <span class="section-count">${items.length}</span>
+      `;
+      section.appendChild(head);
+
+      const list = document.createElement("div");
+      list.className = "items";
+
+      if (visibleItems.length === 0) {
+        list.innerHTML = `<p class="empty-state">Rien dans cette catégorie pour ce filtre.</p>`;
+      } else {
+        visibleItems.forEach(item => {
+          const el = document.createElement("div");
+          el.className = "item";
+          el.innerHTML = `
+            <div>
+              <h3 class="item-title">${item.title}</h3>
+              <p class="item-desc">${item.desc}</p>
+              <div class="item-tags">
+                <span class="prio ${item.priority}">${prioLabels[item.priority]}</span>
+              </div>
+            </div>
+            <div class="item-meta">
+              ${item.targetVersion ? `<span class="item-version">${item.targetVersion}</span>` : ""}
+            </div>
+          `;
+          list.appendChild(el);
+        });
+      }
+
+      section.appendChild(list);
+      sectionsEl.appendChild(section);
+    });
+  }
+
+  function renderFilters() {
+    const options = [
+      { key: "all", label: "Tout" },
+      { key: "haute", label: "Priorité haute" },
+      { key: "moyenne", label: "Priorité moyenne" },
+      { key: "basse", label: "Priorité basse" }
+    ];
+    filtersEl.innerHTML = options.map(o =>
+      `<button class="filter-btn ${o.key === activeFilter ? "active" : ""}" data-key="${o.key}">${o.label}</button>`
+    ).join("");
+
+    filtersEl.querySelectorAll(".filter-btn").forEach(btn => {
+      btn.addEventListener("click", () => {
+        activeFilter = btn.dataset.key;
+        renderFilters();
+        render();
+      });
+    });
+  }
+
+  renderFilters();
+
+  fetch("data.json")
+    .then(r => {
+      if (!r.ok) throw new Error("Impossible de charger data.json (" + r.status + ")");
+      return r.json();
+    })
+    .then(data => {
+      backlog = data.backlog;
+      render();
+      document.getElementById("footer-count").textContent =
+        backlog.length + " éléments au total";
+    })
+    .catch(err => {
+      sectionsEl.innerHTML = `<p class="empty-state">Impossible de charger le backlog (${err.message}). Vérifiez que data.json est présent à côté de cette page et servi via HTTP.</p>`;
+      console.error(err);
+    });
+
+  document.getElementById("footer-date").textContent =
+    "Mis à jour le " + new Date().toLocaleDateString("fr-FR", { day: "2-digit", month: "long", year: "numeric" });
+</script>
+</body>
+</html>
