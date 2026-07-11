@@ -43,6 +43,26 @@
     margin-bottom: 72px;
   }
 
+  .nav-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12.5px;
+    color: var(--muted);
+    text-decoration: none;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 6px 14px;
+    margin-bottom: 24px;
+    transition: all 0.15s ease;
+  }
+
+  .nav-link:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+
   .eyebrow {
     font-family: 'IBM Plex Mono', monospace;
     font-size: 12px;
@@ -214,6 +234,7 @@
 <body>
   <div class="wrap">
     <header class="page-head">
+      <a class="nav-link" href="backlog.html">← Backlog</a>
       <div class="eyebrow">Nouveautés</div>
       <h1>Journal des versions</h1>
       <p class="subtitle">L'historique des évolutions de l'application — nouvelles fonctionnalités, corrections et changements, par ordre chronologique.</p>
