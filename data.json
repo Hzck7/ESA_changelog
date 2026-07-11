@@ -55,6 +55,13 @@
       "title": "Impression fiche technique client",
       "desc": "Modifier l'export de la fiche technique client pour utiliser le modéle Word. ",
       "targetVersion": "v1.65.4"
+    },
+    {
+      "status": "termine",
+      "priority": "haute",
+      "title": "Erreur actualisation article",
+      "desc": "Correction de l'erreur d'actualisation des articles.",
+      "targetVersion": "v1.65.2"
     }
   ]
 }
