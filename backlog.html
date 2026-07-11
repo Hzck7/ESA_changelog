@@ -293,14 +293,14 @@
   const statusFiltersEl = document.getElementById("status-filters");
 
   let activePrioFilter = "all";
-  let activeStatusFilter = "all";
+  let activeStatuses = new Set(); // vide = tous les états affichés
 
   function render() {
     sectionsEl.innerHTML = "";
 
-    const visibleStatuses = activeStatusFilter === "all"
+    const visibleStatuses = activeStatuses.size === 0
       ? statusOrder
-      : statusOrder.filter(s => s === activeStatusFilter);
+      : statusOrder.filter(s => activeStatuses.has(s));
 
     visibleStatuses.forEach(status => {
       const items = backlog.filter(b => b.status === status);
@@ -380,13 +380,21 @@
       { key: "idee", label: statusLabels.idee },
       { key: "termine", label: statusLabels.termine }
     ];
-    statusFiltersEl.innerHTML = options.map(o =>
-      `<button class="filter-btn ${o.key === activeStatusFilter ? "active" : ""}" data-key="${o.key}">${o.label}</button>`
-    ).join("");
+    statusFiltersEl.innerHTML = options.map(o => {
+      const isActive = o.key === "all" ? activeStatuses.size === 0 : activeStatuses.has(o.key);
+      return `<button class="filter-btn ${isActive ? "active" : ""}" data-key="${o.key}">${o.label}</button>`;
+    }).join("");
 
     statusFiltersEl.querySelectorAll(".filter-btn").forEach(btn => {
       btn.addEventListener("click", () => {
-        activeStatusFilter = btn.dataset.key;
+        const key = btn.dataset.key;
+        if (key === "all") {
+          activeStatuses.clear();
+        } else if (activeStatuses.has(key)) {
+          activeStatuses.delete(key);
+        } else {
+          activeStatuses.add(key);
+        }
         renderStatusFilters();
         render();
       });
