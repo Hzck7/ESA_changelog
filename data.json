@@ -10,6 +10,42 @@
         { "type": "fixed", "text": "Correction de l'actualisation des articles." },
         { "type": "fixed", "text": "Correction de la laize et du développé lors de la saisie d'un article depuis un devis." }
       ]
+    },
+    {
+      "version": "v1.65.1",
+      "date": "2026-07-07",
+      "title": "Améliorations sur l'actualisation EBP, l'importation de packing list, l'ajout d'articles similaires dans le stock et la correction de l'actualisation des clients.",
+      "changes": [
+        { "type": "added", "text": "Le temps d'actualisation EBP est paramétrable et automatique." },
+        { "type": "added", "text": "Ajout de la fiche technique dans l'écran magasinier via un double clic." },
+        { "type": "changed", "text": "L'actualisation EBP a été retirée pour l'atelier." },
+        { "type": "changed", "text": "Modification du commentaire lors d'un import. Le numéro de commande apparait en premier dans le commentaire." },
+        { "type": "changed", "text": "Les articles similaires ajoutés dans le stock seront regroupés sur une seule ligne." },
+        { "type": "fixed", "text": "Correction de l'actualisation des clients. La liste des articles ne se vide plus à chaque actualisation." },
+        { "type": "fixed", "text": "Correction du calcul de la quantité de mandrin." }
+      ]
+    },
+    {
+      "version": "v1.65.0",
+      "date": "2026-07-01",
+      "title": "Améliorations sur le planning, les devis, les temps de production et la liste outils.",
+      "changes": [
+        { "type": "added", "text": "Ajout d'une vue hebdomadaire du planning." },
+        { "type": "added", "text": "Ajout d'un bouton d'actualisation des données de temps de production." },
+        { "type": "changed", "text": "Modification des modèles Word." },
+        { "type": "changed", "text": "La fenêtre des devis ne se ferme plus après l'enregistrement d'un devis." },
+        { "type": "changed", "text": "Les filtres par défaut ont été ajoutés dans le nouveau planning." },
+        { "type": "changed", "text": "Les informations du mandrin et de la quantité ont été ajoutées à l'écran atelier." },
+        { "type": "changed", "text": "Le nombre de lignes sélectionnées est maintenant affiché dans l'écran de mise à jour des prix." },
+        { "type": "changed", "text": "Les données de temps de production sont correctement actualisées." },
+        { "type": "fixed", "text": "Le calcul du prix HT a été corrigé." },
+        { "type": "fixed", "text": "Correction de la génération automatique du numéro de devis." },
+        { "type": "fixed", "text": "Le changement de matière met correctement à jour le prix HT dans la liste des quantités." },
+        { "type": "fixed", "text": "Correction de l'affichage de la case \"Autre\" lors de l'impression." },
+        { "type": "fixed", "text": "La virgule peut être utilisée comme séparateur dans la recherche de laize." },
+        { "type": "fixed", "text": "La sauvegarde de la liste outil prend correctement en compte les décimales." },
+        { "type": "fixed", "text": "La sélection du code article fonctionne correctement dans la mise à jour des prix." }
+      ]
     }
   ],
   "backlog": [
