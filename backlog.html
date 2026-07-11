@@ -97,6 +97,10 @@
     flex-wrap: wrap;
   }
 
+  .filters.status-filters {
+    margin-top: 10px;
+  }
+
   .filter-btn {
     font-family: 'Inter', sans-serif;
     font-size: 13px;
@@ -261,6 +265,7 @@
     </header>
 
     <div class="filters" id="filters"></div>
+    <div class="filters status-filters" id="status-filters"></div>
 
     <div id="sections"></div>
 
@@ -285,19 +290,25 @@
 
   const sectionsEl = document.getElementById("sections");
   const filtersEl = document.getElementById("filters");
+  const statusFiltersEl = document.getElementById("status-filters");
 
-  let activeFilter = "all";
+  let activePrioFilter = "all";
+  let activeStatusFilter = "all";
 
   function render() {
     sectionsEl.innerHTML = "";
 
-    statusOrder.forEach(status => {
+    const visibleStatuses = activeStatusFilter === "all"
+      ? statusOrder
+      : statusOrder.filter(s => s === activeStatusFilter);
+
+    visibleStatuses.forEach(status => {
       const items = backlog.filter(b => b.status === status);
       if (items.length === 0) return;
 
-      const visibleItems = activeFilter === "all"
+      const visibleItems = activePrioFilter === "all"
         ? items
-        : items.filter(i => i.priority === activeFilter);
+        : items.filter(i => i.priority === activePrioFilter);
 
       const section = document.createElement("div");
       section.className = "section";
@@ -349,19 +360,41 @@
       { key: "basse", label: "Priorité basse" }
     ];
     filtersEl.innerHTML = options.map(o =>
-      `<button class="filter-btn ${o.key === activeFilter ? "active" : ""}" data-key="${o.key}">${o.label}</button>`
+      `<button class="filter-btn ${o.key === activePrioFilter ? "active" : ""}" data-key="${o.key}">${o.label}</button>`
     ).join("");
 
     filtersEl.querySelectorAll(".filter-btn").forEach(btn => {
       btn.addEventListener("click", () => {
-        activeFilter = btn.dataset.key;
+        activePrioFilter = btn.dataset.key;
         renderFilters();
         render();
       });
     });
   }
 
+  function renderStatusFilters() {
+    const options = [
+      { key: "all", label: "Tous les états" },
+      { key: "encours", label: statusLabels.encours },
+      { key: "planifie", label: statusLabels.planifie },
+      { key: "idee", label: statusLabels.idee },
+      { key: "termine", label: statusLabels.termine }
+    ];
+    statusFiltersEl.innerHTML = options.map(o =>
+      `<button class="filter-btn ${o.key === activeStatusFilter ? "active" : ""}" data-key="${o.key}">${o.label}</button>`
+    ).join("");
+
+    statusFiltersEl.querySelectorAll(".filter-btn").forEach(btn => {
+      btn.addEventListener("click", () => {
+        activeStatusFilter = btn.dataset.key;
+        renderStatusFilters();
+        render();
+      });
+    });
+  }
+
   renderFilters();
+  renderStatusFilters();
 
   fetch("data.json")
     .then(r => {
