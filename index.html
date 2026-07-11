@@ -130,31 +130,6 @@
     letter-spacing: -0.01em;
   }
 
-  .change-group {
-    margin: 0 0 18px;
-  }
-
-  .change-group:last-child {
-    margin-bottom: 0;
-  }
-
-  .group-label {
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 10.5px;
-    font-weight: 500;
-    letter-spacing: 0.07em;
-    text-transform: uppercase;
-    color: var(--muted);
-    margin: 0 0 8px;
-    display: flex;
-    align-items: center;
-    gap: 7px;
-  }
-
-  .group-label .dot {
-    margin-top: 0;
-  }
-
   ul.changes {
     list-style: none;
     margin: 0;
@@ -287,25 +262,9 @@
   const sinceVersion = params.get("since");
   const timeline = document.getElementById("timeline");
 
-  const typeOrder = ["added", "changed", "fixed", "security"];
-
-  function groupChanges(changes) {
-    const groups = {};
-    changes.forEach(c => {
-      if (!groups[c.type]) groups[c.type] = [];
-      groups[c.type].push(c);
-    });
-    const orderedTypes = [
-      ...typeOrder.filter(t => groups[t]),
-      ...Object.keys(groups).filter(t => !typeOrder.includes(t))
-    ];
-    return orderedTypes.map(type => ({ type, items: groups[type] }));
-  }
-
   function renderEntry(entry, isNew) {
     const el = document.createElement("div");
     el.className = "entry" + (isNew ? "" : " older");
-    const groups = groupChanges(entry.changes);
     el.innerHTML = `
       <div class="meta-col">
         <span class="version-num">${entry.version}</span>
@@ -314,21 +273,14 @@
       </div>
       <div>
         <h2 class="entry-title">${entry.title}</h2>
-        ${groups.map(g => `
-          <div class="change-group">
-            <div class="group-label">
-              <span class="dot ${g.type}"></span>
-              ${tagLabels[g.type] || g.type}
-            </div>
-            <ul class="changes">
-              ${g.items.map(c => `
-                <li>
-                  <span class="change-text">${c.text}</span>
-                </li>
-              `).join("")}
-            </ul>
-          </div>
-        `).join("")}
+        <ul class="changes">
+          ${entry.changes.map(c => `
+            <li>
+              <span class="dot ${c.type}"></span>
+              <span class="change-text"><span class="type-label">${tagLabels[c.type] || c.type} —</span> ${c.text}</span>
+            </li>
+          `).join("")}
+        </ul>
       </div>
     `;
     timeline.appendChild(el);
