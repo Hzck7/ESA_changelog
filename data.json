@@ -3,48 +3,1983 @@
     {
       "version": "v1.65.2",
       "date": "2026-07-08",
-      "title": "Améliorations sur l'écran magasinier, l'ordre des commandes et la correction de l'actualisation des articles.",
+      "title": "Cette version apporte des améliorations sur l'écran magasinier, l'ordre des commandes et la correction de l'actualisation des articles.",
       "changes": [
-        { "type": "added", "text": "Ajout de la colonne \"pose en laize\" dans la liste des commandes pour l'écran magasinier." },
-        { "type": "changed", "text": "Les commandes sont triées par ordre croissant dans l'écran magasinier." },
-        { "type": "fixed", "text": "Correction de l'actualisation des articles." },
-        { "type": "fixed", "text": "Correction de la laize et du développé lors de la saisie d'un article depuis un devis." }
+        {
+          "type": "added",
+          "text": "Liste des commandes : Ajout de la colonne \"pose en laize\" dans la liste des commandes pour l'écran magasinier."
+        },
+        {
+          "type": "changed",
+          "text": "Ordre des commandes : Dans l'écran magasinier, les commandes sont triées par ordre croissant."
+        },
+        {
+          "type": "fixed",
+          "text": "Actualisation des articles : Correction de l'actualisation des articles."
+        },
+        {
+          "type": "fixed",
+          "text": "Article / devis : Correction de la laize et du développé lors de la saisie d'un article depuis un devis."
+        }
       ]
     },
     {
       "version": "v1.65.1",
       "date": "2026-07-07",
-      "title": "Améliorations sur l'actualisation EBP, l'importation de packing list, l'ajout d'articles similaires dans le stock et la correction de l'actualisation des clients.",
+      "title": "Cette version apporte des améliorations sur l'actualisation EBP, l'importation de packing list, l'ajout d'articles similaires dans le stock et la correction de l'actualisation des clients.",
       "changes": [
-        { "type": "added", "text": "Le temps d'actualisation EBP est paramétrable et automatique." },
-        { "type": "added", "text": "Ajout de la fiche technique dans l'écran magasinier via un double clic." },
-        { "type": "changed", "text": "L'actualisation EBP a été retirée pour l'atelier." },
-        { "type": "changed", "text": "Modification du commentaire lors d'un import. Le numéro de commande apparait en premier dans le commentaire." },
-        { "type": "changed", "text": "Les articles similaires ajoutés dans le stock seront regroupés sur une seule ligne." },
-        { "type": "fixed", "text": "Correction de l'actualisation des clients. La liste des articles ne se vide plus à chaque actualisation." },
-        { "type": "fixed", "text": "Correction du calcul de la quantité de mandrin." }
+        {
+          "type": "added",
+          "text": "Temps d'actualisation EBP : Le temps d'actualisation EBP est paramétrable et automatique."
+        },
+        {
+          "type": "added",
+          "text": "Fiche technique : Ajout de la fiche technique dans l'écran magasinier via un double clic."
+        },
+        {
+          "type": "changed",
+          "text": "Actualisation EBP : L'actualisation EBP a été retirée pour l'atelier."
+        },
+        {
+          "type": "changed",
+          "text": "Importation packing list : Modification du commentaire lors d'un import. Le numéro de commande apparait en premier dans le commentaire."
+        },
+        {
+          "type": "changed",
+          "text": "Ajout dans le stock : Les articles similaires ajoutés dans le stock seront regroupés sur une seule ligne."
+        },
+        {
+          "type": "fixed",
+          "text": "Actualisation clients : Correction de l'actualisation des clients. La liste des articles ne se vide plus à chaque actualisation."
+        },
+        {
+          "type": "fixed",
+          "text": "Quantité mandrin : Correction du calcul de la quantité de mandrin."
+        }
       ]
     },
     {
       "version": "v1.65.0",
-      "date": "2026-07-01",
-      "title": "Améliorations sur le planning, les devis, les temps de production et la liste outils.",
+      "date": "2026-07-06",
+      "title": "Cette version introduit un nouvel écran magasinier, l'export des codes articles, la synchronisation des clients avec EBP et plusieurs améliorations de l'interface utilisateur.",
       "changes": [
-        { "type": "added", "text": "Ajout d'une vue hebdomadaire du planning." },
-        { "type": "added", "text": "Ajout d'un bouton d'actualisation des données de temps de production." },
-        { "type": "changed", "text": "Modification des modèles Word." },
-        { "type": "changed", "text": "La fenêtre des devis ne se ferme plus après l'enregistrement d'un devis." },
-        { "type": "changed", "text": "Les filtres par défaut ont été ajoutés dans le nouveau planning." },
-        { "type": "changed", "text": "Les informations du mandrin et de la quantité ont été ajoutées à l'écran atelier." },
-        { "type": "changed", "text": "Le nombre de lignes sélectionnées est maintenant affiché dans l'écran de mise à jour des prix." },
-        { "type": "changed", "text": "Les données de temps de production sont correctement actualisées." },
-        { "type": "fixed", "text": "Le calcul du prix HT a été corrigé." },
-        { "type": "fixed", "text": "Correction de la génération automatique du numéro de devis." },
-        { "type": "fixed", "text": "Le changement de matière met correctement à jour le prix HT dans la liste des quantités." },
-        { "type": "fixed", "text": "Correction de l'affichage de la case \"Autre\" lors de l'impression." },
-        { "type": "fixed", "text": "La virgule peut être utilisée comme séparateur dans la recherche de laize." },
-        { "type": "fixed", "text": "La sauvegarde de la liste outil prend correctement en compte les décimales." },
-        { "type": "fixed", "text": "La sélection du code article fonctionne correctement dans la mise à jour des prix." }
+        {
+          "type": "added",
+          "text": "Export code article : Ajout de la fonctionnalité d'exportation des codes articles."
+        },
+        {
+          "type": "added",
+          "text": "Ecran magasinier : Ajout d'un écran dédié pour le magasinier."
+        },
+        {
+          "type": "added",
+          "text": "Actualisation EBP : Mise en place de l'actualisation des clients depuis EBP."
+        },
+        {
+          "type": "fixed",
+          "text": "Calcul ML prod : La somme des ML utilisés à été corrigée."
+        }
+      ]
+    },
+    {
+      "version": "v1.64.1",
+      "date": "2026-07-01",
+      "title": "Cette version apporte des améliorations sur le planning, les devis, les temps de production et la liste outil.",
+      "changes": [
+        {
+          "type": "added",
+          "text": "Affichage du planning semaine : Ajout d'une vue hebdomadaire du planning."
+        },
+        {
+          "type": "added",
+          "text": "Actualisation des temps de production : Ajout d'un bouton d'actualisation des données de temps de production."
+        },
+        {
+          "type": "changed",
+          "text": "Modèles Word : Modification des modèles Word."
+        },
+        {
+          "type": "changed",
+          "text": "Enregistrement des devis : La fenêtre des devis ne se ferme plus après l'enregistrement d'un devis."
+        },
+        {
+          "type": "changed",
+          "text": "Filtres par défaut : Les filtres par défaut ont été ajoutés dans le nouveau planning."
+        },
+        {
+          "type": "changed",
+          "text": "Informations écran atelier : Les informations du mandrin et de la quantité ont été ajoutées à l'écran atelier."
+        },
+        {
+          "type": "changed",
+          "text": "Lignes sélectionnées : Le nombre de lignes sélectionnées est maintenant affiché dans l'écran de mise à jour des prix."
+        },
+        {
+          "type": "changed",
+          "text": "Mise à jour des données : Les données de temps de production sont correctement actualisées."
+        },
+        {
+          "type": "fixed",
+          "text": "Calcul de prix rouleaux : Le calcul du prix HT a été corrigé."
+        },
+        {
+          "type": "fixed",
+          "text": "Numéro de devis : Correction de la génération automatique du numéro de devis."
+        },
+        {
+          "type": "fixed",
+          "text": "Changement de matière : Le changement de matière met correctement à jour le prix HT dans la liste des quantités."
+        },
+        {
+          "type": "fixed",
+          "text": "Impression des devis : LCorrection de l'affichage de la case \"Autre\" lors de l'impression."
+        },
+        {
+          "type": "fixed",
+          "text": "Recherche laize : La virgule peut être utilisée comme séparateur dans la recherche de laize."
+        },
+        {
+          "type": "fixed",
+          "text": "Sauvegarde laize : La sauvegarde de la liste outil prend correctement en compte les décimales."
+        },
+        {
+          "type": "fixed",
+          "text": "Sélection du code article : La sélection du code article fonctionne correctement dans la mise à jour des prix."
+        }
+      ]
+    },
+    {
+      "version": "v1.64.0",
+      "date": "2026-06-29",
+      "title": "Cette version apporte des améliorations sur les devis, l'accueil et le planning.",
+      "changes": [
+        {
+          "type": "added",
+          "text": "Ajout d'article depuis la liste des devis : Ajout d'une liste permettant de retrouver les articles disponibles pour chaque devis."
+        },
+        {
+          "type": "added",
+          "text": "Visualisation de l'état des devis : Les différents états des devis sont maintenant identifiés par une couleur dans la liste des devis."
+        },
+        {
+          "type": "added",
+          "text": "Accès aux machines depuis l'accueil : Ajout d'un bouton permettant de visualiser les cylindres disponibles pour chaque machine.."
+        },
+        {
+          "type": "changed",
+          "text": "Recherche clients/prospects : La liste déroulante des clients et prospects permet désormais d'effectuer une recherche."
+        },
+        {
+          "type": "changed",
+          "text": "Affichage des infobulles : Le temps d'affichage des infobulles dans le nouveau planning a été augmenté à 30 secondes.."
+        },
+        {
+          "type": "fixed",
+          "text": "Calcul des devis avec dorure : Correction de la prise en compte de la dorure dans le calcul du PAHT 1000."
+        }
+      ]
+    },
+    {
+      "version": "v1.63.4",
+      "date": "2026-06-23",
+      "title": "Cette version corrige une erreur de table",
+      "changes": [
+        {
+          "type": "fixed",
+          "text": "Erreur de table : Correction d'une erreur de table dans le formulaire de gestion des temps de production."
+        }
+      ]
+    },
+    {
+      "version": "v1.63.3",
+      "date": "2026-06-22",
+      "title": "Cette version corrige des erreurs liées au filtre de date dans le temps de production et à l'actualisation de la liste des devis.",
+      "changes": [
+        {
+          "type": "added",
+          "text": "Bouton d'actualisation : Ajout d'un bouton permettant de rafraîchir manuellement la liste des devis."
+        },
+        {
+          "type": "fixed",
+          "text": "Correction du filtre de date dans le temps de production : Le filtre de date dans le formulaire de gestion des temps de production a été corrigé pour fonctionner correctement."
+        },
+        {
+          "type": "fixed",
+          "text": "Actualisation de la liste des devis : Correction d'un problème lié à l'actualisation de la liste des devis après la création ou la modification d'un devis."
+        }
+      ]
+    },
+    {
+      "version": "v1.63.2",
+      "date": "2026-06-16",
+      "title": "Cette version apporte des améliorations sur la génération des devis, l'impression des étiquettes inventaire et sur le suivi des temps de production/bobinage",
+      "changes": [
+        {
+          "type": "added",
+          "text": "Option \"rouleaux continus\" : Lors de la génération des devis, il est maintenant possible de maintenir l'impression en continu des rouleaux."
+        },
+        {
+          "type": "added",
+          "text": "Bouton d'actualisation : Ajout d'un bouton permettant de rafraîchir manuellement les listes déroulantes."
+        },
+        {
+          "type": "added",
+          "text": "Mise à jour de la trame Word : La trame Word affiche désormais le champ observation et adapte automatiquement l'unité selon le type de devis (étiquettes ou rouleaux continus)."
+        },
+        {
+          "type": "changed",
+          "text": "Fenêtre de choix de date : La fenêtre est maintenant affichée automatiquement au premier plan."
+        },
+        {
+          "type": "fixed",
+          "text": "Réinitialisation des champs d'impression : Après l'impression d'une étiquette, les champs d'impression sont maintenant remis à zéro."
+        },
+        {
+          "type": "fixed",
+          "text": "Filtre de date de production : Correction d'un problème lié au filtrage des dates dans le formulaire de gestion des temps de production."
+        }
+      ]
+    },
+    {
+      "version": "v1.63.1",
+      "date": "2026-06-16",
+      "title": "Colonne référence client",
+      "changes": [
+        {
+          "type": "added",
+          "text": "Colonne référence client : Dans la liste des devis, la colonne référence client est ajouté."
+        },
+        {
+          "type": "added",
+          "text": "Accès rapide à l'impression d'étiquette : Un raccourci a été ajouté pour accéder rapidement à l'impression des étiquettes."
+        },
+        {
+          "type": "added",
+          "text": "Imprimante par défaut : Lors de l'impression d'étiquettes, l'imprimante par défaut est maintenant sélectionnée automatiquement."
+        },
+        {
+          "type": "added",
+          "text": "Ecrans inventaire : Mise en place des écrans d'inventaire."
+        },
+        {
+          "type": "changed",
+          "text": "Identification des champs manquant : Lorsque que des champs sont manquants dans la création d'un devis, ils sont maintenant clairement identifiés."
+        },
+        {
+          "type": "changed",
+          "text": "Remise à zéro : Lors d'un nouveau devis, les champs frais de découpe et de cliché sont maintenant remis à zéro."
+        },
+        {
+          "type": "changed",
+          "text": "Modification étiquette inventaire : Modification de l'affichage des informations sur les étiquettes d'inventaire."
+        },
+        {
+          "type": "fixed",
+          "text": "Tri des devis : Les devis sont maintenant triés par ordre de numéro de devis."
+        },
+        {
+          "type": "fixed",
+          "text": "Création d'un nouveau client : Les nouveaux clients ne sont plus créés plusieurs fois lors d'un nouveau devis."
+        }
+      ]
+    },
+    {
+      "version": "v1.63.0",
+      "date": "2026-06-11",
+      "title": "Somme ML utilsé",
+      "changes": [
+        {
+          "type": "added",
+          "text": "Somme ML utilsé : Ajout de somme ML utilisé dans le formulaire de gestion des temps de production."
+        },
+        {
+          "type": "added",
+          "text": "Filtre date : Ajout d'un filtre par date dans le formulaire de gestion des temps de production."
+        },
+        {
+          "type": "added",
+          "text": "Aplat : Ajout de l'aplat dans la trame WORD des devis."
+        },
+        {
+          "type": "changed",
+          "text": "Adhésif matière : Lors de la création ou de la modification d'une matière, l'adhésif reste cohérant avec la matière."
+        },
+        {
+          "type": "changed",
+          "text": "Modification de format : Les champs frais de découpe et de cliché sont maintenant des champs alphanumérique."
+        },
+        {
+          "type": "changed",
+          "text": "Mise en page des étiquettes inventaire : Modification de l'affichage des informations sur les étiquettes d'inventaire."
+        },
+        {
+          "type": "changed",
+          "text": "RAZ champs impression : Lors du scan des codes-barres, si le code article est différent, les champs laize et quantité sont remis à zéro."
+        },
+        {
+          "type": "fixed",
+          "text": "Erreur filtre technicien : Le filtre technicien ne prennait pas en compte l'affichage production ou bobinage."
+        }
+      ]
+    },
+    {
+      "version": "v1.62.9",
+      "date": "2026-06-10",
+      "title": "Erreur étiquettes inventaire",
+      "changes": [
+        {
+          "type": "fixed",
+          "text": "Erreur étiquettes inventaire : Correction de l'erreur d'impression"
+        }
+      ]
+    },
+    {
+      "version": "v1.62.8",
+      "date": "2026-06-09",
+      "title": "Frais de découpe et de cliché",
+      "changes": [
+        {
+          "type": "added",
+          "text": "Frais de découpe et de cliché : Ajout des frais de découpe et de cliché dans le formulaire de génération de devis. Ajout des champs dans les trames Word."
+        },
+        {
+          "type": "added",
+          "text": "Développé : Ajout du développé dans le formulaire de gestion des cylindres machines."
+        },
+        {
+          "type": "changed",
+          "text": "Mise en page des étiquettes inventaire : Modification de l'affichage des informations sur les étiquettes d'inventaire. Agrandissement des champs code article et laize. Modification de la taille du code barre."
+        },
+        {
+          "type": "changed",
+          "text": "Verrouillage laize matière : Le verrouillage de la laize matière a été levé."
+        },
+        {
+          "type": "changed",
+          "text": "Sélection machine & nombre de dents : Modification du fonctionnement de la sélection de la machine et du nombre de dents. Affichage automatique des machine compatible aprés sélection du nombre de dents et vice versa."
+        }
+      ]
+    },
+    {
+      "version": "v1.62.7",
+      "date": "2026-06-08",
+      "title": "Date & heure impression",
+      "changes": [
+        {
+          "type": "added",
+          "text": "Date & heure impression : Ajout de la date et de l'heure d'impression sur les étiquettes d'inventaire."
+        },
+        {
+          "type": "added",
+          "text": "Impression devis : Ajout du choix du format lors de l'impression du devis."
+        },
+        {
+          "type": "changed",
+          "text": "Informations étiquettes : Affichage des informations de l'étiquette à la verticale."
+        },
+        {
+          "type": "changed",
+          "text": "Suppression des champs : Après une impression, les champs ne sont pas remis à zéro."
+        }
+      ]
+    },
+    {
+      "version": "v1.62.6",
+      "date": "2026-06-05",
+      "title": "Disponibilité étiquettes",
+      "changes": [
+        {
+          "type": "added",
+          "text": "Disponibilité étiquettes : Mise à disposition des étiquettes d'inventaire pour l'atelier"
+        },
+        {
+          "type": "changed",
+          "text": "Format étiquettes : Les étiquettes inventaire sont maintenant au format 100x98mm"
+        },
+        {
+          "type": "changed",
+          "text": "Caractère de séparation : Modification du caractère de séparation utilisé dans les étiquettes"
+        }
+      ]
+    },
+    {
+      "version": "v1.62.5",
+      "date": "2026-06-05",
+      "title": "Impression automatique",
+      "changes": [
+        {
+          "type": "added",
+          "text": "Impression automatique : Ajout d'une case à cocher pour activer l'impression automatique des étiquettes après saisie des informations."
+        },
+        {
+          "type": "added",
+          "text": "Ajout fournisseur : Ajout du fournisseur dans l'impression des étiquettes inventaire."
+        }
+      ]
+    },
+    {
+      "version": "v1.62.4",
+      "date": "2026-06-01",
+      "title": "Choix de l'imprimante",
+      "changes": [
+        {
+          "type": "added",
+          "text": "Choix de l'imprimante : Ajout de la possibilité de choisir l'imprimante lors de l'impression d'étiquettes"
+        },
+        {
+          "type": "added",
+          "text": "Sélection arrivage : Ajout d'une case à cocher pour sélectionner les arrivages à prendre en compte dans le stock"
+        },
+        {
+          "type": "fixed",
+          "text": "Erreur de cylindres : Lors de l'ouverture d'un devis, un mauvais chargement du cylindre pouvait entraîner une erreur de chargement des données"
+        }
+      ]
+    },
+    {
+      "version": "v1.62.3",
+      "date": "2026-06-01",
+      "title": "Réinstallation à la suite d'une erreur d'installation",
+      "changes": [
+        {
+          "type": "changed",
+          "text": "Réinstallation à la suite d'une erreur d'installation : Suite à une erreur d'installation, une réinstallation est nécessaire pour la mise à jour vers la version v1.62.2"
+        }
+      ]
+    },
+    {
+      "version": "v1.62.2",
+      "date": "2026-06-01",
+      "title": "Réinstallation à la suite d'une erreur d'installation",
+      "changes": [
+        {
+          "type": "changed",
+          "text": "Réinstallation à la suite d'une erreur d'installation : Suite à une erreur d'installation, une réinstallation est nécessaire pour la mise à jour vers la version v1.62.1"
+        }
+      ]
+    },
+    {
+      "version": "v1.62.1",
+      "date": "2026-06-01",
+      "title": "Présentation par défaut",
+      "changes": [
+        {
+          "type": "added",
+          "text": "Présentation par défaut : Lors de la création d'un devis, l'option \"Rouleau\" est cochée par défaut."
+        },
+        {
+          "type": "added",
+          "text": "Génération des étiquettes : Génération des étiquettes à destination de l'inventaire"
+        },
+        {
+          "type": "added",
+          "text": "Modification liste machine : Lors de la sélection d'une plaque, le nombre de dents est automatiquement renseigné et la liste machine est filtrée pour n'afficher que les machines compatibles avec le nombre de dents de la plaque."
+        },
+        {
+          "type": "fixed",
+          "text": "Email erroné : Correction de l'erreur d'email dans la trame d'impression du devis."
+        },
+        {
+          "type": "fixed",
+          "text": "Caclul du prix : Prise en compte de la bonne colonne dans le calcul du prix d'un devis."
+        },
+        {
+          "type": "fixed",
+          "text": "Mappage référence client : Correction du mappage de la référence client dans le formulaire de génération de devis."
+        },
+        {
+          "type": "fixed",
+          "text": "Nouvelle matière : Lors de la création d'une nouvelle matière dans le stock, le code article n'est plus grisé*."
+        }
+      ]
+    },
+    {
+      "version": "v1.62.0",
+      "date": "2026-05-22",
+      "title": "Actualisation du stock",
+      "changes": [
+        {
+          "type": "added",
+          "text": "Actualisation du stock : Lors de l'actualisation du stock, les fenêtres volantes sont garder au premier plan."
+        },
+        {
+          "type": "changed",
+          "text": "Référence client : La trame d'impression du devis a été modifié pour prendre en compte la référence client."
+        },
+        {
+          "type": "fixed",
+          "text": "Déplacement des commandes : Correction de l'erreur de déplacement des commandes dans le planning."
+        },
+        {
+          "type": "fixed",
+          "text": "Prise en compte des décimales dans le devis : Correction de l'erreur de prise en compte des décimales dans le devis."
+        }
+      ]
+    },
+    {
+      "version": "v1.61.1",
+      "date": "2026-05-22",
+      "title": "Tri des devis",
+      "changes": [
+        {
+          "type": "added",
+          "text": "Tri des devis : Tri des devis par date décroissante."
+        },
+        {
+          "type": "added",
+          "text": "Ajout de colonnes dans la liste des devis : Ajout des colonnes \"Num. devis\", \"Ville\" et \"Dept.\" dans la liste des devis."
+        },
+        {
+          "type": "added",
+          "text": "Référence client : Ajout de la référence client dans le formulaire de génération de devis."
+        },
+        {
+          "type": "added",
+          "text": "Bouton \"nouveau devis\" : Ajout d'un bouton pour créer un nouveau devis directement depuis le formulaire en gardant le client."
+        },
+        {
+          "type": "added",
+          "text": "Filtres devis : Ajout de filtres pour rechercher les devis par client, numéro de devis et département."
+        },
+        {
+          "type": "changed",
+          "text": "Ordre contact : Modification de l'ordre d'affichage du nom et prénom du contact."
+        },
+        {
+          "type": "changed",
+          "text": "Dossier de sauvegarde devis : Modification du dossier de sauvegarde des devis."
+        },
+        {
+          "type": "changed",
+          "text": "Impression devis : Ajout de la vérification de l'existence d'un fichier de devis avant impression."
+        },
+        {
+          "type": "changed",
+          "text": "Contact commercial : Modification du champ contact commercial lors de la génération des devis"
+        },
+        {
+          "type": "fixed",
+          "text": "Chargement données devis : Correction de l'erreur de quantité lors du chargement d'un devis déjà ouvert."
+        }
+      ]
+    },
+    {
+      "version": "v1.61.0",
+      "date": "2026-05-21",
+      "title": "Adhésif",
+      "changes": [
+        {
+          "type": "added",
+          "text": "Adhésif : Ajout de la sélection de l'adhésif dans le formulaire de génération de devis. Ajout de la liste des adhésifs lors de la création d'une matière depuis le stock."
+        },
+        {
+          "type": "added",
+          "text": "Liste des prospects devis : Ajout de la sélection des prospects dans le formulaire de génération de devis."
+        },
+        {
+          "type": "added",
+          "text": "Affichage des prospects : Modification de la liste des clients pour afficher/masquer les prospects."
+        },
+        {
+          "type": "added",
+          "text": "Mise à jour des EAN : Mise à jour des EAN"
+        },
+        {
+          "type": "added",
+          "text": "Modification liste adhésifs matières : Ajout de la modification manuelle de la liste des adhésifs matières depuis l'écran de paramètrage."
+        },
+        {
+          "type": "added",
+          "text": "Impression avec ruban : Ajout de la possibilité d'imprimer les devis avec l'option ruban."
+        },
+        {
+          "type": "changed",
+          "text": "Affichage observation article : Modification de l'affichage des observations des articles pour prendre en charge le format RTF."
+        },
+        {
+          "type": "changed",
+          "text": "Libellé de machine : Modification de l'affichage du libellé de la machine pour une prise en compte de la machine séléctionnée dans la commande et non dans le squelette."
+        },
+        {
+          "type": "changed",
+          "text": "Suppression d'un devis : Ajout de la possibilité de supprimer un devis directement depuis la liste des devis."
+        },
+        {
+          "type": "fixed",
+          "text": "Sauvegarde statut : Correction d'un problème de sauvegarde du statut d'un devis lors de la création."
+        }
+      ]
+    },
+    {
+      "version": "v1.60.9",
+      "date": "2026-05-18",
+      "title": "Bouton génération devis",
+      "changes": [
+        {
+          "type": "added",
+          "text": "Bouton génération devis : Ajout d'un bouton pour générer les devis directement depuis le formulaire"
+        },
+        {
+          "type": "added",
+          "text": "Affichage des commandes en production : Affichage des commandes en cours de production dans les écrans de choix de la date de début de production"
+        },
+        {
+          "type": "added",
+          "text": "Rouleau et Paravent : Ajout des options rouleau et paravent dans le formulaire de génération de devis"
+        },
+        {
+          "type": "added",
+          "text": "Tri des quantités : Tri des quantités dans le tableau des devis par ordre croissant"
+        },
+        {
+          "type": "changed",
+          "text": "Vérrouillage des heures de production : Mise en pause du vérrouillage des heures de production pour les jours ou une commande est déjà planifiée"
+        },
+        {
+          "type": "changed",
+          "text": "Vérrouillage des champs devis : Dans la liste des devis, les champs des devis sont désormais verrouillés pour éviter les modifications accidentelles"
+        },
+        {
+          "type": "fixed",
+          "text": "Erreur lors de la modification d'informations dans le stock : Lors de la modification d'information dans le stock, si le prix n'était pas renseigné, cela posait un problème de chargement des données"
+        },
+        {
+          "type": "fixed",
+          "text": "Erreur matieère sans prix : Lors du choix de la matièere dans la création d'un devis, si le prix de la matièere n'était pas renseigné, cela posait un problème de chargement des données"
+        },
+        {
+          "type": "fixed",
+          "text": "Erreur recalcul laize matière : Lors de la saisie des informations de la plaque, il était possible que le recalcul de laize matière échoue"
+        },
+        {
+          "type": "fixed",
+          "text": "Erreur de chargement d'un article depuis la commande : Lors de la sélection d'un article depuis la commande, si le format n'était pas renseigné, le chargement rentrait en erreur"
+        }
+      ]
+    },
+    {
+      "version": "v1.60.8",
+      "date": "2026-05-14",
+      "title": "Vérrouillage des horaires",
+      "changes": [
+        {
+          "type": "added",
+          "text": "Vérrouillage des horaires : La gestion des horaires de production ne sont pas modifiable si une commandes est déjà planifiée"
+        },
+        {
+          "type": "added",
+          "text": "Modification statut devis : Modification du statut d'un devis directement dans la liste des devis"
+        },
+        {
+          "type": "added",
+          "text": "Pictogramme plaque : Ajout d'un pictogramme pour différencier les plaques a créer des plaques déjà créées"
+        },
+        {
+          "type": "added",
+          "text": "Sélection de la ligne devis : Lors de l'actualisation de la liste des devis, si une ligne était sélectionnée, elle reste sélectionnée"
+        },
+        {
+          "type": "added",
+          "text": "Création plaque depuis un devis : Une plaque peut directement être créée depuis un devis"
+        },
+        {
+          "type": "added",
+          "text": "Fichier trame devis : Mise à disposition du fichier de trame devis"
+        },
+        {
+          "type": "changed",
+          "text": "Affichage des prix devis : Modification du nombre de chiffre après la virgule pour le prix matière et le PA HT\""
+        },
+        {
+          "type": "fixed",
+          "text": "Actualisation du stock : Le stock n'était pas correctement actualisé après l'ajout d'un article dans une commande"
+        },
+        {
+          "type": "fixed",
+          "text": "Affichage commercial : Correction de la sélection du commercial dans la liste des devis"
+        }
+      ]
+    },
+    {
+      "version": "v1.40.0",
+      "date": "2025-12-13",
+      "title": "Déplacement des commandes sur 4 semaines",
+      "changes": [
+        {
+          "type": "added",
+          "text": "Déplacement des commandes sur 4 semaines : Modification de la simulation pour prendre en compte 4 semaines"
+        },
+        {
+          "type": "added",
+          "text": "Suppression d'une commande planifiée : Ajout de la suppression d'une commande qui est planifié. Une fois supprimée, celle-ci revient dans la liste des commandes en attente de planification"
+        },
+        {
+          "type": "added",
+          "text": "Pauses repas dans le planning : Ajout de l'effet visuel des pauses repas dans le planning"
+        },
+        {
+          "type": "changed",
+          "text": "Temps de production restant : Changement du libellé d'information qu'une machine ne peut plus produire sur une journée"
+        },
+        {
+          "type": "fixed",
+          "text": "Calcul de la disponibilité matière : Lors du calcul, la commande en cours de modification était prise en compte dans le calcul de disponibilité et le calcul était érronnée"
+        },
+        {
+          "type": "fixed",
+          "text": "Impression du BAT avec une fiche techniques : Lors de l'impression d'une fiche technique, si le BAT était vide, il était considéré comme indisponible"
+        },
+        {
+          "type": "fixed",
+          "text": "Impression des fiches techniques : Corrections multiples"
+        },
+        {
+          "type": "fixed",
+          "text": "Déduction du stock : La matière n'était pas correctement déduite du stock"
+        },
+        {
+          "type": "fixed",
+          "text": "Alerte de stock : Modification de l'alerte pour une bonne prise en compte du stock"
+        }
+      ]
+    },
+    {
+      "version": "v1.0.38",
+      "date": "2025-12-10",
+      "title": "Alerte de stock matière indisponible",
+      "changes": [
+        {
+          "type": "added",
+          "text": "Alerte de stock matière indisponible : Lors de la saisie d'un article dans une commande, une alerte de stock matière indisponible est levé si jamais le stock est indisponible"
+        },
+        {
+          "type": "added",
+          "text": "Alerte lors de la création d'un article avec un produit inexistant : Lors de la saisie d'un article dans une commande, si la combinaison laize & produit n'existe pas, alors une alerte est levé et le produit est créé"
+        },
+        {
+          "type": "added",
+          "text": "Ecrans multiples article : L'écran des articles peut maintenant afficher plusieurs articles"
+        },
+        {
+          "type": "added",
+          "text": "Impression fiche technique et BAT : Ajout de la fusion entre la fiche technique et le BAT"
+        },
+        {
+          "type": "added",
+          "text": "Sélection automatique : Lorsqu'un commande est créée, celle-ci est automatiquement sélectionnée dans la liste des commandes"
+        },
+        {
+          "type": "added",
+          "text": "Alerte de création : Ajout d'une alerte de création des articles"
+        },
+        {
+          "type": "changed",
+          "text": "Changement de l'affichage des commandes sans date de planification : Ajout d'une colonne code client et changement des libellés de colonnes"
+        },
+        {
+          "type": "changed",
+          "text": "Changement icone : Changement de l'icone d'ajout d'un article à une commande"
+        },
+        {
+          "type": "changed",
+          "text": "Saisie du Z : Modification de la liste déroulante du nombre de dents (Z) par une zone de texte"
+        },
+        {
+          "type": "fixed",
+          "text": "Modification d'un BAT : Correction des erreurs liées à la modification d'un BAT"
+        },
+        {
+          "type": "fixed",
+          "text": "Création et modification d'un article : Correction des erreurs liées à la création et à la modification d'un article"
+        },
+        {
+          "type": "fixed",
+          "text": "Calcul article : Actualisation des calculs PA HT/1000 et M²/1000 lors de la saisie d'informations d'un article"
+        },
+        {
+          "type": "fixed",
+          "text": "Actualisation des articles : Lors de la création d'un article, la liste des articles n'était pas correctement actualisée"
+        },
+        {
+          "type": "fixed",
+          "text": "Filtre fiche technique : Correction des filtres d'affichage des fiches techniques"
+        }
+      ]
+    },
+    {
+      "version": "v1.0.37",
+      "date": "2025-12-02",
+      "title": "Temps de production restant",
+      "changes": [
+        {
+          "type": "added",
+          "text": "Temps de production restant : Ajout du calcul de temps de production restant par machine. ⚠️ Le calcul du temps de production restant est basé sur les commandes saisient et le temps théorique de travail. Le calcul sera adapté lors de la modification du temps de production réel de l'atelier"
+        },
+        {
+          "type": "added",
+          "text": "Bouton vers le changelog : Ajout d'un bouton pointant vers le changelog de l'application"
+        },
+        {
+          "type": "added",
+          "text": "Infobulles : Des infobulles ont été ajoutées sur l'ensemble des boutons de l'application"
+        },
+        {
+          "type": "changed",
+          "text": "Sauvegarde du fichier de configuration : Le fichier de configuration est maintenant sauvegardé. Le fichier ne sera plus demandé à chaque mise à jour"
+        },
+        {
+          "type": "changed",
+          "text": "Masquage d'une colonne ID : Dans la liste des fiches techniques, l'ID était visible. Il est maintenant masqué"
+        },
+        {
+          "type": "changed",
+          "text": "Ajout d'un article à une commande : Le fonctionnement d'ajout d'un article à une commande a évolué. Maintenant, lors de la sélection d'un article, celui-ci est automatiquement ajouté à la commande et est directement modifiable"
+        },
+        {
+          "type": "changed",
+          "text": "Filtre liste des articles : Le filtre de la liste des articles a été étendu à l'ensemble des colonnes visible dans la liste"
+        },
+        {
+          "type": "changed",
+          "text": "Changement de libellé dans la saisie d'une commande : Dans l'écran de saisit d'une commande, le champ 'Num. Commande' a été remplacé par 'Référence client' et 'Num. Lot' par 'N° Lot CM'"
+        },
+        {
+          "type": "fixed",
+          "text": "Erreur de mise à jour des suppressions des commandes commandes : Lors de la suppression d'une commande, celle-ci pouvait toujours être visible dans la liste des commandes en attente de plannification"
+        },
+        {
+          "type": "fixed",
+          "text": "Filtre des commandes dans date de plannification : Lorsqu'un filtre machine est appliqué sur le planning, celui-ci est également appliqué sur les commandes en attente de plannification"
+        },
+        {
+          "type": "fixed",
+          "text": "Erreur de saisie de date de livraison : Lors de la création d'une commande, la date de départ était automatiquement sauvegardée dans la date de livraison"
+        },
+        {
+          "type": "fixed",
+          "text": "Numéro de semaines : Les numéros de semaines n'étaient pas toujours corrects dans le planning"
+        },
+        {
+          "type": "fixed",
+          "text": "Liste déroulante des formats de cartons : Correction de la liste déroulante des formats qui n'affichait pas la bonne liste"
+        },
+        {
+          "type": "fixed",
+          "text": "Liste des commandes : Dans l'écran de sélection de l'heure de début de production, la colonne Z n'était jamais remise à zéro"
+        },
+        {
+          "type": "removed",
+          "text": "Modification commentaire : La modification directement du commentaire dans la liste du stock n'est pas possible"
+        }
+      ]
+    },
+    {
+      "version": "v1.0.36",
+      "date": "2025-11-27",
+      "title": "Création de l'écran fiches techniques",
+      "changes": [
+        {
+          "type": "added",
+          "text": "Création de l'écran fiches techniques : Création de l'écran de visualisation de toutes le fiches techniques"
+        },
+        {
+          "type": "added",
+          "text": "Crétion du nombre de clichés : Ajout d'une liste déroulante du nombre de cliché dans la saisie des commandes. Si cette option est utilisée, le temps de calage de la machine est enlevé du temps de production et un durée de cinq minutes par cliché est ajoutée"
+        },
+        {
+          "type": "added",
+          "text": "Changement de couleur global de l'application : Changement de la nuance de vert dans l'application [en cours de changement]"
+        },
+        {
+          "type": "changed",
+          "text": "Impression des fiches techniques : Modification du lien vers les fiches techniques"
+        },
+        {
+          "type": "changed",
+          "text": "Modification de l'écran de saisie des commandes dans le planning : Modification de l'interfacde de saisie des commandes dans le planning pour une optimisation du chargement"
+        },
+        {
+          "type": "fixed",
+          "text": "Erreur lors de la création d'une commande : A la création d'une commande, celle-ci n'avait pas d'état pas défaut. Cela entrainait une erreur lors du placement de la commande dans le planning"
+        },
+        {
+          "type": "fixed",
+          "text": "Erreur de suppression d'une commande : Correction de l'erreur lié à la suppression d'une commannde"
+        }
+      ]
+    },
+    {
+      "version": "v1.0.35",
+      "date": "2025-11-25",
+      "title": "Ajout d'un bouton de stock",
+      "changes": [
+        {
+          "type": "added",
+          "text": "Ajout d'un bouton de stock : Ajout d'un bouton pour afficher le stock sur une fenêtre indépendante"
+        },
+        {
+          "type": "added",
+          "text": "Ajout du nombre de dents dans le planning : Le nombre de dents a été ajouté dans les informations visualisées dans le planning ainsi que dans l'écran du choix de début de production"
+        },
+        {
+          "type": "changed",
+          "text": "Sélection automatique d'un article : Lors de la sélection d'une commande, le premier article est automatiquement sélectionné et chargé"
+        },
+        {
+          "type": "changed",
+          "text": "Changement des couleurs des champs PA €/HT 1000 & M²/1000 : La couleur verte a été ajoutée pour les données issues du squelette de l'article et la couleur rouge pour les données modifiées"
+        },
+        {
+          "type": "fixed",
+          "text": "Correction de la l'affichage de la liste déroulante des Z la partie commande : La liste s'affichait vide peu importe l'article saisit"
+        },
+        {
+          "type": "fixed",
+          "text": "Changement du lien vers l'image de sens : Le lien vers l'image de sens n'allait pas chercher au bon endroit sur le NAS"
+        },
+        {
+          "type": "fixed",
+          "text": "Erreur sur la mise à jour des prix : Une erreur était déclenchée lors de la modification de prix via l'écran \"mise à jour des prix\""
+        },
+        {
+          "type": "fixed",
+          "text": "Erreur lors du changement de mois et d'année dans l'onglet planning : Correction de l'erreur de base de données lors du chargement du planning"
+        }
+      ]
+    },
+    {
+      "version": "v1.60.5",
+      "date": "2025-05-07",
+      "title": "Ouverture des journées",
+      "changes": [
+        {
+          "type": "added",
+          "text": "Ouverture des journées : Ouverture des journées de productions de 05h00 à 20h00"
+        },
+        {
+          "type": "changed",
+          "text": "Affichage des jours de fermeture machine : Modification de l'affichage des jours de fermeture machine"
+        },
+        {
+          "type": "fixed",
+          "text": "Corrections multiples commandes : Corrections multiples des erreurs de déplacement des commandes"
+        }
+      ]
+    },
+    {
+      "version": "v1.60.4",
+      "date": "2025-04-30",
+      "title": "ESA-97",
+      "changes": [
+        {
+          "type": "added",
+          "text": "ESA-97 : Ajout du nom et du prénom du contact dans la visualisation des devis"
+        },
+        {
+          "type": "fixed",
+          "text": "ESA-96 : Correction de l'erreur de l'enregistrement d'un devis lors de la création d'une plaque"
+        }
+      ]
+    },
+    {
+      "version": "v1.60.3",
+      "date": "2025-04-30",
+      "title": "Corrections continues",
+      "changes": [
+        {
+          "type": "changed",
+          "text": "Corrections continues"
+        }
+      ]
+    },
+    {
+      "version": "v1.60.2",
+      "date": "2025-04-29",
+      "title": "Correction de l'erreur d'ajout de quantité en stock",
+      "changes": [
+        {
+          "type": "fixed",
+          "text": "Correction de l'erreur d'ajout de quantité en stock",
+          "linearId": "ESA-92"
+        },
+        {
+          "type": "fixed",
+          "text": "Correction de l'erreur de validation de la matière lors d'une fin de production",
+          "linearId": "ESA-93"
+        }
+      ]
+    },
+    {
+      "version": "v1.60.1",
+      "date": "2025-04-29",
+      "title": "Export des fiches techniques vers un fichier Excel",
+      "changes": [
+        {
+          "type": "added",
+          "text": "Export des fiches techniques vers un fichier Excel",
+          "linearId": "ESA-80"
+        },
+        {
+          "type": "added",
+          "text": "Le format des cartons n'est plus un champ obligatoire",
+          "linearId": "ESA-83"
+        },
+        {
+          "type": "added",
+          "text": "Ajout du nom du client et du format dans la visualisation des mouvements de stock",
+          "linearId": "ESA-88"
+        },
+        {
+          "type": "changed",
+          "text": "Actualisation de la liste des commandes lorsque le filtre des clients est vide",
+          "linearId": "ESA-79"
+        },
+        {
+          "type": "changed",
+          "text": "Changement du fonctionnement du filtre de recherche des clients dans les fiches techniques",
+          "linearId": "ESA-81"
+        },
+        {
+          "type": "changed",
+          "text": "Modification du filtre des machines pour les fiches techniques",
+          "linearId": "ESA-82"
+        },
+        {
+          "type": "changed",
+          "text": "Modification de l'infobulle des commandes dans le planning",
+          "linearId": "ESA-84"
+        },
+        {
+          "type": "fixed",
+          "text": "Correction du chargement de l'image de sens de sortie",
+          "linearId": "ESA-83"
+        },
+        {
+          "type": "fixed",
+          "text": "Correction de l'erreur de calcul du prix de la plaque",
+          "linearId": "ESA-91"
+        },
+        {
+          "type": "fixed",
+          "text": "Correction du troncage de la laize matière",
+          "linearId": "ESA-90"
+        }
+      ]
+    },
+    {
+      "version": "v1.60.0",
+      "date": "2025-04-28",
+      "title": "Génération des devis",
+      "changes": [
+        {
+          "type": "added",
+          "text": "Génération des devis : Mise à jour de la génération des devis"
+        }
+      ]
+    },
+    {
+      "version": "v1.55.9",
+      "date": "2025-04-28",
+      "title": "Génération des devis",
+      "changes": [
+        {
+          "type": "added",
+          "text": "Génération des devis : Mise à jour de la génération des devis"
+        }
+      ]
+    },
+    {
+      "version": "v1.55.8",
+      "date": "2025-04-27",
+      "title": "Génération des devis",
+      "changes": [
+        {
+          "type": "added",
+          "text": "Génération des devis : Mise à jour de la génération des devis"
+        }
+      ]
+    },
+    {
+      "version": "v1.55.7",
+      "date": "2025-04-27",
+      "title": "Génération des devis",
+      "changes": [
+        {
+          "type": "added",
+          "text": "Génération des devis : Mise à jour de la génération des devis"
+        }
+      ]
+    },
+    {
+      "version": "v1.55.6",
+      "date": "2025-04-23",
+      "title": "Génération des devis",
+      "changes": [
+        {
+          "type": "added",
+          "text": "Génération des devis : Mise à jour de la génération des devis"
+        }
+      ]
+    },
+    {
+      "version": "v1.55.5",
+      "date": "2025-04-22",
+      "title": "Génération des devis",
+      "changes": [
+        {
+          "type": "added",
+          "text": "Génération des devis : Mise à jour de la génération des devis"
+        }
+      ]
+    },
+    {
+      "version": "v1.55.4",
+      "date": "2025-04-20",
+      "title": "Filtre fiches techniques",
+      "changes": [
+        {
+          "type": "changed",
+          "text": "Filtre fiches techniques : Modification de la liste des filtres dans les fiches techniques"
+        },
+        {
+          "type": "fixed",
+          "text": "Affichage commentaire client : Affichage du commentaire client"
+        }
+      ]
+    },
+    {
+      "version": "v1.55.3",
+      "date": "2025-04-20",
+      "title": "Ajout colonne stock",
+      "changes": [
+        {
+          "type": "added",
+          "text": "Ajout colonne stock : Ajout de la colonne et du filtre fournisseur"
+        },
+        {
+          "type": "added",
+          "text": "Modification informations : Modification des informations de stock maintenant possible"
+        },
+        {
+          "type": "fixed",
+          "text": "Information stock : Lors de l'ajout d'une nouvelle ligne dans le stock, si le libellé de la ligne avait une apostrophe, la ligne rentrait en erreur"
+        },
+        {
+          "type": "fixed",
+          "text": "Sélection de la laize stock : Correction de l'erreur de sélection de laize dans le stock"
+        },
+        {
+          "type": "fixed",
+          "text": "Actualsiation planning : Correction de l'erreur d'actualisation des commandes sans date de plannification"
+        }
+      ]
+    },
+    {
+      "version": "v1.55.2",
+      "date": "2025-04-15",
+      "title": "Calcul du temps de production",
+      "changes": [
+        {
+          "type": "fixed",
+          "text": "Calcul du temps de production : Le temps de production n'était plus correctement calculé"
+        },
+        {
+          "type": "fixed",
+          "text": "Ouverture semaine : Changement de la gestion des semaines dans l'ouverture des machines"
+        }
+      ]
+    },
+    {
+      "version": "v1.55.1",
+      "date": "2025-04-13",
+      "title": "Visualisation fiche technique",
+      "changes": [
+        {
+          "type": "added",
+          "text": "Visualisation fiche technique : La fiche technique est maintenant visualisable lors d'un double clique"
+        },
+        {
+          "type": "added",
+          "text": "Vérification plaque : Lors de la saisie d'une commande, une vérification de la plaque est faite."
+        },
+        {
+          "type": "added",
+          "text": "Plage dynamique : Ajout des plages dynamiques dans la gestion des horaires de production de machine"
+        },
+        {
+          "type": "added",
+          "text": "Suppression sélection : Il n'y a plus qu'une seule commande sélectionnable dans le planning"
+        },
+        {
+          "type": "changed",
+          "text": "Recherche fiche technique : Lors de la recherche de fiche technique, la sélection de fiche pour impression est automatiquement désélectionné"
+        },
+        {
+          "type": "changed",
+          "text": "Infobulle planning : Modification des informations de l'infobulle planning"
+        }
+      ]
+    },
+    {
+      "version": "v1.55.0",
+      "date": "2025-04-07",
+      "title": "Affichage caractères observation",
+      "changes": [
+        {
+          "type": "fixed",
+          "text": "Affichage caractères observation : Dans le champ observation d'un article, des caractères non sollicités étaient affichés. Le problème intervenait lors de la sauvegarde à cause d'un champ mal dimensionné"
+        },
+        {
+          "type": "fixed",
+          "text": "Créneaux commande : Modification de l'affichage des créneaux interdit dans le placement d'une commande"
+        },
+        {
+          "type": "fixed",
+          "text": "Plage horaire nouveau planning : Correction de l'erreur de plage horaire dans le nouveau planning"
+        }
+      ]
+    },
+    {
+      "version": "v1.54.4",
+      "date": "2025-03-26",
+      "title": "Génération des devis",
+      "changes": [
+        {
+          "type": "added",
+          "text": "Génération des devis : Ajout du module de génération des devis en version alpha"
+        },
+        {
+          "type": "changed",
+          "text": "Infobulle commandes : Retrait de l'infobulle des commandes"
+        },
+        {
+          "type": "fixed",
+          "text": "Impression étiquettes rouleaux : Correction de l'erreur de champ dans les étiquettes rouleaux"
+        }
+      ]
+    },
+    {
+      "version": "v1.54.3",
+      "date": "2025-03-20",
+      "title": "Laize matière",
+      "changes": [
+        {
+          "type": "added",
+          "text": "Laize matière : Ajout de la laize matière dans le fichier Excel des clichés"
+        },
+        {
+          "type": "fixed",
+          "text": "Modification d'un article : Correction de l'erreur lors de la validation d'un article"
+        },
+        {
+          "type": "fixed",
+          "text": "Erreur de format : Correction de l'erreur de format lors du chargement d'un article"
+        }
+      ]
+    },
+    {
+      "version": "v1.54.2",
+      "date": "2025-03-19",
+      "title": "Nouveau planning",
+      "changes": [
+        {
+          "type": "changed",
+          "text": "Nouveau planning : Réactivation du nouveau planning uniquement en consultation"
+        }
+      ]
+    },
+    {
+      "version": "v1.54.1",
+      "date": "2025-03-18",
+      "title": "Filtre automatique",
+      "changes": [
+        {
+          "type": "added",
+          "text": "Filtre automatique : Au lancement de l'application, les commandes sont automatiquement filtrées sur l'état \"en attente\" ou \"en production\""
+        },
+        {
+          "type": "fixed",
+          "text": "Affichage simulation : Les commandes terminées n'étaient pas toutes masquées lors de la simulation"
+        }
+      ]
+    },
+    {
+      "version": "v1.54.0",
+      "date": "2025-03-17",
+      "title": "Version préprod",
+      "changes": [
+        {
+          "type": "added",
+          "text": "Version préprod : Ajout de la version de préproduction pour des tests sur le nouveau planning"
+        }
+      ]
+    },
+    {
+      "version": "v1.53.4",
+      "date": "2025-03-17",
+      "title": "Infobulle commandes",
+      "changes": [
+        {
+          "type": "added",
+          "text": "Infobulle commandes : Ajout d'une infobulle au survol des commandes"
+        },
+        {
+          "type": "added",
+          "text": "Filtre commandes : Ajout d'un filtre des états des commandes"
+        },
+        {
+          "type": "added",
+          "text": "Mise en forme champ observation : Le champ  observation peut être mis en forme par du texte en gras et en couleur"
+        },
+        {
+          "type": "fixed",
+          "text": "Mise à jour ML. Prod : Mise à jour de la quantité de ML prod lors de changement dans le squelette de l'article"
+        }
+      ]
+    },
+    {
+      "version": "v1.53.3",
+      "date": "2025-03-12",
+      "title": "Mise à jour automatique",
+      "changes": [
+        {
+          "type": "fixed",
+          "text": "Mise à jour automatique : La mise à jour automatique ne se lançait plus correctement"
+        },
+        {
+          "type": "fixed",
+          "text": "Etiquettes rouleaux : Corrections des erreurs de mappage des champs dans les étiquettes rouleaux"
+        }
+      ]
+    },
+    {
+      "version": "v1.53.2",
+      "date": "2025-03-11",
+      "title": "Affichage info bulle",
+      "changes": [
+        {
+          "type": "fixed",
+          "text": "Affichage info bulle : Correction de l'erreur d'affichage de l'info bulle dans le planning"
+        },
+        {
+          "type": "fixed",
+          "text": "Informations étiquettes cartons : Corretion des informations dans les étiquettes cartons"
+        }
+      ]
+    },
+    {
+      "version": "v1.53.1",
+      "date": "2025-03-11",
+      "title": "Erreur nom imprimantes",
+      "changes": [
+        {
+          "type": "fixed",
+          "text": "Erreur nom imprimantes : Erreur sur le paramètrage des noms d'imprimantes"
+        }
+      ]
+    },
+    {
+      "version": "v1.53.0",
+      "date": "2025-03-11",
+      "title": "Connexion automatique",
+      "changes": [
+        {
+          "type": "added",
+          "text": "Connexion automatique : Ajout de l'option de connexion automatique et de déconnexion"
+        },
+        {
+          "type": "added",
+          "text": "Info bulle planning : Ajout dans l'info bulle du planning la quantitée d'étiquettes"
+        },
+        {
+          "type": "changed",
+          "text": "Impressions des étiquettes : Refonte de l'impression des étiquettes"
+        }
+      ]
+    },
+    {
+      "version": "v1.52.4",
+      "date": "2025-03-09",
+      "title": "Info bulles planning",
+      "changes": [
+        {
+          "type": "added",
+          "text": "Info bulles planning : Ajout d'une info-bulle lors du passage du curseur sur une commande"
+        },
+        {
+          "type": "changed",
+          "text": "Caclul aplat : Modification du calcul du temps de production avec un aplat"
+        },
+        {
+          "type": "fixed",
+          "text": "Visualisation des commandes dans l'atelier : Certaines commandes n'étaient pas visibles dans l'atelier"
+        },
+        {
+          "type": "fixed",
+          "text": "Lenteur chargement atelier : Optimisation de l'affichage du planning atelier"
+        },
+        {
+          "type": "fixed",
+          "text": "Erreur PA : Modification du format du champ PA et réctification des données dans la table"
+        },
+        {
+          "type": "fixed",
+          "text": "Déduction du stock : Lors de la déclaration de la matière après la production, la matière appelée n'était pas la bonne. Le changement de matière entraînait une erreur de déclaration"
+        },
+        {
+          "type": "fixed",
+          "text": "Affichage stock : Lors de la création d'une nouvelle matière, si celle-ci n'était pas utilisée dans une commande, elle n'apparaissait pas dans le stock"
+        }
+      ]
+    },
+    {
+      "version": "v1.52.2",
+      "date": "2025-02-26",
+      "title": "Observation client",
+      "changes": [
+        {
+          "type": "added",
+          "text": "Observation client : Ajout du champ 'observation client' dans la fiche technique"
+        },
+        {
+          "type": "added",
+          "text": "Planification des commandes : Affichage des commandes en attente"
+        },
+        {
+          "type": "fixed",
+          "text": "Changement de clichés : Enregistrement automatique du changement de clichés avec une bonne prise en compte lors de la planification"
+        },
+        {
+          "type": "fixed",
+          "text": "Affichage des heures de pause : Récupération de l'affichage des heures de pauses"
+        },
+        {
+          "type": "fixed",
+          "text": "Liste outil : Application de la date du jour en automatique dans tous les scénarios possible"
+        }
+      ]
+    },
+    {
+      "version": "v1.52.1",
+      "date": "2025-02-24",
+      "title": "Affichage des heures de pause",
+      "changes": [
+        {
+          "type": "fixed",
+          "text": "Affichage des heures de pause : Récupération de l'affichage des heures de pauses"
+        },
+        {
+          "type": "fixed",
+          "text": "Erreur aplat : La sélection d'un article dans une commande ainsi que la modification de celui-ci ne déclenche plus l'erreur d'aplat"
+        },
+        {
+          "type": "fixed",
+          "text": "Actualisation des commandes sans dates : Modification de l'actualisation de la liste des commandes sans date de modification"
+        }
+      ]
+    },
+    {
+      "version": "v1.52.0",
+      "date": "2025-02-23",
+      "title": "Double ligne planning",
+      "changes": [
+        {
+          "type": "added",
+          "text": "Double ligne planning : Affichage des informations sur deux lignes dans le nouveau planning"
+        },
+        {
+          "type": "added",
+          "text": "Refonte visuels commandes : Refonte visuels des segments des commandes"
+        },
+        {
+          "type": "added",
+          "text": "Code couleurs états : Changemnent des couleurs des commandes pour afficher les états sous forme de couleur"
+        },
+        {
+          "type": "added",
+          "text": "Changement de cliché : Changement du nombre de clichés directement dans la liste des commandes en attente de planification"
+        },
+        {
+          "type": "added",
+          "text": "Changement d'aplat : Ajout d'un changement d'aplat : 20 minutes supplémentaires en cas de changement"
+        },
+        {
+          "type": "added",
+          "text": "Verrouillage du planning : Ajout d'un bouton de verrouillage du planning"
+        },
+        {
+          "type": "changed",
+          "text": "Modification filtre état : Changement de l'affichage des filtres des états"
+        }
+      ]
+    },
+    {
+      "version": "v1.51.1",
+      "date": "2025-02-18",
+      "title": "Affichage du bouton nouveau planning",
+      "changes": [
+        {
+          "type": "changed",
+          "text": "Affichage du bouton nouveau planning : Le bouton du nouveau planning est maintenant disponible pour tout le monde"
+        }
+      ]
+    },
+    {
+      "version": "v1.51.0",
+      "date": "2025-02-18",
+      "title": "Mise en place du nouveau planning",
+      "changes": [
+        {
+          "type": "added",
+          "text": "Mise en place du nouveau planning : Mise à disposition du nouveau planning en version bêta"
+        },
+        {
+          "type": "added",
+          "text": "Détail du reservé : Ajout de la colonne référence client"
+        },
+        {
+          "type": "changed",
+          "text": "Limitation du nombre de caractères : Lors de l'impression d'une étiquette carton, les caractères sont limités lors de l'impression"
+        }
+      ]
+    },
+    {
+      "version": "v1.50.3",
+      "date": "2025-02-12",
+      "title": "Couleur application",
+      "changes": [
+        {
+          "type": "changed",
+          "text": "Couleur application : Harmonisation des couleurs de l'application"
+        },
+        {
+          "type": "fixed",
+          "text": "Date automatique mouvement : Lors de la saisie d'un mouvement dans le stock, la date du mouvement est automatiquement rajoutée"
+        },
+        {
+          "type": "fixed",
+          "text": "Affichage mouvement de stock : Correction de l'affichage de multiréférences dans le mouvement de stock"
+        }
+      ]
+    },
+    {
+      "version": "v1.50.2",
+      "date": "2025-02-11",
+      "title": "Correction erreur planification",
+      "changes": [
+        {
+          "type": "fixed",
+          "text": "Correction erreur planification : Corrections d'erreurs qui perturbaient la planification"
+        }
+      ]
+    },
+    {
+      "version": "v1.50.1",
+      "date": "2025-02-11",
+      "title": "Messages d'erreurs",
+      "changes": [
+        {
+          "type": "fixed",
+          "text": "Messages d'erreurs : Corrections des messages d'erreur lors de la planification"
+        },
+        {
+          "type": "fixed",
+          "text": "Erreur des heures : Correction de l'affichage des heures dans le planning"
+        },
+        {
+          "type": "fixed",
+          "text": "Erreur chargement des commandes : Correction de l'erreur de chargement dans le planning au moment de planifier une commande"
+        },
+        {
+          "type": "fixed",
+          "text": "Affichage des plages interdites : Les plages interdites sont de nouveaux affichées"
+        }
+      ]
+    },
+    {
+      "version": "v1.50.0",
+      "date": "2025-02-10",
+      "title": "Export Excel du temps de production",
+      "changes": [
+        {
+          "type": "added",
+          "text": "Export Excel du temps de production : Eportation du tableau des temps de production au format Excel"
+        },
+        {
+          "type": "added",
+          "text": "Contrôle du Z : Ajout d'un indicateur quand une combinaison cylindre/machine n'existe pas"
+        },
+        {
+          "type": "changed",
+          "text": "Fonction de calcul du temps de production restant : Modification de la fonction de calcul du temps de production. Prise en compte réel du temps de production de chacune des commandes"
+        },
+        {
+          "type": "changed",
+          "text": "Modification filtre machines : Evolution du filtre des machines dans l'écran des temps de production"
+        },
+        {
+          "type": "fixed",
+          "text": "Déplanification commande : Lors du changement de la machine depuis une commande, la commande initialement planifiée sera déplanifiée"
+        },
+        {
+          "type": "fixed",
+          "text": "Affichage des colonnes : L'affichage des colonnes dans le planning ne nécessite plus de rafraichissement pour être correctement affiché"
+        }
+      ]
+    },
+    {
+      "version": "v1.49.6",
+      "date": "2025-02-09",
+      "title": "Affichage des commandes",
+      "changes": [
+        {
+          "type": "fixed",
+          "text": "Affichage des commandes : Les commandes après 16h30 n'étaient pas correctement affichées"
+        }
+      ]
+    },
+    {
+      "version": "v1.49.5",
+      "date": "2025-02-09",
+      "title": "Planification après 16h30",
+      "changes": [
+        {
+          "type": "fixed",
+          "text": "Planification après 16h30 : La planification après 16h30 sur la semaine du 09/02/2026 au 13/02/2026 n'était pas possible"
+        }
+      ]
+    },
+    {
+      "version": "v1.49.4",
+      "date": "2025-02-06",
+      "title": "Ouverture de plannification",
+      "changes": [
+        {
+          "type": "added",
+          "text": "Ouverture de plannification : Pour la semaine du 09/02/2026 au 13/02/2026, la machine markandy est planifiable de 05h00 à 22h00"
+        }
+      ]
+    },
+    {
+      "version": "v1.49.3",
+      "date": "2025-02-03",
+      "title": "Affichage des commandes en attente",
+      "changes": [
+        {
+          "type": "fixed",
+          "text": "Affichage des commandes en attente : Dans l'atelier, certaines commandes en attente n'était pas correctement affichée"
+        }
+      ]
+    },
+    {
+      "version": "v1.49.2",
+      "date": "2025-02-03",
+      "title": "Bouton rafraîchir",
+      "changes": [
+        {
+          "type": "added",
+          "text": "Bouton rafraîchir : Ajout d'un bouton pour rafraîchir la liste des commandes sans date de planification"
+        },
+        {
+          "type": "fixed",
+          "text": "Erreur d'impression des fiches techniques : Lors de l'impression de plusieurs fiches techniques, un message d'erreur pouvait apparaitre"
+        },
+        {
+          "type": "fixed",
+          "text": "Visualisation BAT : Le BAT est de nouveau consultable depuis l'espace des commandes"
+        },
+        {
+          "type": "fixed",
+          "text": "Date de départ : Affichage d'une date vide dans le planning sur la date de départ n'est pas renseignée"
+        }
+      ]
+    },
+    {
+      "version": "v1.49.1",
+      "date": "2025-01-29",
+      "title": "Bouton stock",
+      "changes": [
+        {
+          "type": "added",
+          "text": "Bouton stock : Ajout d'un bouton de stock sur l'écran de planification"
+        },
+        {
+          "type": "added",
+          "text": "Sélection automatique : Lors de l’utilisation des menus contextuelle dans les tableaux, l’appui sur un clique droit sélectionne automatiquement la ligne"
+        },
+        {
+          "type": "added",
+          "text": "Ajout de colonne : Dans la liste des commandes, la date de saisie de la commande a été ajoutée"
+        },
+        {
+          "type": "added",
+          "text": "Opérateur de bobinage : Il existe maintenant un opérateur de bobinage dans le suivi des commandes"
+        },
+        {
+          "type": "added",
+          "text": "Filtre des colonnes : Ajout d'un filtre de sélection des colonnes dans l'écran de temps de production"
+        },
+        {
+          "type": "changed",
+          "text": "Fiche technique : Modification de la trame de la fiche technique"
+        },
+        {
+          "type": "changed",
+          "text": "Actualisation ML : Actualisation du ML si le nombre d'étiquettes par rouleaux est modifié"
+        },
+        {
+          "type": "fixed",
+          "text": "Correction filtre article : Le filtre du libellé de l'article ne fonctionnait plus depuis la dernière mise à jour"
+        },
+        {
+          "type": "fixed",
+          "text": "Erreur format fiche technique : Correction de l'erreur de format lors de l'impression d'une fiche technique client"
+        },
+        {
+          "type": "fixed",
+          "text": "Mauvaise fiche technique - impression multiple : Lors de l'impression multiple, la fiche technique imprimée n'était pas la fiche technique client"
+        },
+        {
+          "type": "fixed",
+          "text": "Inversion des colonnes : Dans le temps de production, deux colonnes étaient inversées"
+        }
+      ]
+    },
+    {
+      "version": "v1.49.0",
+      "date": "2025-01-26",
+      "title": "Changement de machine",
+      "changes": [
+        {
+          "type": "changed",
+          "text": "Changement de machine : Lors du changement d'une machine, la planification de la commande est supprimée"
+        },
+        {
+          "type": "fixed",
+          "text": "Affichage des commandes planning : Sélection des éléments des commandes désormais impossible"
+        },
+        {
+          "type": "fixed",
+          "text": "Affichage ML atelier : Correction de la valeur des ML pour l'atelier"
+        }
+      ]
+    },
+    {
+      "version": "v1.48.1",
+      "date": "2025-01-21",
+      "title": "Ajout des couleurs machine",
+      "changes": [
+        {
+          "type": "added",
+          "text": "Ajout des couleurs machine : L'affichage du planning a été modifié pour faire apparaître les couleurs des machines"
+        },
+        {
+          "type": "added",
+          "text": "Ajout du temps de bobinage : Ajout du temps de bobinage dans l'écran de temps de production"
+        },
+        {
+          "type": "added",
+          "text": "Suppression de la matière : La suppression de la matière est disponible depuis l'écran de mise à jour du prix matière"
+        },
+        {
+          "type": "fixed",
+          "text": "Correction affichage commande : En fonction des critères de filtre, les commandes n'étaient pas toujours affichées dans l'ordre d'heure de début dans le planning"
+        },
+        {
+          "type": "fixed",
+          "text": "Actualisation commande : Lors de la modification de l'état d'une commande, l'écran se met correctement à jour"
+        }
+      ]
+    },
+    {
+      "version": "v1.48.0",
+      "date": "2025-01-20",
+      "title": "Date automatique",
+      "changes": [
+        {
+          "type": "added",
+          "text": "Date automatique : Lors de la création d'un nouveau format, la date de création est automatiquement ajoutée"
+        },
+        {
+          "type": "added",
+          "text": "Affichage d'Excel : Lors de la génération du fichier Excel de cliché, la fenêtre Excel s'ouvre au premier plan"
+        },
+        {
+          "type": "added",
+          "text": "Affichage des commandes sans date de planification : L'écran des commandes sans date de planification est maintenant affiché automatiquement sur le deuxième écran"
+        },
+        {
+          "type": "added",
+          "text": "Bouton RAZ filtres : Ajout d'un bouton de remise à zéro des filtres sur les formulaires"
+        },
+        {
+          "type": "added",
+          "text": "Changement du comportement de la fenêtre d'impression : Après l'impression d'étiquettes, la fenêtre d'impression ne se ferme plus automatiquement"
+        },
+        {
+          "type": "changed",
+          "text": "Modification de format : Modification de l'affichage des champs ESP DEV et Laize avec deux chiffres après la virgule.Modification de l'affichage du champ ECH dans la fiche technique"
+        },
+        {
+          "type": "changed",
+          "text": "Affichage de la date d'impression dans la fiche technique : La date du jour d'impression est maintenant imprimée dans la fiche technique"
+        },
+        {
+          "type": "changed",
+          "text": "Modification du comportement du changement d'état de commande : Lors du changement d'état d'une commande, les questions de validation ont été supprimées et la fenêtre se ferme automatiquement après"
+        },
+        {
+          "type": "fixed",
+          "text": "Affichage du développé dans l'impression de cliché : Lors de la demande d'impression du fichier Excel de cliché, le développé n'était pas reprit"
+        },
+        {
+          "type": "fixed",
+          "text": "Problème mappage du champ ESP DEV : Dans la boite à outil, le champ ESP était mal mappé. Il a été supprimé et le mappage a été contrôlé"
+        },
+        {
+          "type": "fixed",
+          "text": "Couleur pour les commandes terminées : La couleur des commandes terminées est correctement affichée dans l'écran de planification d'une commande"
+        },
+        {
+          "type": "fixed",
+          "text": "Sens de sortie non visible : Lors de la modification d'un article, l'image du sens de sortie n'était pas visible"
+        },
+        {
+          "type": "fixed",
+          "text": "Erreur d'actualisation : Correction de l'erreur d'actualisation qui laissait des articles visible sans commande sélectionnée"
+        },
+        {
+          "type": "fixed",
+          "text": "Suppression d'un client : Remise en fonctionnement de la suppression d'un client via le bouton supp"
+        },
+        {
+          "type": "fixed",
+          "text": "Filtre pause atelier : Correction du fonctionnement du filtre pause"
+        }
+      ]
+    },
+    {
+      "version": "v1.47.4",
+      "date": "2025-01-13",
+      "title": "Modification des listes déroulantes",
+      "changes": [
+        {
+          "type": "changed",
+          "text": "Modification des listes déroulantes : Les listes déroulantes sont maintenant actualisées lors de modification sur d'autres plannings"
+        },
+        {
+          "type": "changed",
+          "text": "Prise en compte de la laize mini : Lors de la création d'un article, la laize mini est maintenant utilisée à la place de la laize 2"
+        },
+        {
+          "type": "changed",
+          "text": "Modification taille : Réduction de la taille de la fenêtre de stock"
+        },
+        {
+          "type": "fixed",
+          "text": "Erreur lors de la création d'un stock : Correction lors de la création d'un article depuis le stock sans quantitée renseignée"
+        },
+        {
+          "type": "fixed",
+          "text": "Tri des tableaux : Le tri des colonnes dans les tableaux fonctionne sur toutes les colonnes"
+        }
+      ]
+    },
+    {
+      "version": "v1.47.3",
+      "date": "2025-01-13",
+      "title": "Commandes terminées",
+      "changes": [
+        {
+          "type": "changed",
+          "text": "Commandes terminées : lorsqu'une commande est terminée, celle-ci s'affiche d'une couleur différente dans la planification"
+        },
+        {
+          "type": "changed",
+          "text": "Liste déroulante : Dans l'écran de planification des commandes, la molette ne modifie plus les liste déroulante"
+        }
+      ]
+    },
+    {
+      "version": "v1.47.2",
+      "date": "2025-01-12",
+      "title": "Réduction du planning",
+      "changes": [
+        {
+          "type": "changed",
+          "text": "Réduction du planning : Lors de l'impression d'étiquettes, le planning était automatiquement réduit"
+        },
+        {
+          "type": "changed",
+          "text": "Affichage de la fenêtre des commandes : Certaine fois, la fenêtre des commandes n'était pas affichée au premier plan"
+        }
+      ]
+    },
+    {
+      "version": "v1.47.1",
+      "date": "2025-01-12",
+      "title": "Ajout de la laize 2",
+      "changes": [
+        {
+          "type": "added",
+          "text": "Ajout de la laize 2 : Dans l'écran de saisie d'une commande, ajout du champ laize 2 issue de la liste outil"
+        },
+        {
+          "type": "added",
+          "text": "Actualisation planning : Ajout de l'actualisation du planning dans la routine d'actualisation globale"
+        },
+        {
+          "type": "added",
+          "text": "Ajout du filtre code article client : Ajout du filtre dans la recherche de fiche technique"
+        },
+        {
+          "type": "added",
+          "text": "Création fiche technique client : Création de la fiche technique client a partir de l'ancien modèle"
+        },
+        {
+          "type": "added",
+          "text": "Ajout d'un bouton cocher/décocher : Ajout d'un bouton pour sélectionner ou de sélectionner les colonnes des fiches techniques"
+        },
+        {
+          "type": "changed",
+          "text": "Modification de l'utilisation du filtre des états : Dans le planning de l'atelier, le filtre multiple des états a été remplacé par un mono filtre"
+        },
+        {
+          "type": "changed",
+          "text": "Contrôle du stock : L'affichage de la pastille de couleur n'était pas cohérent avec le stock réel de l'atelier"
+        },
+        {
+          "type": "changed",
+          "text": "Optimisation de l'affichage : Dans le planning de l'atelier, après une validation de commande, le temps de chargement du planning a été réduit"
+        },
+        {
+          "type": "changed",
+          "text": "Modification des filtres stock : Ajout de la possibilité de trié le stock avec des valeurs > et <"
+        },
+        {
+          "type": "changed",
+          "text": "Modification format laize mini : Retrait des 3 chiffres après la virgule de la laize mini dans la liste outil"
+        },
+        {
+          "type": "fixed",
+          "text": "Remise dans l'ordre des commandes : Dans le planning de l'atelier, les commandes sont maintenant affichées par ordre de début de production"
+        },
+        {
+          "type": "fixed",
+          "text": "Erreur de mise à jour du prix : Correction de l'erreur de format rencontré dans la mise à jour des prix"
+        },
+        {
+          "type": "fixed",
+          "text": "Erreur de calcul - temps de production restant : Correction de l'affichage du temps de production restant"
+        },
+        {
+          "type": "fixed",
+          "text": "Rechargement de la table des prix : Correction des erreurs de prix matière"
+        },
+        {
+          "type": "fixed",
+          "text": "Corrections multiples en run"
+        }
       ]
     }
   ],
