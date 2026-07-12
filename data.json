@@ -1985,18 +1985,44 @@
   ],
   "backlog": [
     {
-      "status": "encours",
-      "priority": "moyenne",
-      "title": "Impression fiche technique client",
-      "desc": "Modifier l'export de la fiche technique client pour utiliser le modéle Word. ",
-      "targetVersion": "v1.65.4"
+      "status": "idee",
+      "priority": "basse",
+      "title": "Revoir l'actualisation complète des données",
+      "desc": "",
+      "targetVersion": null,
+      "linearId": "ESA-279"
     },
     {
-      "status": "termine",
-      "priority": "haute",
-      "title": "Erreur actualisation article",
-      "desc": "Correction de l'erreur d'actualisation des articles.",
-      "targetVersion": "v1.65.2"
+      "status": "encours",
+      "priority": "basse",
+      "title": "Harmoniser la taille des header dans les fenêtres",
+      "desc": "",
+      "targetVersion": null,
+      "linearId": "ESA-278"
+    },
+    {
+      "status": "idee",
+      "priority": "basse",
+      "title": "Ajouter un état terminé sur le devis",
+      "desc": "",
+      "targetVersion": null,
+      "linearId": "ESA-255"
+    },
+    {
+      "status": "idee",
+      "priority": "basse",
+      "title": "Modifier le champ couleur pour prise en compte d'alphanumérique",
+      "desc": "",
+      "targetVersion": null,
+      "linearId": "ESA-236"
+    },
+    {
+      "status": "idee",
+      "priority": "basse",
+      "title": "Impression fiche technique client",
+      "desc": "Impression de la fiche technique client depuis une trame Word. ",
+      "targetVersion": null,
+      "linearId": "ESA-178"
     }
   ]
 }
