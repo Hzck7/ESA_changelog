@@ -1985,6 +1985,14 @@
   ],
   "backlog": [
     {
+      "status": "idee",
+      "priority": "basse",
+      "title": "test",
+      "desc": "test",
+      "targetVersion": null,
+      "linearId": "ESA-296"
+    },
+    {
       "status": "termine",
       "priority": "basse",
       "title": "Erreur actualisation article",
