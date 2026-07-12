@@ -121,10 +121,26 @@ function parseChangelog(mdRaw) {
 // Mappe la priorité Linear (0-4) vers les 3 niveaux utilisés par backlog.html
 const LINEAR_PRIORITY_MAP = { 1: 'haute', 2: 'haute', 3: 'moyenne', 4: 'basse', 0: 'basse' };
 
-// Mappe le "type" d'état Linear (backlog / unstarted / started / completed / canceled)
-// vers les 3 colonnes de backlog.html. À ajuster si ton workflow Linear distingue
-// autrement "idée" et "planifié".
-const LINEAR_STATE_MAP = { started: 'encours', unstarted: 'planifie', backlog: 'idee' };
+// Mappe le NOM exact de ton statut Linear vers les 3 colonnes de backlog.html.
+// C'est la correspondance la plus fiable : elle suit ce que tu as configuré
+// dans ton workflow Linear, peu importe la catégorie générique Linear.
+// -> Ajuste/complète cette liste si tu ajoutes ou renommes des statuts.
+const LINEAR_STATE_NAME_MAP = {
+  'Backlog': 'idee',
+  'Waiting': 'idee',
+  'In Progress': 'encours',
+  'Done': 'termine',
+};
+
+// Filet de sécurité : si un statut Linear ne figure pas dans la liste
+// ci-dessus (ex: tu ajoutes un nouveau statut sans mettre à jour ce fichier),
+// on retombe sur la catégorie générique Linear (backlog / unstarted / started / completed).
+const LINEAR_STATE_TYPE_FALLBACK = { started: 'encours', unstarted: 'planifie', backlog: 'idee', completed: 'termine' };
+
+function resolveBacklogStatus(state) {
+  if (LINEAR_STATE_NAME_MAP[state.name]) return LINEAR_STATE_NAME_MAP[state.name];
+  return LINEAR_STATE_TYPE_FALLBACK[state.type] || 'idee';
+}
 
 async function fetchLinearBacklog(apiKey, projectId) {
   const query = `
@@ -160,9 +176,9 @@ async function fetchLinearBacklog(apiKey, projectId) {
   const nodes = json.data.project.issues.nodes;
 
   return nodes
-    .filter(issue => !['completed', 'canceled'].includes(issue.state.type))
+    .filter(issue => issue.state.type !== 'canceled')
     .map(issue => ({
-      status: LINEAR_STATE_MAP[issue.state.type] || 'idee',
+      status: resolveBacklogStatus(issue.state),
       priority: LINEAR_PRIORITY_MAP[issue.priority] ?? 'basse',
       title: issue.title,
       desc: (issue.description || '').split('\n')[0].slice(0, 220),
