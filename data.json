@@ -1985,6 +1985,134 @@
   ],
   "backlog": [
     {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Erreur actualisation article",
+      "desc": "",
+      "targetVersion": null,
+      "linearId": "ESA-295"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Correction ordre d'affichage commande dans l'écran magasinier",
+      "desc": "",
+      "targetVersion": null,
+      "linearId": "ESA-294"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Ajout de la colonne pose en laize dans l'écran magasinier",
+      "desc": "",
+      "targetVersion": null,
+      "linearId": "ESA-293"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Ajouter la fiche technique dans l'écran du magasinier",
+      "desc": "",
+      "targetVersion": null,
+      "linearId": "ESA-292"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Ajout de l'impression après validation dans le stock",
+      "desc": "",
+      "targetVersion": null,
+      "linearId": "ESA-291"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Ajout de la colonne quantité",
+      "desc": "",
+      "targetVersion": null,
+      "linearId": "ESA-290"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Correction erreur quantité mandrin",
+      "desc": "",
+      "targetVersion": null,
+      "linearId": "ESA-289"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Modifier le commentaire lors de l'import d'un packing list",
+      "desc": "",
+      "targetVersion": null,
+      "linearId": "ESA-288"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Modifier l'ajout dans le stock",
+      "desc": "Modifier l'ajout dans le stock pour grouper les lignes avec les mêmes commentaires",
+      "targetVersion": null,
+      "linearId": "ESA-287"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Actualisation EBP atelier",
+      "desc": "Retirer l'actualisation EBP pour l'atelier",
+      "targetVersion": null,
+      "linearId": "ESA-286"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Erreur actualisation des clients",
+      "desc": "Lors de l'actualisation des clients, la liste des commandes est aussi actualisée et pose problème",
+      "targetVersion": null,
+      "linearId": "ESA-285"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Mise en place de l'actualisation toutes les x min",
+      "desc": "",
+      "targetVersion": null,
+      "linearId": "ESA-284"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Actualisation EBP",
+      "desc": "",
+      "targetVersion": null,
+      "linearId": "ESA-283"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Correction modèle Word",
+      "desc": "",
+      "targetVersion": null,
+      "linearId": "ESA-282"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Export code article",
+      "desc": "Ajouter un bouton d'export des codes article depuis la liste des fiches techniques",
+      "targetVersion": null,
+      "linearId": "ESA-281"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Erreur somme temps de production",
+      "desc": "La somme du ML utilisé n'est pas bon",
+      "targetVersion": null,
+      "linearId": "ESA-280"
+    },
+    {
       "status": "idee",
       "priority": "basse",
       "title": "Revoir l'actualisation complète des données",
@@ -2001,12 +2129,324 @@
       "linearId": "ESA-278"
     },
     {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Vérifier les informations concernant les temps de production",
+      "desc": "",
+      "targetVersion": null,
+      "linearId": "ESA-277"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Modifier la fenêtre de suppression des codes article",
+      "desc": "Afficher la liste des codes sélectionnés",
+      "targetVersion": null,
+      "linearId": "ESA-276"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Ecran magasinier",
+      "desc": "",
+      "targetVersion": null,
+      "linearId": "ESA-275"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Erreur de sauvegarde avec une laize avec virgule ?",
+      "desc": "",
+      "targetVersion": null,
+      "linearId": "ESA-274"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Erreur recherche liste outil (laize avec virgule)",
+      "desc": "",
+      "targetVersion": null,
+      "linearId": "ESA-273"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Ajouter l'écran atelier pour la partie bureau",
+      "desc": "Ajouter dans l'écran de planning",
+      "targetVersion": null,
+      "linearId": "ESA-272"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Modifier l'écran atelier",
+      "desc": "* Ajouter le mandrin et la quantité",
+      "targetVersion": null,
+      "linearId": "ESA-271"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Changer le filtre dans le planning new",
+      "desc": "* Attente + prod",
+      "targetVersion": null,
+      "linearId": "ESA-270"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Ne plus fermer la fenêtre après une validation",
+      "desc": "",
+      "targetVersion": null,
+      "linearId": "ESA-269"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Ajouter dorure dans la trame",
+      "desc": "Mettre sur la même ligne \"Impréssion\", \"Aplat ou vernis\" et \"Dorure\"",
+      "targetVersion": null,
+      "linearId": "ESA-268"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Modifier la trame Word pour la partie ruban",
+      "desc": "",
+      "targetVersion": null,
+      "linearId": "ESA-267"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Erreur case à cocher autre",
+      "desc": "",
+      "targetVersion": null,
+      "linearId": "ESA-266"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Modifier les informations de quantité si changement de matière",
+      "desc": "",
+      "targetVersion": null,
+      "linearId": "ESA-265"
+    },
+    {
+      "status": "termine",
+      "priority": "haute",
+      "title": "Erreur numéro de devis",
+      "desc": "Lors de l'enregistrement, rechercher de nouveau le numéro de devis",
+      "targetVersion": null,
+      "linearId": "ESA-264"
+    },
+    {
+      "status": "termine",
+      "priority": "haute",
+      "title": "Erreur de prix lors de l'utilisation de l'option rouleaux",
+      "desc": "Lors de l'utilisation de l'option ruban, le prix ne doit pas être divisé par 1000",
+      "targetVersion": null,
+      "linearId": "ESA-263"
+    },
+    {
+      "status": "termine",
+      "priority": "moyenne",
+      "title": "Erreur offre ruban",
+      "desc": "",
+      "targetVersion": null,
+      "linearId": "ESA-261"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Ajouter un code couleur pour l'état des devis",
+      "desc": "",
+      "targetVersion": null,
+      "linearId": "ESA-260"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Erreur dorure",
+      "desc": "",
+      "targetVersion": null,
+      "linearId": "ESA-259"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Modifier le type de la liste déroulante client/prospect",
+      "desc": "",
+      "targetVersion": null,
+      "linearId": "ESA-258"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Rallonger la durée d'affichage de l'infobulle",
+      "desc": "",
+      "targetVersion": null,
+      "linearId": "ESA-257"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Ajouter un onglet machine dans le menu",
+      "desc": "",
+      "targetVersion": null,
+      "linearId": "ESA-256"
+    },
+    {
       "status": "idee",
       "priority": "basse",
       "title": "Ajouter un état terminé sur le devis",
       "desc": "",
       "targetVersion": null,
       "linearId": "ESA-255"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Liste déroulante des conducteurs",
+      "desc": "",
+      "targetVersion": null,
+      "linearId": "ESA-254"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Erreur de chargements des données de date",
+      "desc": "",
+      "targetVersion": null,
+      "linearId": "ESA-253"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "RAZ des champs après impression",
+      "desc": "",
+      "targetVersion": null,
+      "linearId": "ESA-252"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Correction de la sélection des temps de prod avec date",
+      "desc": "",
+      "targetVersion": null,
+      "linearId": "ESA-251"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Ajouter le commentaire dans la trame Word",
+      "desc": "",
+      "targetVersion": null,
+      "linearId": "ESA-250"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Mettre la fenêtre de date au 1er plan",
+      "desc": "",
+      "targetVersion": null,
+      "linearId": "ESA-249"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Ajouter un bouton d'actualisation",
+      "desc": "",
+      "targetVersion": null,
+      "linearId": "ESA-248"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Ajouter l'option rouleaux continu",
+      "desc": "",
+      "targetVersion": null,
+      "linearId": "ESA-247"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Information du champ manquant",
+      "desc": "",
+      "targetVersion": null,
+      "linearId": "ESA-246"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Choix de l'impression automatique",
+      "desc": "",
+      "targetVersion": null,
+      "linearId": "ESA-245"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Erreur nouveau devis",
+      "desc": "Si le client a été créer lors de la création du devis et qu'un nouveau devis est fait, alors il rajoutera un nouveau client",
+      "targetVersion": null,
+      "linearId": "ESA-244"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Ajouter l'écran d'impression d'étiquette côté atelier",
+      "desc": "",
+      "targetVersion": null,
+      "linearId": "ESA-243"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Agrandir et centrer le code article et la laize",
+      "desc": "",
+      "targetVersion": null,
+      "linearId": "ESA-242"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Ajouter la colonne référence client dans la liste des devis",
+      "desc": "",
+      "targetVersion": null,
+      "linearId": "ESA-241"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Vider les champs de frais lors de l'appuie sur nouveau devis",
+      "desc": "",
+      "targetVersion": null,
+      "linearId": "ESA-240"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Trie de la liste des devis",
+      "desc": "",
+      "targetVersion": null,
+      "linearId": "ESA-239"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Vider la champ d'impression si code article différent",
+      "desc": "",
+      "targetVersion": null,
+      "linearId": "ESA-238"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Modifier l'étiquette inventaire",
+      "desc": "",
+      "targetVersion": null,
+      "linearId": "ESA-237"
     },
     {
       "status": "idee",
@@ -2017,12 +2457,468 @@
       "linearId": "ESA-236"
     },
     {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Modifier le champ frais de découpe et de cliché",
+      "desc": "Le rendre alphanumérique",
+      "targetVersion": null,
+      "linearId": "ESA-235"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Ajout le champ aplat/vernis dans la trame des devis",
+      "desc": "",
+      "targetVersion": null,
+      "linearId": "ESA-234"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Modifier le libellé aplat",
+      "desc": "",
+      "targetVersion": null,
+      "linearId": "ESA-233"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Ajouter somme ML utilisé + filtre mois et année",
+      "desc": "",
+      "targetVersion": null,
+      "linearId": "ESA-232"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Corriger filtre temps de production",
+      "desc": "",
+      "targetVersion": null,
+      "linearId": "ESA-231"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Mise à jour des adhésifs",
+      "desc": "Ajouter dans le stock la mise à jour de l'adhésif lors de l'ajout",
+      "targetVersion": null,
+      "linearId": "ESA-230"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Mise à jour des adhésifs",
+      "desc": "Mettre à jour les adhésifs et prise en compte pour les prochaines créations",
+      "targetVersion": null,
+      "linearId": "ESA-229"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Ajouter la colonne développé à coté des cylindres",
+      "desc": "",
+      "targetVersion": null,
+      "linearId": "ESA-228"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Remplir la liste du nombre de dent avec toutes les dents possibles",
+      "desc": "* Ajouter toutes les dents + champ vide",
+      "targetVersion": null,
+      "linearId": "ESA-227"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Retirer le verrou de la laize matière",
+      "desc": "",
+      "targetVersion": null,
+      "linearId": "ESA-226"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Ajout des champs frais de découpe et de clichés dans les devis",
+      "desc": "",
+      "targetVersion": null,
+      "linearId": "ESA-225"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Modifier l'affichage de l'étiquette invetnaire",
+      "desc": "",
+      "targetVersion": null,
+      "linearId": "ESA-224"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Construire l'écran de construction de l'inventaire",
+      "desc": "",
+      "targetVersion": null,
+      "linearId": "ESA-223"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Implémenter la suppression de l'inventaire temporaire",
+      "desc": "",
+      "targetVersion": null,
+      "linearId": "ESA-222"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Création de la table temporaire de l'inventaire",
+      "desc": "",
+      "targetVersion": null,
+      "linearId": "ESA-221"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Activer la validation des entrées",
+      "desc": "",
+      "targetVersion": null,
+      "linearId": "ESA-220"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Reprise intégration packing list",
+      "desc": "Ajouter le fichier dans la ligne d'arrivage temporaire et vérifier cette colonne la plutôt que la table",
+      "targetVersion": null,
+      "linearId": "ESA-218"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Correction de l'erreur du cylindre",
+      "desc": "",
+      "targetVersion": null,
+      "linearId": "ESA-217"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Création d'une matière dans le stock",
+      "desc": "La création n'est pas possible, le code article n'est pas modifiable",
+      "targetVersion": null,
+      "linearId": "ESA-216"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Modifier l'odre d'affichage des devis",
+      "desc": "",
+      "targetVersion": null,
+      "linearId": "ESA-215"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Modifier le remplissage du nombre de dents",
+      "desc": "",
+      "targetVersion": null,
+      "linearId": "ESA-214"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Modifier le mappage de la référence client",
+      "desc": "En dessous de la date = référence client générée par EBP",
+      "targetVersion": null,
+      "linearId": "ESA-213"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Erreur total",
+      "desc": "La colonne total n'est pas calculé correctement. Prendre en compte les clichées",
+      "targetVersion": null,
+      "linearId": "ESA-212"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Mauvais prix dans l'impression des devis",
+      "desc": "Prendre en compte la colonne avec les clichées dans l'impression",
+      "targetVersion": null,
+      "linearId": "ESA-211"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Ajouter une case cocher inventaire",
+      "desc": "",
+      "targetVersion": null,
+      "linearId": "ESA-209"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Rajouter le numéro de commande dans l'import d'un packinglist",
+      "desc": "",
+      "targetVersion": null,
+      "linearId": "ESA-208"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Régénération après enregistrement du devis",
+      "desc": "",
+      "targetVersion": null,
+      "linearId": "ESA-207"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Ouvrir le devis en lecture seul",
+      "desc": "",
+      "targetVersion": null,
+      "linearId": "ESA-206"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Changement de fonctionnement de la colonne PV € HT / 1000",
+      "desc": "Ne plus prendre en compte la changement de cliché dans le calcul du prix de la colonne",
+      "targetVersion": null,
+      "linearId": "ESA-205"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Ajouter un colonne dans la liste des quantités",
+      "desc": "PV € HT / 1000 chang. cliché : même fonctionnement que la colonne PV € HT / 1000 aujourd'hui",
+      "targetVersion": null,
+      "linearId": "ESA-204"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Ajout de la référence client dans le devis",
+      "desc": "",
+      "targetVersion": null,
+      "linearId": "ESA-203"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Prise en compte des décimales dans le devis",
+      "desc": "Lors de l'enregistrement, les décimales n'étaient pas prises en compte pour la hauteur et la largeur",
+      "targetVersion": null,
+      "linearId": "ESA-202"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Déplacement des commandes",
+      "desc": "",
+      "targetVersion": null,
+      "linearId": "ESA-201"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Focus fenêtre stock",
+      "desc": "Gestion du focus lors de l'actualisation du stock",
+      "targetVersion": null,
+      "linearId": "ESA-200"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Ajouter un bouton nouveau devis",
+      "desc": "Ajouter un bouton nouveau devis qui vide l'ensemble des données sauf la partie client",
+      "targetVersion": null,
+      "linearId": "ESA-199"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Changer le champ contact dans le devis",
+      "desc": "Si le commercial = Cédric = contact = Lucie",
+      "targetVersion": null,
+      "linearId": "ESA-198"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Ajouter la référence du client dans le devis",
+      "desc": "Placer avant le commercial",
+      "targetVersion": null,
+      "linearId": "ESA-197"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Enregistrement des devis dans le dossier E:\\Planning\\Devis\\Annee",
+      "desc": "Format : Client_JJMMMAA_NuméroDevis.docx",
+      "targetVersion": null,
+      "linearId": "ESA-196"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Inverser nom et prénom dans le devis",
+      "desc": "",
+      "targetVersion": null,
+      "linearId": "ESA-195"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Afficher le numéro du devis",
+      "desc": "",
+      "targetVersion": null,
+      "linearId": "ESA-194"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Création de la commande",
+      "desc": "Ajouter la création de la commande depuis l'écran des devis",
+      "targetVersion": null,
+      "linearId": "ESA-193"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Afficher la ville dans la liste des devis",
+      "desc": "",
+      "targetVersion": null,
+      "linearId": "ESA-192"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Afficher le département",
+      "desc": "Afficher le département dans la liste des devis après la colonne client",
+      "targetVersion": null,
+      "linearId": "ESA-191"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Trier devis",
+      "desc": "Ordre du plus récent au plus ancien",
+      "targetVersion": null,
+      "linearId": "ESA-190"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Ajouter des filtres pour les devis",
+      "desc": "Liste des filtres :",
+      "targetVersion": null,
+      "linearId": "ESA-189"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Erreur de chargement des devis",
+      "desc": "Lors d'un chargement de devis, si la gestion du devis est déjà ouverte, les données de quantité ne sont pas supprimé avant d'être intégrées",
+      "targetVersion": null,
+      "linearId": "ESA-188"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Mise à jour des emails",
+      "desc": "",
+      "targetVersion": null,
+      "linearId": "ESA-186"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Modifier la liste adhésif dans les devis",
+      "desc": "Modifier la source de la liste des adhésifs",
+      "targetVersion": null,
+      "linearId": "ESA-185"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Ajouter la liste des adhésifs",
+      "desc": "Lors de l'ajout et la modification dans le stock, ajouter l'adhésif",
+      "targetVersion": null,
+      "linearId": "ESA-184"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Mappage des champs du devis",
+      "desc": "Finir le mappage des champs dans les trames de devis",
+      "targetVersion": null,
+      "linearId": "ESA-183"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Affichage champ observation",
+      "desc": "Ajouter la format RTF dans le champ observation",
+      "targetVersion": null,
+      "linearId": "ESA-182"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Ajout de l'adhésif",
+      "desc": "Dans l'écran des devis, ajout de l'adhésif lié à la matière",
+      "targetVersion": null,
+      "linearId": "ESA-181"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Intégration des EAN",
+      "desc": "",
+      "targetVersion": null,
+      "linearId": "ESA-180"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Suppression des devis",
+      "desc": "* Retirer le bouton de suppression des devis ",
+      "targetVersion": null,
+      "linearId": "ESA-179"
+    },
+    {
       "status": "idee",
       "priority": "basse",
       "title": "Impression fiche technique client",
       "desc": "Impression de la fiche technique client depuis une trame Word. ",
       "targetVersion": null,
       "linearId": "ESA-178"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Affichage des prospects",
+      "desc": "Dans la liste des clients, ajouter une case à cocher \"prospect\" pour inclure ou exclure les prospects de la liste",
+      "targetVersion": null,
+      "linearId": "ESA-177"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Ajouter une liste de prospect",
+      "desc": "Dans la gestion des devis, ajouter une liste des prospects. Un prospect est un client dans référence client",
+      "targetVersion": null,
+      "linearId": "ESA-176"
+    },
+    {
+      "status": "termine",
+      "priority": "basse",
+      "title": "Libellé de machine erroné",
+      "desc": "Dans l'écran de recherche des commandes, le libellé de la machine est celui du squelette de l'article. Il faut prendre la machine de l'article",
+      "targetVersion": null,
+      "linearId": "ESA-175"
     }
   ]
 }
