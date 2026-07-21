@@ -1,6 +1,17 @@
 {
   "changelog": [
     {
+      "version": "v1.65.4",
+      "date": "2026-07-21",
+      "title": "Cette version apporte des améliorations sur l'impression des fiches techniques.",
+      "changes": [
+        {
+          "type": "fixed",
+          "text": "Impression fiche technique : L'adhésif est correctement affiché sur les fiches techniques."
+        }
+      ]
+    },
+    {
       "version": "v1.65.3",
       "date": "2026-07-21",
       "title": "Cette version apporte des améliorations sur l'écran des commandes, la boite à outil et l'impression des fiches techniques.",
