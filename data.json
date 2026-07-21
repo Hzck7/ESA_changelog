@@ -3,15 +3,15 @@
     {
       "version": "v1.65.3",
       "date": "2026-07-21",
-      "title": "Cette version apporte des améliorations sur l'écran magasinier, l'ordre des commandes et la correction de l'actualisation des articles.",
+      "title": "Cette version apporte des améliorations sur l'écran des commandes, la boite à outil et l'impression des fiches techniques.",
       "changes": [
         {
           "type": "changed",
-          "text": "Actualisation des listes : Les listes des clients, commandes et des articles sont correctements actualisées."
+          "text": "Actualisation des listes : Les listes des clients, des commandes et des articles sont correctement actualisées."
         },
         {
           "type": "fixed",
-          "text": "Boite à outils : Correction de l'erreur d'ouverture de la boite à outil."
+          "text": "Boîte à outils : Correction de l'erreur d'ouverture de la boîte à outils."
         },
         {
           "type": "fixed",
