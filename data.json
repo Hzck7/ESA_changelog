@@ -1,6 +1,17 @@
 {
   "changelog": [
     {
+      "version": "v1.65.5",
+      "date": "2026-08-26",
+      "title": "Cette version apporte des améliorations sur l'inventaire.",
+      "changes": [
+        {
+          "type": "fixed",
+          "text": "Construction de l'inventaire : Les informations du code barre sont correctement lues."
+        }
+      ]
+    },
+    {
       "version": "v1.65.4",
       "date": "2026-07-21",
       "title": "Cette version apporte des améliorations sur l'impression des fiches techniques.",
