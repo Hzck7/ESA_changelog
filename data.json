@@ -1,6 +1,29 @@
 {
   "changelog": [
     {
+      "version": "v1.66.0",
+      "date": "2026-08-27",
+      "title": "Cette version apporte des améliorations sur l'inventaire.",
+      "changes": [
+        {
+          "type": "added",
+          "text": "Affichage de toutes les lignes : L'option d'affichage \"toutes les lignes\" est active dans la génération de l'inventaire."
+        },
+        {
+          "type": "added",
+          "text": "Étiquette bobine : Création d'une nouvelle étiquette bobine."
+        },
+        {
+          "type": "fixed",
+          "text": "Stock inventaire : Le stock affiché lors de l'inventaire est maintenant le même que dans l'onglet stock."
+        },
+        {
+          "type": "fixed",
+          "text": "Gestion du Z : Le comportement du redimensionnement de la fenêtre a été corrigé."
+        }
+      ]
+    },
+    {
       "version": "v1.65.6",
       "date": "2026-08-26",
       "title": "Redéploiement de la version précédente.",
