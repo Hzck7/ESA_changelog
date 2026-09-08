@@ -3,8 +3,21 @@
     {
       "version": "v1.66.1",
       "date": "2026-09-08",
-      "title": "Cette version apporte des améliorations sur l'inventaire.",
-      "changes": []
+      "title": "Cette version apporte des améliorations le planning et les fiches techniques.",
+      "changes": [
+        {
+          "type": "added",
+          "text": "Étiquettes bobines : Les nouvelles étiquettes bobines sont disponibles à l'impression."
+        },
+        {
+          "type": "added",
+          "text": "Filtres planning : LLes filtres « référence client » et « code article » ont été ajoutés au planning. De plus, les filtres ont été déplacés dans un formulaire à part."
+        },
+        {
+          "type": "fixed",
+          "text": "Impression fiche technique : L'impression de la fiche technique depuis une commande prend en compte les bonnes données."
+        }
+      ]
     },
     {
       "version": "v1.66.0",
