@@ -1,6 +1,12 @@
 {
   "changelog": [
     {
+      "version": "v1.66.1",
+      "date": "2026-09-08",
+      "title": "Cette version apporte des améliorations sur l'inventaire.",
+      "changes": []
+    },
+    {
       "version": "v1.66.0",
       "date": "2026-08-27",
       "title": "Cette version apporte des améliorations sur l'inventaire.",
