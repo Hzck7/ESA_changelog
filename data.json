@@ -1,6 +1,17 @@
 {
   "changelog": [
     {
+      "version": "v1.66.2",
+      "date": "2026-09-09",
+      "title": "Cette version apporte des améliorations à l'impression des étiquettes bobines.",
+      "changes": [
+        {
+          "type": "fixed",
+          "text": "Étiquettes bobines : Lancement de l'impression pour les machines MARKANDY et ESC. Affichage du nom du client plutôt que la raison sociale."
+        }
+      ]
+    },
+    {
       "version": "v1.66.1",
       "date": "2026-09-08",
       "title": "Cette version apporte des améliorations le planning et les fiches techniques.",
@@ -11,7 +22,7 @@
         },
         {
           "type": "added",
-          "text": "Filtres planning : LLes filtres « référence client » et « code article » ont été ajoutés au planning. De plus, les filtres ont été déplacés dans un formulaire à part."
+          "text": "Filtres planning : Les filtres « référence client » et « code article » ont été ajoutés au planning. De plus, les filtres ont été déplacés dans un formulaire à part."
         },
         {
           "type": "fixed",
