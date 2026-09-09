@@ -1,6 +1,29 @@
 {
   "changelog": [
     {
+      "version": "v1.66.4",
+      "date": "2026-09-09",
+      "title": "Cette version apporte des améliorations à l'affichage du planning, le filtre des temps de production et l'impression de l'étiquette bobine.",
+      "changes": [
+        {
+          "type": "changed",
+          "text": "Filtre planning : Le chargement du planning a été amélioré."
+        },
+        {
+          "type": "changed",
+          "text": "Étiquettes bobines : Fermeture automatique de la fenêtre après impression."
+        },
+        {
+          "type": "changed",
+          "text": "Temps de production : La sélection de date est étendue  à 500 jours maximum."
+        },
+        {
+          "type": "fixed",
+          "text": "Étiquettes bobines : Correction du champ date de départ."
+        }
+      ]
+    },
+    {
       "version": "v1.66.3",
       "date": "2026-09-09",
       "title": "Cette version apporte des améliorations à l'impression des fiches techniques.",
