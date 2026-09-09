@@ -1,6 +1,17 @@
 {
   "changelog": [
     {
+      "version": "v1.66.3",
+      "date": "2026-09-09",
+      "title": "Cette version apporte des améliorations à l'impression des fiches techniques.",
+      "changes": [
+        {
+          "type": "fixed",
+          "text": "Fiches techniques commandes : Correction de l'erreur d'adhésif."
+        }
+      ]
+    },
+    {
       "version": "v1.66.2",
       "date": "2026-09-09",
       "title": "Cette version apporte des améliorations à l'impression des étiquettes bobines.",
