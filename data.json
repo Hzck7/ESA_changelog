@@ -1,6 +1,110 @@
 {
   "changelog": [
     {
+      "version": "v1.66.4",
+      "date": "2026-09-09",
+      "title": "Cette version apporte des améliorations à l'affichage du planning, le filtre des temps de production et l'impression de l'étiquette bobine.",
+      "changes": [
+        {
+          "type": "changed",
+          "text": "Filtre planning : Le chargement du planning a été amélioré."
+        },
+        {
+          "type": "changed",
+          "text": "Étiquettes bobines : Fermeture automatique de la fenêtre après impression."
+        },
+        {
+          "type": "changed",
+          "text": "Temps de production : La sélection de date est étendue  à 500 jours maximum."
+        },
+        {
+          "type": "fixed",
+          "text": "Étiquettes bobines : Correction du champ date de départ."
+        }
+      ]
+    },
+    {
+      "version": "v1.66.3",
+      "date": "2026-09-09",
+      "title": "Cette version apporte des améliorations à l'impression des fiches techniques.",
+      "changes": [
+        {
+          "type": "fixed",
+          "text": "Fiches techniques commandes : Correction de l'erreur d'adhésif."
+        }
+      ]
+    },
+    {
+      "version": "v1.66.2",
+      "date": "2026-09-09",
+      "title": "Cette version apporte des améliorations à l'impression des étiquettes bobines.",
+      "changes": [
+        {
+          "type": "fixed",
+          "text": "Étiquettes bobines : Lancement de l'impression pour les machines MARKANDY et ESC. Affichage du nom du client plutôt que la raison sociale."
+        }
+      ]
+    },
+    {
+      "version": "v1.66.1",
+      "date": "2026-09-08",
+      "title": "Cette version apporte des améliorations le planning et les fiches techniques.",
+      "changes": [
+        {
+          "type": "added",
+          "text": "Étiquettes bobines : Les nouvelles étiquettes bobines sont disponibles à l'impression."
+        },
+        {
+          "type": "added",
+          "text": "Filtres planning : Les filtres « référence client » et « code article » ont été ajoutés au planning. De plus, les filtres ont été déplacés dans un formulaire à part."
+        },
+        {
+          "type": "fixed",
+          "text": "Impression fiche technique : L'impression de la fiche technique depuis une commande prend en compte les bonnes données."
+        }
+      ]
+    },
+    {
+      "version": "v1.66.0",
+      "date": "2026-08-27",
+      "title": "Cette version apporte des améliorations sur l'inventaire.",
+      "changes": [
+        {
+          "type": "added",
+          "text": "Affichage de toutes les lignes : L'option d'affichage \"toutes les lignes\" est active dans la génération de l'inventaire."
+        },
+        {
+          "type": "added",
+          "text": "Étiquette bobine : Création d'une nouvelle étiquette bobine."
+        },
+        {
+          "type": "fixed",
+          "text": "Stock inventaire : Le stock affiché lors de l'inventaire est maintenant le même que dans l'onglet stock."
+        },
+        {
+          "type": "fixed",
+          "text": "Gestion du Z : Le comportement du redimensionnement de la fenêtre a été corrigé."
+        }
+      ]
+    },
+    {
+      "version": "v1.65.6",
+      "date": "2026-08-26",
+      "title": "Redéploiement de la version précédente.",
+      "changes": []
+    },
+    {
+      "version": "v1.65.5",
+      "date": "2026-08-26",
+      "title": "Cette version apporte des améliorations sur l'inventaire.",
+      "changes": [
+        {
+          "type": "fixed",
+          "text": "Construction de l'inventaire : Les informations du code barre sont correctement lues."
+        }
+      ]
+    },
+    {
       "version": "v1.65.4",
       "date": "2026-07-21",
       "title": "Cette version apporte des améliorations sur l'impression des fiches techniques.",
