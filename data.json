@@ -1,6 +1,29 @@
 {
   "changelog": [
     {
+      "version": "v1.67.0",
+      "date": "2026-09-28",
+      "title": "Cette version apporte des améliorations à l'impression des fiches techniques et aux contacts, et permet la synchronisation entre EBP et le planning.",
+      "changes": [
+        {
+          "type": "added",
+          "text": "EBP : SSynchronisation automatique des contacts et des clients depuis EBP. Création des commandes dans EBP depuis le planning."
+        },
+        {
+          "type": "added",
+          "text": "Envoi des devis : LLes devis peuvent être envoyés par mail directement depuis le planning."
+        },
+        {
+          "type": "added",
+          "text": "Contacts clients : LLa saisie de plusieurs contacts pour un client est maintenant possible."
+        },
+        {
+          "type": "changed",
+          "text": "Fiches techniques client : Changement du format de la fiche technique client."
+        }
+      ]
+    },
+    {
       "version": "v1.66.4",
       "date": "2026-09-09",
       "title": "Cette version apporte des améliorations à l'affichage du planning, le filtre des temps de production et l'impression de l'étiquette bobine.",
