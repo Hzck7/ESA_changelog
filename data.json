@@ -3,11 +3,19 @@
     {
       "version": "v1.67.1",
       "date": "2026-09-29",
-      "title": "Cette version apporte des améliorations à l'impression des fiches techniques client.",
+      "title": "Cette version apporte des améliorations à l'impression des fiches techniques client et à la saisie des devis.",
       "changes": [
         {
           "type": "changed",
           "text": "Fiches techniques client : Ajout de l'image du sens de sortie et de la matière sur la fiche technique client."
+        },
+        {
+          "type": "changed",
+          "text": "Devis : L'adhésif correspondant à la matière est sélectionné automatiquement lors du choix de la matière."
+        },
+        {
+          "type": "changed",
+          "text": "Devis : Lors d'un changement de matière, le prix de vente des quantités est conservé et c'est le % de marge qui est recalculé."
         }
       ]
     },
