@@ -1,6 +1,17 @@
 {
   "changelog": [
     {
+      "version": "v1.67.1",
+      "date": "2026-09-29",
+      "title": "Cette version apporte des améliorations à l'impression des fiches techniques client.",
+      "changes": [
+        {
+          "type": "changed",
+          "text": "Fiches techniques client : Ajout de l'image du sens de sortie et de la matière sur la fiche technique client."
+        }
+      ]
+    },
+    {
       "version": "v1.67.0",
       "date": "2026-09-28",
       "title": "Cette version apporte des améliorations à l'impression des fiches techniques et aux contacts, et permet la synchronisation entre EBP et le planning.",
