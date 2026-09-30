@@ -6,6 +6,10 @@
       "title": "Cette version apporte des améliorations à l'impression des fiches techniques client et à la saisie des devis.",
       "changes": [
         {
+          "type": "added",
+          "text": "Devis : Nouvelle liste déroulante « Article » affichant les articles du client sur plusieurs colonnes (article, réf. client, matière, adhésif, laize, développé), avec recherche à la saisie. La sélection d'un article pré-remplit le devis."
+        },
+        {
           "type": "changed",
           "text": "Fiches techniques client : Ajout de l'image du sens de sortie et de la matière sur la fiche technique client."
         },
