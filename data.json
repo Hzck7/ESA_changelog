@@ -3,11 +3,15 @@
     {
       "version": "v1.67.2",
       "date": "2026-10-01",
-      "title": "Cette version apporte des améliorations à l'impression des fiches techniques client.",
+      "title": "Cette version apporte des améliorations à l'impression des fiches techniques client et corrige l'ajout d'un contact sur un prospect dans les devis.",
       "changes": [
         {
           "type": "changed",
           "text": "Fiches techniques client : L'adhésif affiché est désormais celui du produit (matière et laize) de l'article."
+        },
+        {
+          "type": "fixed",
+          "text": "Devis : Il est de nouveau possible d'ajouter un contact lors de la création d'un prospect : le prospect est enregistré automatiquement avant la saisie du contact."
         }
       ]
     },
