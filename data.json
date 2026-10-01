@@ -6,6 +6,10 @@
       "title": "Cette version apporte des améliorations à l'impression des fiches techniques client et corrige l'ajout d'un contact sur un prospect dans les devis.",
       "changes": [
         {
+          "type": "added",
+          "text": "EBP : Importation des codes articles EBP dans les produits à partir d'un export d'articles EBP : le rapprochement se fait sur la matière et la laize, avec un bilan du nombre de produits renseignés et des codes sans correspondance."
+        },
+        {
           "type": "changed",
           "text": "Fiches techniques client : L'adhésif affiché est désormais celui du produit (matière et laize) de l'article."
         },
