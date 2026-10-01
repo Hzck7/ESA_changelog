@@ -7,7 +7,7 @@
       "changes": [
         {
           "type": "added",
-          "text": "Devis : Nouvelle liste déroulante « Article » affichant les articles du client sur plusieurs colonnes (article, réf. client, matière, adhésif, laize, développé), avec recherche à la saisie. La sélection d'un article pré-remplit le devis."
+          "text": "Devis : Nouvelle liste déroulante « Article » affichant les articles du client sur plusieurs colonnes (article, réf. client, matière, adhésif), avec recherche à la saisie. La sélection d'un article pré-remplit le devis."
         },
         {
           "type": "changed",
