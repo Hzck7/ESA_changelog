@@ -20,6 +20,14 @@
         {
           "type": "changed",
           "text": "Devis : Lors d'un changement de matière, le prix de vente des quantités est conservé et c'est le % de marge qui est recalculé."
+        },
+        {
+          "type": "changed",
+          "text": "EBP : L'envoi d'une commande dans EBP est suivi dans une notification en bas à droite de l'écran, sans bloquer l'application. La fenêtre détaillée s'ouvre automatiquement en cas d'erreur, ou à la demande via « Voir le détail »."
+        },
+        {
+          "type": "changed",
+          "text": "EBP : Dans la liste des commandes, un « ? » gris signale les commandes qui n'ont jamais été envoyées dans EBP."
         }
       ]
     },
