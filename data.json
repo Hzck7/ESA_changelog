@@ -1,6 +1,17 @@
 {
   "changelog": [
     {
+      "version": "v1.67.2",
+      "date": "2026-10-01",
+      "title": "Cette version apporte des améliorations à l'impression des fiches techniques client.",
+      "changes": [
+        {
+          "type": "changed",
+          "text": "Fiches techniques client : L'adhésif affiché est désormais celui du produit (matière et laize) de l'article."
+        }
+      ]
+    },
+    {
       "version": "v1.67.1",
       "date": "2026-09-29",
       "title": "Cette version apporte des améliorations à l'impression des fiches techniques client et à la saisie des devis.",
