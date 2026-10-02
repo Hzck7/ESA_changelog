@@ -3,7 +3,7 @@
     {
       "version": "v1.67.2",
       "date": "2026-10-01",
-      "title": "Cette version ajoute l'écran « Stock à commander » avec la création des commandes d'achat matière dans EBP, apporte des améliorations à l'impression des fiches techniques client et corrige l'ajout d'un contact sur un prospect dans les devis.",
+      "title": "Cette version ajoute l'écran « Stock à commander » avec la création des commandes d'achat matière dans EBP, apporte des améliorations à l'impression des fiches techniques client et corrige l'ajout d'un contact sur un prospect dans les devis. Les nouveautés de chaque version sont maintenant présentées directement dans le planning.",
       "changes": [
         {
           "type": "added",
@@ -18,12 +18,24 @@
           "text": "EBP : Importation des codes articles EBP dans les produits à partir d'un export d'articles EBP : le rapprochement se fait sur la matière et la laize, avec un bilan du nombre de produits renseignés et des codes sans correspondance."
         },
         {
+          "type": "added",
+          "text": "Quoi de neuf ? : Les nouveautés de chaque version sont désormais présentées directement dans le planning, au premier démarrage après une mise à jour, à la place du mail. L'écran reste accessible à tout moment depuis le bouton « Quoi de neuf ? » du menu de gauche, au-dessus de « Déconnecter », avec une recherche et un filtre par type (ajouts, améliorations, corrections)."
+        },
+        {
           "type": "changed",
           "text": "Fiches techniques client : L'adhésif affiché est désormais celui du produit (matière et laize) de l'article."
         },
         {
           "type": "fixed",
           "text": "Devis : Il est de nouveau possible d'ajouter un contact lors de la création d'un prospect : le prospect est enregistré automatiquement avant la saisie du contact."
+        },
+        {
+          "type": "fixed",
+          "text": "Temps de production : Le tri choisi sur une colonne, les filtres et la position dans la liste sont conservés lors de l'actualisation automatique des données."
+        },
+        {
+          "type": "fixed",
+          "text": "Suivi des devis, commandes et magasinier : Le tri choisi sur une colonne est conservé lors de l'actualisation des données (liste des devis, liste des clients des commandes, liste du magasinier)."
         }
       ]
     },
