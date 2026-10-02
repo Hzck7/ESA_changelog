@@ -3,8 +3,16 @@
     {
       "version": "v1.67.2",
       "date": "2026-10-01",
-      "title": "Cette version apporte des améliorations à l'impression des fiches techniques client et corrige l'ajout d'un contact sur un prospect dans les devis.",
+      "title": "Cette version ajoute l'écran « Stock à commander » avec la création des commandes d'achat matière dans EBP, apporte des améliorations à l'impression des fiches techniques client et corrige l'ajout d'un contact sur un prospect dans les devis.",
       "changes": [
+        {
+          "type": "added",
+          "text": "Stock à commander : Nouvel écran listant la matière avec son stock disponible, les quantités déjà en commande et le stock prévisionnel. Filtres par seuil (ex. stock ≤ 0 ou ≤ -500) et par fournisseur."
+        },
+        {
+          "type": "added",
+          "text": "Commandes d'achat : Les lignes sélectionnées (un seul fournisseur) sont transférées en commande fournisseur dans EBP. Les matières commandées sont signalées en bleu jusqu'à leur réception ; un nouveau transfert demande une confirmation. Les arrivages soldent automatiquement les quantités en commande."
+        },
         {
           "type": "added",
           "text": "EBP : Importation des codes articles EBP dans les produits à partir d'un export d'articles EBP : le rapprochement se fait sur la matière et la laize, avec un bilan du nombre de produits renseignés et des codes sans correspondance."
