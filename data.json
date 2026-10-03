@@ -26,6 +26,10 @@
           "text": "Fiches techniques client : L'adhésif affiché est désormais celui du produit (matière et laize) de l'article."
         },
         {
+          "type": "changed",
+          "text": "Démarrage : Ouverture de l'application plus rapide et plus fluide : les données sont chargées en parallèle avant l'affichage de l'accueil, sans être rechargées juste après, et la synchronisation des clients EBP se fait en arrière-plan."
+        },
+        {
           "type": "fixed",
           "text": "Devis : Il est de nouveau possible d'ajouter un contact lors de la création d'un prospect : le prospect est enregistré automatiquement avant la saisie du contact."
         },
