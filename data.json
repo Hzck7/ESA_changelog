@@ -27,7 +27,11 @@
         },
         {
           "type": "changed",
-          "text": "Démarrage : Ouverture de l'application plus rapide et plus fluide : les données sont chargées en parallèle sans être rechargées juste après, la synchronisation des clients EBP se fait en arrière-plan, la fenêtre d'accueil apparaît avant l'écran des commandes et celui-ci se construit plus vite (listes et grille remplies en une fois)."
+          "text": "Démarrage : Ouverture de l'application plus rapide et plus fluide : les données sont chargées en parallèle sans être rechargées juste après, la synchronisation des clients EBP se fait en arrière-plan et l'écran des commandes se construit plus vite (listes et grille remplies en une fois)."
+        },
+        {
+          "type": "changed",
+          "text": "Écran de chargement : Nouvel écran de chargement avec la progression et l'étape en cours, qui reste animé pendant tout le démarrage. L'accueil n'apparaît qu'une fois entièrement prêt, et en connexion automatique l'écran de connexion n'est plus affiché."
         },
         {
           "type": "fixed",
