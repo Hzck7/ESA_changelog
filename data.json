@@ -1,7 +1,7 @@
 {
   "changelog": [
     {
-      "version": "v1.67.2",
+      "version": "v1.68.0",
       "date": "2026-10-01",
       "title": "Cette version ajoute l'écran « Stock à commander » avec la création des commandes d'achat matière dans EBP, apporte des améliorations à l'impression des fiches techniques client et corrige l'ajout d'un contact sur un prospect dans les devis. L'ouverture de l'application est également plus rapide. Les nouveautés de chaque version sont maintenant présentées directement dans le planning.",
       "changes": [
@@ -32,6 +32,10 @@
         {
           "type": "changed",
           "text": "Écran de chargement : Nouvel écran de chargement avec la progression et l'étape en cours, qui reste animé pendant tout le démarrage. L'accueil n'apparaît qu'une fois entièrement prêt, et en connexion automatique l'écran de connexion n'est plus affiché."
+        },
+        {
+          "type": "changed",
+          "text": "Mise à jour : Le téléchargement d'une nouvelle version utilise le même écran que le chargement, avec la barre de progression. Une fois la version téléchargée, deux boutons permettent de l'installer immédiatement (le planning redémarre) ou plus tard (installation au prochain démarrage)."
         },
         {
           "type": "fixed",
