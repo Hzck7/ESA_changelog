@@ -2,8 +2,8 @@
   "changelog": [
     {
       "version": "v1.68.0",
-      "date": "2026-10-01",
-      "title": "Cette version ajoute l'écran « Stock à commander » avec la création des commandes d'achat matière dans EBP, apporte des améliorations à l'impression des fiches techniques client et corrige l'ajout d'un contact sur un prospect dans les devis. L'ouverture de l'application est également plus rapide. Les nouveautés de chaque version sont maintenant présentées directement dans le planning.",
+      "date": "2026-10-04",
+      "title": "Cette version ajoute l'écran « Stock à commander » avec la création des commandes d'achat matière dans EBP, apporte des améliorations à l'impression des fiches techniques client et corrige l'ajout d'un contact sur un prospect dans les devis. L'application est nettement plus rapide : à l'ouverture, pendant la saisie des commandes et des articles, et lors de l'actualisation automatique. Plusieurs erreurs sont corrigées, notamment avec les apostrophes dans les recherches et la détection des chevauchements lors du choix d'une date de production. Les nouveautés de chaque version sont maintenant présentées directement dans le planning.",
       "changes": [
         {
           "type": "added",
@@ -36,6 +36,46 @@
         {
           "type": "changed",
           "text": "Mise à jour : Le téléchargement d'une nouvelle version utilise le même écran que le chargement, avec la barre de progression. Une fois la version téléchargée, deux boutons permettent de l'installer immédiatement (le planning redémarre) ou plus tard (installation au prochain démarrage)."
+        },
+        {
+          "type": "changed",
+          "text": "Saisie des commandes et des articles : Le prix d'achat, le m²/1000 et le ML à produire se recalculent instantanément pendant la saisie (laize, poses, échenillage, quantité), sans ralentissement à chaque caractère."
+        },
+        {
+          "type": "changed",
+          "text": "Actualisation automatique : Plus légère et plus rapide : le planning n'est plus rechargé en entier en arrière-plan (chaque écran charge uniquement la période affichée) et les données sont chargées en parallèle."
+        },
+        {
+          "type": "changed",
+          "text": "Base de données : Accès plus rapide au stock et à son réservé, aux commandes sans date et au planning."
+        },
+        {
+          "type": "changed",
+          "text": "Sécurité : Les valeurs saisies (recherches, codes articles, commentaires…) sont transmises de façon sécurisée à la base de données."
+        },
+        {
+          "type": "changed",
+          "text": "Application allégée : Suppression d'anciens écrans et de composants qui n'étaient plus utilisés."
+        },
+        {
+          "type": "fixed",
+          "text": "Apostrophes : Une apostrophe saisie dans une recherche (stock, temps de production, fiches techniques, devis, articles…), dans un commentaire d'arrivage ou dans un code article ne provoque plus d'erreur."
+        },
+        {
+          "type": "fixed",
+          "text": "Choix de la date de production : La vérification des chevauchements s'appuie sur le planning à jour : une commande planifiée entre-temps depuis un autre poste est bien prise en compte. Le calendrier d'une machine sans commande s'affiche désormais vide, au lieu de reprendre les commandes de la machine précédente."
+        },
+        {
+          "type": "fixed",
+          "text": "Listes déroulantes : Elles ne peuvent plus apparaître vides ou incomplètes lorsqu'elles sont ouvertes pendant l'actualisation automatique."
+        },
+        {
+          "type": "fixed",
+          "text": "Stock : L'ouverture des paramètres (adhésifs, couleurs…) ou de l'écran Dorure ne remplace plus le stock affiché et exporté vers Excel."
+        },
+        {
+          "type": "fixed",
+          "text": "Liste des commandes : Les filtres par date de commande et par état sont de nouveau pris en compte."
         },
         {
           "type": "fixed",
