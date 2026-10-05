@@ -1,6 +1,49 @@
 {
   "changelog": [
     {
+      "version": "v1.68.1",
+      "date": "2026-10-05",
+      "title": "Cette version accélère le chargement de l'écran Planning et le changement de filtre (machine, client, état). Les plannings, les commandes, le magasinier et les arrivages se mettent à jour automatiquement avec les modifications faites depuis les autres postes, sans perdre la sélection ni la position dans les listes. Le planning graphique devient un écran de consultation. L'info-bulle d'une commande s'affiche plus vite, et plusieurs erreurs sont corrigées, dont la double validation d'un arrivage.",
+      "changes": [
+        {
+          "type": "changed",
+          "text": "Actualisation automatique : Le planning, le planning graphique, le planning atelier, les commandes, le magasinier et les arrivages se mettent à jour d'eux-mêmes avec les modifications faites depuis les autres postes. La mise à jour se fait seulement sur l'écran affiché (sinon au retour sur l'écran, si les données ont plus de 2 minutes), jamais pendant une saisie, un glisser-déposer ou une fenêtre ouverte. La commande sélectionnée, les cases cochées, le tri et la position dans les listes sont conservés."
+        },
+        {
+          "type": "changed",
+          "text": "Planning graphique : L'écran devient un écran de consultation : les commandes ne peuvent plus y être déplacées, ajoutées ou retirées. La planification se fait depuis l'écran Planning."
+        },
+        {
+          "type": "changed",
+          "text": "Planning : Ouverture et changement de semaine ou de mois plus rapides : les horaires de production sont lus seulement pour la période affichée, les 25 journées s'affichent en une seule fois et le nombre de commandes sans date est calculé directement par la base de données."
+        },
+        {
+          "type": "changed",
+          "text": "Filtres du planning : Le choix d'une machine, d'un client ou d'un état s'applique instantanément, sans relire la base de données. Les modifications faites depuis un autre poste restent prises en compte par le bouton Rafraîchir, l'actualisation automatique et le changement de semaine."
+        },
+        {
+          "type": "changed",
+          "text": "Info-bulle du planning : Le détail d'une commande (format, couleurs, quantité, ML produits) s'affiche plus vite au survol, sans nouvelle lecture de la base lorsqu'on repasse sur la même commande."
+        },
+        {
+          "type": "fixed",
+          "text": "Arrivages : Un arrivage déjà validé ou supprimé depuis un autre poste n'est plus traité une seconde fois : le stock n'est plus crédité en double et un message indique les lignes ignorées. Une ligne validée ne peut plus être supprimée par erreur depuis un écran non actualisé."
+        },
+        {
+          "type": "fixed",
+          "text": "Planning atelier : L'écran, ouvert toute la journée sur le poste atelier, ne risque plus de planter après de nombreuses actualisations (les anciennes cartes sont maintenant libérées)."
+        },
+        {
+          "type": "fixed",
+          "text": "Planning : Les commandes de la PRATI VEGA+ s'affichent de nouveau dans la couleur de la machine (elles restaient en blanc lorsque toutes les machines étaient affichées)."
+        },
+        {
+          "type": "fixed",
+          "text": "Info-bulle du planning : La quantité et les ML produits s'affichent avec le séparateur de milliers, et une commande sans quantité ne provoque plus d'erreur."
+        }
+      ]
+    },
+    {
       "version": "v1.68.0",
       "date": "2026-10-04",
       "title": "Cette version ajoute l'écran « Stock à commander » avec la création des commandes d'achat matière dans EBP, apporte des améliorations à l'impression des fiches techniques client et corrige l'ajout d'un contact sur un prospect dans les devis. L'application est nettement plus rapide : à l'ouverture, pendant la saisie des commandes et des articles, et lors de l'actualisation automatique. Plusieurs erreurs sont corrigées, notamment avec les apostrophes dans les recherches et la détection des chevauchements lors du choix d'une date de production. Les nouveautés de chaque version sont maintenant présentées directement dans le planning. Enfin, on peut maintenant taper dans les listes déroulantes pour retrouver rapidement un élément.",
