@@ -3,7 +3,7 @@
     {
       "version": "v1.68.0",
       "date": "2026-10-04",
-      "title": "Cette version ajoute l'écran « Stock à commander » avec la création des commandes d'achat matière dans EBP, apporte des améliorations à l'impression des fiches techniques client et corrige l'ajout d'un contact sur un prospect dans les devis. L'application est nettement plus rapide : à l'ouverture, pendant la saisie des commandes et des articles, et lors de l'actualisation automatique. Plusieurs erreurs sont corrigées, notamment avec les apostrophes dans les recherches et la détection des chevauchements lors du choix d'une date de production. Les nouveautés de chaque version sont maintenant présentées directement dans le planning.",
+      "title": "Cette version ajoute l'écran « Stock à commander » avec la création des commandes d'achat matière dans EBP, apporte des améliorations à l'impression des fiches techniques client et corrige l'ajout d'un contact sur un prospect dans les devis. L'application est nettement plus rapide : à l'ouverture, pendant la saisie des commandes et des articles, et lors de l'actualisation automatique. Plusieurs erreurs sont corrigées, notamment avec les apostrophes dans les recherches et la détection des chevauchements lors du choix d'une date de production. Les nouveautés de chaque version sont maintenant présentées directement dans le planning. Enfin, on peut maintenant taper dans les listes déroulantes pour retrouver rapidement un élément.",
       "changes": [
         {
           "type": "added",
@@ -20,6 +20,14 @@
         {
           "type": "added",
           "text": "Quoi de neuf ? : Les nouveautés de chaque version sont désormais présentées directement dans le planning, au premier démarrage après une mise à jour, à la place du mail. L'écran reste accessible à tout moment depuis le bouton « Quoi de neuf ? » du menu de gauche, au-dessus de « Déconnecter », avec une recherche et un filtre par type (ajouts, améliorations, corrections)."
+        },
+        {
+          "type": "changed",
+          "text": "Listes déroulantes : On peut désormais taper directement dans les listes déroulantes : la liste se filtre au fil de la saisie sur les éléments qui contiennent le texte tapé, sans tenir compte des majuscules ni des accents (ex. « blanc » trouve « PP Blanc Mat »). Flèches haut/bas pour se déplacer, Entrée ou Tab pour valider, Échap pour annuler. Seule une valeur de la liste peut être retenue : un texte qui ne correspond à aucun élément est annulé en quittant le champ."
+        },
+        {
+          "type": "changed",
+          "text": "Apparence des listes déroulantes : Les dernières listes à l'ancien style (devis, filtre des états, retrait de stock, export des codes articles, impression d'étiquettes) ont désormais le même aspect que les autres."
         },
         {
           "type": "changed",
