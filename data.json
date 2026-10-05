@@ -1,6 +1,12 @@
 {
   "changelog": [
     {
+      "version": "v1.68.2",
+      "date": "2026-10-04",
+      "title": "Mise à jour v1.68.2",
+      "changes": []
+    },
+    {
       "version": "v1.68.0",
       "date": "2026-10-04",
       "title": "Cette version ajoute l'écran « Stock à commander » avec la création des commandes d'achat matière dans EBP, apporte des améliorations à l'impression des fiches techniques client et corrige l'ajout d'un contact sur un prospect dans les devis. L'application est nettement plus rapide : à l'ouverture, pendant la saisie des commandes et des articles, et lors de l'actualisation automatique. Plusieurs erreurs sont corrigées, notamment avec les apostrophes dans les recherches et la détection des chevauchements lors du choix d'une date de production. Les nouveautés de chaque version sont maintenant présentées directement dans le planning. Enfin, on peut maintenant taper dans les listes déroulantes pour retrouver rapidement un élément.",
