@@ -11,7 +11,7 @@
         },
         {
           "type": "added",
-          "text": "Commandes d'achat : Les lignes sélectionnées (un seul fournisseur) sont transférées en commande fournisseur dans EBP. Les matières commandées sont signalées en bleu jusqu'à leur réception ; un nouveau transfert demande une confirmation. Les arrivages soldent automatiquement les quantités en commande."
+          "text": "Commandes d'achat : Les lignes sélectionnées (un seul fournisseur) sont transférées en commande fournisseur dans EBP. L'envoi se fait en arrière-plan et son avancement s'affiche dans une notification en bas à droite de l'écran, comme pour les commandes clients ; en cas d'échec, le détail s'ouvre automatiquement. Les matières commandées sont signalées en bleu jusqu'à leur réception ; un nouveau transfert demande une confirmation. Les arrivages soldent automatiquement les quantités en commande."
         },
         {
           "type": "added",
