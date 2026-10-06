@@ -34,6 +34,10 @@
           "text": "Info-bulle du planning : Le détail d'une commande (format, couleurs, quantité, ML produits) s'affiche plus vite au survol, sans nouvelle lecture de la base lorsqu'on repasse sur la même commande."
         },
         {
+          "type": "changed",
+          "text": "Prix des matières : Le prix d'une matière s'affiche désormais avec 3 décimales dans la liste du Stock, dans son export Excel et dans la fiche matière."
+        },
+        {
           "type": "fixed",
           "text": "Arrivages : Un arrivage déjà validé ou supprimé depuis un autre poste n'est plus traité une seconde fois : le stock n'est plus crédité en double et un message indique les lignes ignorées. Une ligne validée ne peut plus être supprimée par erreur depuis un écran non actualisé."
         },
