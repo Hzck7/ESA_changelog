@@ -3,8 +3,12 @@
     {
       "version": "v1.68.1",
       "date": "2026-10-05",
-      "title": "Cette version accélère le chargement de l'écran Planning et le changement de filtre (machine, client, état). Les plannings, les commandes, le magasinier et les arrivages se mettent à jour automatiquement avec les modifications faites depuis les autres postes, sans perdre la sélection ni la position dans les listes. Le planning graphique devient un écran de consultation. L'info-bulle d'une commande s'affiche plus vite, et plusieurs erreurs sont corrigées, dont la double validation d'un arrivage et la reprise de l'adhésif lors de la création d'un produit dans une nouvelle laize.",
+      "title": "Cette version accélère le chargement de l'écran Planning et le changement de filtre (machine, client, état). Les plannings, les commandes, le magasinier et les arrivages se mettent à jour automatiquement avec les modifications faites depuis les autres postes, sans perdre la sélection ni la position dans les listes. Le planning graphique devient un écran de consultation. L'info-bulle d'une commande s'affiche plus vite, et plusieurs erreurs sont corrigées, dont la double validation d'un arrivage et la reprise de l'adhésif lors de la création d'un produit dans une nouvelle laize. Les commandes du client ESA peuvent maintenant être rattachées au client final, dont le commentaire est repris à l'écran et sur la fiche technique ESA.",
       "changes": [
+        {
+          "type": "added",
+          "text": "Client de rattachement : Lors de la création ou de la modification d'une commande du client ESA, une liste permet de choisir (facultativement) le client final de la commande. La liste des commandes l'affiche dans la colonne client (ex. « ESA > DUPONT ») et la recherche le prend en compte. Le commentaire affiché dans « Observation client » à l'ajout ou à la sélection d'un article, ainsi que sur la fiche technique ESA, est alors celui du client rattaché."
+        },
         {
           "type": "changed",
           "text": "Actualisation automatique : Le planning, le planning graphique, le planning atelier, les commandes, le magasinier et les arrivages se mettent à jour d'eux-mêmes avec les modifications faites depuis les autres postes. La mise à jour se fait seulement sur l'écran affiché (sinon au retour sur l'écran, si les données ont plus de 2 minutes), jamais pendant une saisie, un glisser-déposer ou une fenêtre ouverte. La commande sélectionnée, les cases cochées, le tri et la position dans les listes sont conservés."
