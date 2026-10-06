@@ -3,7 +3,7 @@
     {
       "version": "v1.68.1",
       "date": "2026-10-05",
-      "title": "Cette version accélère le chargement de l'écran Planning et le changement de filtre (machine, client, état). Les plannings, les commandes, le magasinier et les arrivages se mettent à jour automatiquement avec les modifications faites depuis les autres postes, sans perdre la sélection ni la position dans les listes. Le planning graphique devient un écran de consultation. L'info-bulle d'une commande s'affiche plus vite, et plusieurs erreurs sont corrigées, dont la double validation d'un arrivage.",
+      "title": "Cette version accélère le chargement de l'écran Planning et le changement de filtre (machine, client, état). Les plannings, les commandes, le magasinier et les arrivages se mettent à jour automatiquement avec les modifications faites depuis les autres postes, sans perdre la sélection ni la position dans les listes. Le planning graphique devient un écran de consultation. L'info-bulle d'une commande s'affiche plus vite, et plusieurs erreurs sont corrigées, dont la double validation d'un arrivage et la reprise de l'adhésif lors de la création d'un produit dans une nouvelle laize.",
       "changes": [
         {
           "type": "changed",
@@ -40,6 +40,18 @@
         {
           "type": "fixed",
           "text": "Info-bulle du planning : La quantité et les ML produits s'affichent avec le séparateur de milliers, et une commande sans quantité ne provoque plus d'erreur."
+        },
+        {
+          "type": "fixed",
+          "text": "Adhésif des nouvelles laizes : Un produit créé dans une nouvelle laize depuis la saisie d'une commande reprend désormais l'adhésif des autres laizes du même code article, comme l'EAN, le fournisseur, le prix et le libellé."
+        },
+        {
+          "type": "fixed",
+          "text": "Adhésif repris : Lors de la création d'un produit (commande, arrivage, inventaire, nouvelle matière), seules les laizes dont l'adhésif est renseigné servent de modèle : une laize sans adhésif n'empêche plus la reprise."
+        },
+        {
+          "type": "fixed",
+          "text": "Fiche matière : L'adhésif d'une autre matière ne reste plus affiché lorsqu'on change le code article, et il est retrouvé dans la liste même si les majuscules ou les espaces diffèrent. L'enregistrement sans adhésif choisi ne provoque plus d'erreur : l'adhésif déjà connu pour le code article est conservé."
         }
       ]
     },
