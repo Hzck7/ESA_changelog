@@ -11,7 +11,7 @@
         },
         {
           "type": "added",
-          "text": "Matières de devis : Un bouton à côté de la liste des matières du devis permet de créer une matière qui n'existe pas encore (code article, laize, prix, adhésif…), sans entrée en stock. Elle n'est proposée que dans les devis (repérée par « Matière devis ») et apparaît dans le Stock en italique gris ; elle reste absente des commandes, des articles, de l'inventaire, du stock à commander et de la mise à jour des prix jusqu'à son activation par clic droit « Activer la matière » dans le Stock."
+          "text": "Matières de devis : Un bouton à côté de la liste des matières du devis permet de créer une matière qui n'existe pas encore (code article, laize, prix, adhésif…), sans entrée en stock. Elle n'est proposée que dans les devis (repérée par « Matière devis ») et apparaît dans le Stock en italique gris ; elle reste absente des commandes, des articles, de l'inventaire, du stock à commander et de la mise à jour des prix jusqu'à son activation par clic droit « Activer la matière » dans le Stock. Elles sont masquées par défaut dans le Stock : la case « Afficher les matières devis » permet de les afficher."
         },
         {
           "type": "changed",
