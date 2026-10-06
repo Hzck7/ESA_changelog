@@ -3,11 +3,15 @@
     {
       "version": "v1.68.1",
       "date": "2026-10-05",
-      "title": "Cette version accélère le chargement de l'écran Planning et le changement de filtre (machine, client, état). Les plannings, les commandes, le magasinier et les arrivages se mettent à jour automatiquement avec les modifications faites depuis les autres postes, sans perdre la sélection ni la position dans les listes. Le planning graphique devient un écran de consultation. L'info-bulle d'une commande s'affiche plus vite, et plusieurs erreurs sont corrigées, dont la double validation d'un arrivage et la reprise de l'adhésif lors de la création d'un produit dans une nouvelle laize. Les commandes du client ESA peuvent maintenant être rattachées au client final, dont le commentaire est repris à l'écran et sur la fiche technique ESA.",
+      "title": "Cette version accélère le chargement de l'écran Planning et le changement de filtre (machine, client, état). Les plannings, les commandes, le magasinier et les arrivages se mettent à jour automatiquement avec les modifications faites depuis les autres postes, sans perdre la sélection ni la position dans les listes. Le planning graphique devient un écran de consultation. L'info-bulle d'une commande s'affiche plus vite, et plusieurs erreurs sont corrigées, dont la double validation d'un arrivage et la reprise de l'adhésif lors de la création d'un produit dans une nouvelle laize. Les commandes du client ESA peuvent maintenant être rattachées au client final, dont le commentaire est repris à l'écran et sur la fiche technique ESA. Enfin, une matière qui n'existe pas encore peut être créée directement depuis un devis : elle reste réservée aux devis jusqu'à son activation depuis le Stock.",
       "changes": [
         {
           "type": "added",
           "text": "Client de rattachement : Lors de la création ou de la modification d'une commande du client ESA, une liste permet de choisir (facultativement) le client final de la commande. La liste des commandes l'affiche dans la colonne client (ex. « ESA > DUPONT ») et la recherche le prend en compte. Le commentaire affiché dans « Observation client » à l'ajout ou à la sélection d'un article, ainsi que sur la fiche technique ESA, est alors celui du client rattaché."
+        },
+        {
+          "type": "added",
+          "text": "Matières de devis : Un bouton à côté de la liste des matières du devis permet de créer une matière qui n'existe pas encore (code article, laize, prix, adhésif…), sans entrée en stock. Elle n'est proposée que dans les devis (repérée par « Matière devis ») et apparaît dans le Stock en italique gris ; elle reste absente des commandes, des articles, de l'inventaire, du stock à commander et de la mise à jour des prix jusqu'à son activation par clic droit « Activer la matière » dans le Stock."
         },
         {
           "type": "changed",
