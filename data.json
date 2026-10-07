@@ -3,7 +3,7 @@
     {
       "version": "v1.68.1",
       "date": "2026-10-05",
-      "title": "Cette version accélère le chargement de l'écran Planning et le changement de filtre (machine, client, état). Les plannings, les commandes, le magasinier et les arrivages se mettent à jour automatiquement avec les modifications faites depuis les autres postes, sans perdre la sélection ni la position dans les listes. Le planning graphique devient un écran de consultation. L'info-bulle d'une commande s'affiche plus vite, et plusieurs erreurs sont corrigées, dont la double validation d'un arrivage et la reprise de l'adhésif lors de la création d'un produit dans une nouvelle laize. Les commandes du client ESA peuvent maintenant être rattachées au client final, dont le commentaire est repris à l'écran et sur la fiche technique ESA. Enfin, une matière qui n'existe pas encore peut être créée directement depuis un devis : elle reste réservée aux devis jusqu'à son activation depuis le Stock.",
+      "title": "Cette version accélère le chargement de l'écran Planning et le changement de filtre (machine, client, état). Les plannings, les commandes, le magasinier et les arrivages se mettent à jour automatiquement avec les modifications faites depuis les autres postes, sans perdre la sélection ni la position dans les listes. Le planning graphique devient un écran de consultation. L'info-bulle d'une commande s'affiche plus vite, et plusieurs erreurs sont corrigées, dont la double validation d'un arrivage et la reprise de l'adhésif lors de la création d'un produit dans une nouvelle laize. Les commandes du client ESA peuvent maintenant être rattachées au client final, dont le commentaire est repris à l'écran et sur la fiche technique ESA. Enfin, une matière qui n'existe pas encore peut être créée directement depuis un devis : elle reste réservée aux devis jusqu'à son activation depuis le Stock. Le code article EBP d'une matière se saisit désormais dans la fiche matière, et les commandes envoyées à EBP ne contiennent plus de ligne de frais de port ajoutée automatiquement.",
       "changes": [
         {
           "type": "added",
@@ -36,6 +36,14 @@
         {
           "type": "changed",
           "text": "Prix des matières : Le prix d'une matière s'affiche désormais avec 3 décimales dans la liste du Stock, dans son export Excel et dans la fiche matière."
+        },
+        {
+          "type": "changed",
+          "text": "Code article EBP des matières : La fiche matière (création, modification, création depuis un devis) affiche le code article EBP de la matière et de la laize, sous le code article, et permet de le saisir ou de le corriger. C'est ce code qui est utilisé lors du transfert des commandes d'achat dans EBP."
+        },
+        {
+          "type": "changed",
+          "text": "Import des commandes dans EBP : La commande créée dans EBP ne contient plus que les articles de la commande : la ligne « FRAIS DE PORT » (ZPORT) à 0 € n'est plus ajoutée automatiquement."
         },
         {
           "type": "fixed",
