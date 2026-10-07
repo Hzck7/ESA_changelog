@@ -3,11 +3,15 @@
     {
       "version": "v1.68.2",
       "date": "2026-10-07",
-      "title": "Cette version facilite la saisie des commandes d'achat transférées dans EBP : la quantité en ML s'affiche avec le séparateur de milliers pendant la saisie.",
+      "title": "Cette version facilite la saisie des commandes d'achat transférées dans EBP : la quantité en ML s'affiche avec le séparateur de milliers pendant la saisie. Les écrans ne clignotent plus lors de l'actualisation automatique.",
       "changes": [
         {
           "type": "changed",
           "text": "Quantités des commandes d'achat : Lors du transfert d'une commande d'achat dans EBP, la quantité en ML s'affiche avec le séparateur de milliers dès la saisie (ex. « 12 000 ») et le conserve une fois validée. Seuls les chiffres et une virgule décimale sont acceptés."
+        },
+        {
+          "type": "fixed",
+          "text": "Clignotement à l'actualisation automatique : Les écrans ne clignotent plus à chaque actualisation automatique (commandes, stock, stock à commander, suivi des devis, temps de production, magasinier, arrivages, planning, planning graphique et planning atelier). Un écran n'est réaffiché que si ses données ont changé depuis un autre poste, et il est alors redessiné en une seule fois. Les cases cochées des devis ne sont plus perdues à chaque actualisation. Dans les commandes, les champs de l'article sélectionné ne sont rechargés que si la liste des articles de la commande a changé."
         }
       ]
     },
