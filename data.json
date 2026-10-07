@@ -3,8 +3,12 @@
     {
       "version": "v1.68.2",
       "date": "2026-10-07",
-      "title": "Cette version facilite la saisie des commandes d'achat transférées dans EBP : la quantité en ML s'affiche avec le séparateur de milliers pendant la saisie. Les écrans ne clignotent plus lors de l'actualisation automatique.",
+      "title": "Cette version facilite la saisie des commandes d'achat transférées dans EBP : la quantité en ML s'affiche avec le séparateur de milliers pendant la saisie, et une commande d'achat envoyée par erreur peut être annulée dans Planning. Les écrans ne clignotent plus lors de l'actualisation automatique.",
       "changes": [
+        {
+          "type": "added",
+          "text": "Annulation d'une commande d'achat : Dans « Stock à commander », le clic droit « Commandes d'achat de la matière » ouvre la liste des commandes de la matière, avec un bouton « Annuler la commande ». Une commande annulée (toutes ses matières) n'est plus comptée en commande ni dans le stock prévisionnel, et les arrivages ne lui sont plus imputés ; elle reste visible avec le statut « annulée ». L'annulation ne concerne que Planning : la commande est à supprimer à la main dans EBP. Non disponible pour le profil Atelier."
+        },
         {
           "type": "changed",
           "text": "Quantités des commandes d'achat : Lors du transfert d'une commande d'achat dans EBP, la quantité en ML s'affiche avec le séparateur de milliers dès la saisie (ex. « 12 000 ») et le conserve une fois validée. Seuls les chiffres et une virgule décimale sont acceptés."
