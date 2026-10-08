@@ -3,7 +3,7 @@
     {
       "version": "v1.68.3",
       "date": "2026-10-08",
-      "title": "Cette version reprend le code commercial des clients depuis EBP et l'utilise dans les commandes qui y sont envoyées. Dans la saisie des devis, le statut « En attente » est retiré au profit de « Envoyé » par défaut, et l'écran défile lorsque la fenêtre est trop petite.",
+      "title": "Cette version reprend le code commercial des clients depuis EBP et l'utilise dans les commandes qui y sont envoyées. Dans la saisie des devis, le statut « En attente » est retiré au profit de « Envoyé » par défaut, et l'écran défile lorsque la fenêtre est trop petite. Les totaux de l'écran Stock s'affichent de nouveau.",
       "changes": [
         {
           "type": "changed",
@@ -15,7 +15,11 @@
         },
         {
           "type": "fixed",
-          "text": "Saisie des devis : Lorsque la fenêtre est trop petite pour afficher tous les champs, des barres de défilement apparaissent : plus aucun champ n'est inaccessible."
+          "text": "Saisie des devis : Lorsque la fenêtre est trop petite pour afficher tous les champs, des barres de défilement apparaissent : plus aucun champ n'est inaccessible. Le défilement reste fluide : en faisant glisser la barre, l'écran se positionne au relâchement."
+        },
+        {
+          "type": "fixed",
+          "text": "Totaux du stock : Les totaux affichés sous la liste du Stock (en stock, réservé, total et valorisation) s'affichent de nouveau. Ils correspondent aux matières affichées et se mettent à jour à chaque filtre et à chaque actualisation."
         }
       ]
     },
