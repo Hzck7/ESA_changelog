@@ -1,6 +1,25 @@
 {
   "changelog": [
     {
+      "version": "v1.68.3",
+      "date": "2026-10-08",
+      "title": "Cette version reprend le code commercial des clients depuis EBP et l'utilise dans les commandes qui y sont envoyées. Dans la saisie des devis, le statut « En attente » est retiré au profit de « Envoyé » par défaut, et l'écran défile lorsque la fenêtre est trop petite.",
+      "changes": [
+        {
+          "type": "changed",
+          "text": "Code commercial des clients : La mise à jour des clients depuis EBP reprend désormais le code commercial/collaborateur de chaque client. Les commandes envoyées à EBP utilisent ce code commercial (en-tête et lignes) ; à défaut, le code commercial habituel est conservé."
+        },
+        {
+          "type": "changed",
+          "text": "Statut des devis : Dans la saisie des devis, le statut « En attente » n'est plus proposé : un nouveau devis est « Envoyé » par défaut. Un ancien devis « En attente » s'ouvre avec le statut « Envoyé », qui lui est appliqué à l'enregistrement. Le suivi des devis affiche toujours les devis « En attente » existants."
+        },
+        {
+          "type": "fixed",
+          "text": "Saisie des devis : Lorsque la fenêtre est trop petite pour afficher tous les champs, des barres de défilement apparaissent : plus aucun champ n'est inaccessible."
+        }
+      ]
+    },
+    {
       "version": "v1.68.2",
       "date": "2026-10-07",
       "title": "Cette version facilite la saisie des commandes d'achat transférées dans EBP : la quantité en ML s'affiche avec le séparateur de milliers pendant la saisie, et une commande d'achat envoyée par erreur peut être annulée dans Planning. Les écrans ne clignotent plus lors de l'actualisation automatique.",
