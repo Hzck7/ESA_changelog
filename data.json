@@ -26,6 +26,10 @@
           "text": "Synchronisation EBP des clients et des contacts : La mise à jour automatique des clients et des contacts depuis EBP prend environ 15 s au lieu de 3 min : seuls les clients et contacts nouveaux ou modifiés sont enregistrés. Elle n'est lancée que par un seul poste à la fois, et une mise à jour interrompue (application fermée) reprend 10 minutes plus tard au lieu de recommencer à chaque démarrage. Une erreur sur un contact n'interrompt plus la mise à jour et n'affiche plus de message."
         },
         {
+          "type": "changed",
+          "text": "Démarrage et temps de production : L'application démarre plus vite : les temps de production (tout l'historique, le chargement le plus long) ne sont plus attendus au démarrage, ils sont lus en arrière-plan une fois l'accueil affiché, et ne sont plus relus toutes les quelques secondes tant que l'écran Temps de production n'a pas été ouvert. Cet écran s'affiche immédiatement, avec la mention « Chargement des temps de production… » si les données ne sont pas encore arrivées. Le bouton Rafraîchir de l'écran relit désormais les données en base (il ne faisait que réafficher celles déjà en mémoire)."
+        },
+        {
           "type": "fixed",
           "text": "Rouleaux complets : À la modification d'un client depuis l'écran Commandes, la case « Rouleaux complets » reprend la valeur du client. Auparavant elle s'affichait toujours décochée, et l'enregistrement de la fiche retirait l'option au client."
         }
