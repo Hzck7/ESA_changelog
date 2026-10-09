@@ -3,7 +3,7 @@
     {
       "version": "v1.68.4",
       "date": "2026-10-09",
-      "title": "Cette version accélère l'ouverture d'une commande depuis le planning et surtout sa validation : le planning ne relit plus que les semaines affichées et garde la commande sélectionnée. La modification d'un client depuis l'écran Commandes conserve désormais son option « Rouleaux complets ».",
+      "title": "Cette version accélère l'ouverture d'une commande depuis le planning et surtout sa validation : le planning ne relit plus que les semaines affichées et garde la commande sélectionnée. La sélection d'un article dans l'écran Commandes s'affiche d'un seul coup, sans clignotement. La modification d'un client depuis l'écran Commandes conserve désormais son option « Rouleaux complets ».",
       "changes": [
         {
           "type": "changed",
@@ -12,6 +12,10 @@
         {
           "type": "changed",
           "text": "Validation d'une commande : Après validation ou suppression de la planification, seules les semaines affichées du planning sont relues au lieu de tout l'historique (environ 1,2 s → 0,55 s, et nettement plus à la première validation). La commande sélectionnée et la position dans les listes sont conservées."
+        },
+        {
+          "type": "changed",
+          "text": "Sélection d'un article dans l'écran Commandes : Les champs de l'article s'affichent d'un seul coup, sans clignotement : ils ne sont plus vidés puis remplis à l'écran, et les listes déroulantes ne sont plus reconstruites à chaque clic (seulement quand leur contenu a changé). Pendant le chargement, l'article précédent reste affiché avec la mention « Chargement de l'article… » en haut à droite du détail, et le curseur passe en sablier. L'affichage est aussi plus rapide (environ 0,7 s → 0,5 s) : moins de requêtes, calculs de ML et de temps de production faits une seule fois. La liste des matières ne se remplit plus de doublons au fil des sélections."
         },
         {
           "type": "fixed",
