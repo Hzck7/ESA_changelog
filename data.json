@@ -19,7 +19,7 @@
         },
         {
           "type": "changed",
-          "text": "Première ouverture des écrans : Les écrans Stock (environ 2 s → 0,2 s) et Stock à commander s'ouvrent beaucoup plus vite : ils reprennent le stock déjà chargé au lieu de le relire en base, et la liste n'est plus remplie deux fois ni ligne par ligne (le retour sur ces écrans est aussi plus rapide). Les écrans les plus utilisés (planning, stock, articles, suivi des devis, temps de production, boîte à outils…) sont préparés en arrière-plan après l'ouverture de l'accueil, quand l'application n'est pas utilisée : le planning s'ouvre en environ 0,6 s au lieu de 1,2 s, et le suivi des devis en 0,4 s au lieu de 0,55 s. L'application est aussi précompilée, ce qui accélère la première ouverture de toutes les fenêtres, et chaque démarrage profite du précédent pour préparer le code en avance."
+          "text": "Première ouverture des écrans : Les écrans Stock (environ 2 s → 0,2 s) et Stock à commander s'ouvrent beaucoup plus vite : ils reprennent le stock déjà chargé au lieu de le relire en base, et la liste n'est plus remplie deux fois ni ligne par ligne (le retour sur ces écrans est aussi plus rapide). Les écrans les plus utilisés (planning, stock, articles, suivi des devis, temps de production, boîte à outils…) sont préparés en arrière-plan après l'ouverture de l'accueil, quand l'application n'est pas utilisée : le planning s'ouvre en environ 0,5 s au lieu de 1,2 s, et le suivi des devis en 0,4 s au lieu de 0,55 s. L'application est aussi précompilée, ce qui accélère la première ouverture de toutes les fenêtres, et chaque démarrage profite du précédent pour préparer le code en avance."
         },
         {
           "type": "changed",
