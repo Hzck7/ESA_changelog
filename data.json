@@ -22,6 +22,10 @@
           "text": "Première ouverture des écrans : Les écrans Stock (environ 2 s → 0,2 s) et Stock à commander s'ouvrent beaucoup plus vite : ils reprennent le stock déjà chargé au lieu de le relire en base, et la liste n'est plus remplie deux fois ni ligne par ligne (le retour sur ces écrans est aussi plus rapide). Les écrans les plus utilisés (planning, stock, articles, suivi des devis, temps de production, boîte à outils…) sont préparés en arrière-plan après l'ouverture de l'accueil, quand l'application n'est pas utilisée : le planning s'ouvre en environ 0,6 s au lieu de 1,2 s, et le suivi des devis en 0,4 s au lieu de 0,55 s. L'application est aussi précompilée, ce qui accélère la première ouverture de toutes les fenêtres, et chaque démarrage profite du précédent pour préparer le code en avance."
         },
         {
+          "type": "changed",
+          "text": "Synchronisation EBP des clients et des contacts : La mise à jour automatique des clients et des contacts depuis EBP prend environ 15 s au lieu de 3 min : seuls les clients et contacts nouveaux ou modifiés sont enregistrés. Elle n'est lancée que par un seul poste à la fois, et une mise à jour interrompue (application fermée) reprend 10 minutes plus tard au lieu de recommencer à chaque démarrage. Une erreur sur un contact n'interrompt plus la mise à jour et n'affiche plus de message."
+        },
+        {
           "type": "fixed",
           "text": "Rouleaux complets : À la modification d'un client depuis l'écran Commandes, la case « Rouleaux complets » reprend la valeur du client. Auparavant elle s'affichait toujours décochée, et l'enregistrement de la fiche retirait l'option au client."
         }
