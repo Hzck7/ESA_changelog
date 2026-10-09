@@ -1,6 +1,25 @@
 {
   "changelog": [
     {
+      "version": "v1.68.4",
+      "date": "2026-10-09",
+      "title": "Cette version accélère l'ouverture d'une commande depuis le planning et surtout sa validation : le planning ne relit plus que les semaines affichées et garde la commande sélectionnée. La modification d'un client depuis l'écran Commandes conserve désormais son option « Rouleaux complets ».",
+      "changes": [
+        {
+          "type": "changed",
+          "text": "Ouverture d'une commande depuis le planning : La fenêtre de saisie se remplit plus vite (environ 1,4 s → 1 s) : le temps de production, le n° de lot et le commentaire client sont lus en beaucoup moins de requêtes. Le calcul du temps de production est aussi plus rapide partout où il est affiché (liste des commandes sans date, planning graphique, impressions)."
+        },
+        {
+          "type": "changed",
+          "text": "Validation d'une commande : Après validation ou suppression de la planification, seules les semaines affichées du planning sont relues au lieu de tout l'historique (environ 1,2 s → 0,55 s, et nettement plus à la première validation). La commande sélectionnée et la position dans les listes sont conservées."
+        },
+        {
+          "type": "fixed",
+          "text": "Rouleaux complets : À la modification d'un client depuis l'écran Commandes, la case « Rouleaux complets » reprend la valeur du client. Auparavant elle s'affichait toujours décochée, et l'enregistrement de la fiche retirait l'option au client."
+        }
+      ]
+    },
+    {
       "version": "v1.68.3",
       "date": "2026-10-08",
       "title": "Cette version reprend le code commercial des clients depuis EBP et l'utilise dans les commandes qui y sont envoyées. Dans la saisie des devis, le statut « En attente » est retiré au profit de « Envoyé » par défaut, et l'écran défile lorsque la fenêtre est trop petite. Les totaux de l'écran Stock s'affichent de nouveau.",
