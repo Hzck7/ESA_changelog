@@ -3,7 +3,7 @@
     {
       "version": "v1.68.4",
       "date": "2026-10-09",
-      "title": "Cette version accélère l'ouverture d'une commande depuis le planning et surtout sa validation : le planning ne relit plus que les semaines affichées et garde la commande sélectionnée. La sélection d'un article dans l'écran Commandes s'affiche d'un seul coup, sans clignotement. La modification d'un client depuis l'écran Commandes conserve désormais son option « Rouleaux complets ».",
+      "title": "Cette version accélère l'ouverture d'une commande depuis le planning et surtout sa validation : le planning ne relit plus que les semaines affichées et garde la commande sélectionnée. La sélection d'un article dans l'écran Commandes s'affiche d'un seul coup, sans clignotement, et la recherche ou le changement de client ne font plus clignoter l'écran. La modification d'un client depuis l'écran Commandes conserve désormais son option « Rouleaux complets ».",
       "changes": [
         {
           "type": "changed",
@@ -32,6 +32,10 @@
         {
           "type": "fixed",
           "text": "Rouleaux complets : À la modification d'un client depuis l'écran Commandes, la case « Rouleaux complets » reprend la valeur du client. Auparavant elle s'affichait toujours décochée, et l'enregistrement de la fiche retirait l'option au client."
+        },
+        {
+          "type": "fixed",
+          "text": "Clignotement de l'écran Commandes : La recherche d'un client et le passage d'un client à l'autre ne font plus clignoter l'écran : les listes des clients, des commandes et des articles ne disparaissent plus un instant (le changement du titre « Liste de vos commandes… » redessinait tout l'écran). La recherche est lancée dès que la frappe marque une courte pause, et non plus à chaque touche ; les listes ne sont rechargées que si leur contenu change, et le détail de l'article affiché se vide d'un seul coup. Un nouveau clic sur le client déjà sélectionné, ou un tri de la liste des clients, ne recharge plus ses commandes."
         }
       ]
     },
