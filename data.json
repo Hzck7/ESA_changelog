@@ -30,12 +30,28 @@
           "text": "Démarrage et temps de production : L'application démarre plus vite : les temps de production (tout l'historique, le chargement le plus long) ne sont plus attendus au démarrage, ils sont lus en arrière-plan une fois l'accueil affiché, et ne sont plus relus toutes les quelques secondes tant que l'écran Temps de production n'a pas été ouvert. Cet écran s'affiche immédiatement, avec la mention « Chargement des temps de production… » si les données ne sont pas encore arrivées. Le bouton Rafraîchir de l'écran relit désormais les données en base (il ne faisait que réafficher celles déjà en mémoire)."
         },
         {
+          "type": "changed",
+          "text": "Recherches et filtres : Dans tous les écrans, les zones de recherche et de filtre saisies au clavier (commandes, stock, stock à commander, temps de production, suivi des devis, fiches techniques, listes d'articles, boîte à outils, inventaire, mise à jour des prix…) mettent la liste à jour dès que la frappe marque une courte pause, et non plus à chaque touche : la saisie reste fluide et la liste n'est plus recalculée (ni relue en base) pour chaque lettre. La touche Entrée lance toujours la recherche immédiatement ; les cases à cocher et les listes déroulantes s'appliquent toujours aussitôt."
+        },
+        {
+          "type": "changed",
+          "text": "Liste des commandes (bouton « Commandes » de l'écran Commandes) : La liste s'ouvre plus vite : elle est remplie d'un seul coup au lieu de ligne par ligne. Les filtres (code client, n° de commande, article, réf. client, quantité, dates, états) s'appliquent sur la liste déjà chargée, sans relire la base à chaque lettre, dès que la frappe marque une courte pause ; Entrée filtre immédiatement."
+        },
+        {
           "type": "fixed",
           "text": "Rouleaux complets : À la modification d'un client depuis l'écran Commandes, la case « Rouleaux complets » reprend la valeur du client. Auparavant elle s'affichait toujours décochée, et l'enregistrement de la fiche retirait l'option au client."
         },
         {
           "type": "fixed",
           "text": "Clignotement de l'écran Commandes : La recherche d'un client et le passage d'un client à l'autre ne font plus clignoter l'écran : les listes des clients, des commandes et des articles ne disparaissent plus un instant (le changement du titre « Liste de vos commandes… » redessinait tout l'écran). La recherche est lancée dès que la frappe marque une courte pause, et non plus à chaque touche ; les listes ne sont rechargées que si leur contenu change, et le détail de l'article affiché se vide d'un seul coup. Un nouveau clic sur le client déjà sélectionné, ou un tri de la liste des clients, ne recharge plus ses commandes."
+        },
+        {
+          "type": "fixed",
+          "text": "Recherche de commandes et de plaques : Une apostrophe dans la recherche de commandes (écran Commandes) ne provoque plus d'erreur. Le texte saisi dans cette recherche et dans la recherche de plaques (laize, développé) n'est plus inséré tel quel dans la requête envoyée à la base, ce qui empêchait aussi de la modifier par un texte collé."
+        },
+        {
+          "type": "fixed",
+          "text": "Filtres de la liste des commandes : Le filtre « Date de début » fonctionne de nouveau, et les filtres tiennent compte du dernier caractère saisi (ils avaient toujours une lettre de retard). Une date invalide n'est plus signalée en rouge une fois corrigée."
         }
       ]
     },
