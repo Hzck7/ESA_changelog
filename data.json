@@ -38,6 +38,10 @@
           "text": "Liste des commandes (bouton « Commandes » de l'écran Commandes) : La liste s'ouvre plus vite : elle est remplie d'un seul coup au lieu de ligne par ligne. Les filtres (code client, n° de commande, article, réf. client, quantité, dates, états) s'appliquent sur la liste déjà chargée, sans relire la base à chaque lettre, dès que la frappe marque une courte pause ; Entrée filtre immédiatement."
         },
         {
+          "type": "changed",
+          "text": "Boîte à outils (liste outil) : La liste est remplie d'un seul coup au lieu de ligne par ligne. Les filtres laize, développé et « Commandé ? » s'appliquent sur la liste déjà chargée, sans relire la base, et l'outil sélectionné reste sélectionné. Le clic sur un outil remplit les champs de saisie immédiatement (il relisait l'outil en base à chaque clic). Après une suppression, le nombre d'éléments affiché est juste. Le bouton RAZ relit toujours la liste en base."
+        },
+        {
           "type": "fixed",
           "text": "Rouleaux complets : À la modification d'un client depuis l'écran Commandes, la case « Rouleaux complets » reprend la valeur du client. Auparavant elle s'affichait toujours décochée, et l'enregistrement de la fiche retirait l'option au client."
         },
