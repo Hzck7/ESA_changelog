@@ -1,6 +1,17 @@
 {
   "changelog": [
     {
+      "version": "v1.68.5",
+      "date": "2026-10-13",
+      "title": "Cette version corrige les adresses des commandes envoyées à EBP : l'adresse de facturation n'est plus remplacée par l'adresse de livraison. Les commandes envoyées à EBP ne contiennent plus que les informations propres à la commande, EBP reprenant le reste de la fiche client.",
+      "changes": [
+        {
+          "type": "fixed",
+          "text": "Adresse de facturation des commandes envoyées à EBP : L'adresse de facturation d'une commande envoyée à EBP n'est plus remplacée par l'adresse de livraison du client. La commande n'envoie plus que le n° de document, la date, le client (code et nom), le code commercial du client, la référence, et pour chaque article son code et sa quantité. Les adresses de facturation et de livraison, les contacts, la TVA, le dépôt et les tarifs sont repris par EBP depuis la fiche client et les fiches articles. Le modèle d'import des commandes dans EBP doit reprendre ces colonnes, dans cet ordre."
+        }
+      ]
+    },
+    {
       "version": "v1.68.4",
       "date": "2026-10-09",
       "title": "Cette version accélère l'ouverture d'une commande depuis le planning et surtout sa validation : le planning ne relit plus que les semaines affichées et garde la commande sélectionnée. La sélection d'un article dans l'écran Commandes s'affiche d'un seul coup, sans clignotement, et la recherche ou le changement de client ne font plus clignoter l'écran. La modification d'un client depuis l'écran Commandes conserve désormais son option « Rouleaux complets ».",
