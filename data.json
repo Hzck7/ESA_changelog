@@ -2,8 +2,8 @@
   "changelog": [
     {
       "version": "v1.68.6",
-      "date": "2026-10-13",
-      "title": "Cette version supprime l'effet de balayage du planning à la validation d'une commande : seules les journées modifiées sont réaffichées, d'un seul coup. Elle corrige aussi l'erreur « Object must be of type Decimal » qui apparaissait dans la saisie des devis à l'ajout d'une quantité. L'écran Commandes affiche désormais le total des ML et des M² des commandes listées, et son filtre permet de choisir une période de date de départ.",
+      "date": "2026-10-14",
+      "title": "Cette version supprime l'effet de balayage du planning à la validation d'une commande : seules les journées modifiées sont réaffichées, d'un seul coup. Elle corrige aussi l'erreur « Object must be of type Decimal » qui pouvait apparaître dans la saisie des devis lors de l'ajout ou de la modification d'une quantité. L'écran Commandes affiche désormais le total des ML et des M² des commandes listées, et son filtre permet de choisir une période de date de départ.",
       "changes": [
         {
           "type": "added",
@@ -15,7 +15,7 @@
         },
         {
           "type": "fixed",
-          "text": "Ajout d'une quantité dans un devis : L'ajout ou la modification d'une quantité dans le tableau des propositions ne provoque plus l'erreur « Object must be of type Decimal ». Elle survenait lorsque le tableau avait été recalculé auparavant (changement de matière, de dorure, d'aplats, de traits, de changements de clichés ou de couleurs, ou de laize matière) : le tri des propositions par quantité échouait. Les propositions restent triées par quantité croissante."
+          "text": "Quantités des devis : Après la modification d'un champ qui recalcule le tableau des quantités (matière, dorure, aplats, traits, changements de cliché ou de couleur, laize matière), l'ajout ou la modification d'une quantité ne provoque plus l'erreur « Object must be of type Decimal ». La quantité est bien ajoutée, les champs de saisie sont vidés et le tableau reste trié par quantité croissante."
         },
         {
           "type": "fixed",
