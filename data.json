@@ -3,8 +3,12 @@
     {
       "version": "v1.68.6",
       "date": "2026-10-13",
-      "title": "Cette version supprime l'effet de balayage du planning à la validation d'une commande : seules les journées modifiées sont réaffichées, d'un seul coup.",
+      "title": "Cette version supprime l'effet de balayage du planning à la validation d'une commande : seules les journées modifiées sont réaffichées, d'un seul coup. Elle corrige aussi l'erreur « Object must be of type Decimal » qui apparaissait dans la saisie des devis à l'ajout d'une quantité.",
       "changes": [
+        {
+          "type": "fixed",
+          "text": "Ajout d'une quantité dans un devis : L'ajout ou la modification d'une quantité dans le tableau des propositions ne provoque plus l'erreur « Object must be of type Decimal ». Elle survenait lorsque le tableau avait été recalculé auparavant (changement de matière, de dorure, d'aplats, de traits, de changements de clichés ou de couleurs, ou de laize matière) : le tri des propositions par quantité échouait. Les propositions restent triées par quantité croissante."
+        },
         {
           "type": "fixed",
           "text": "Rafraîchissement du planning à la validation d'une commande : Après la validation d'une commande (ou la suppression de sa planification), le planning ne se redessine plus carte par carte : seules les journées dont les commandes ont changé sont réaffichées, chacune en une seule fois, et les autres restent telles quelles. La commande sélectionnée et la position dans les listes sont conservées. Le changement de semaine, de filtre et l'actualisation automatique en profitent aussi."
