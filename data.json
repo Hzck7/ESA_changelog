@@ -3,8 +3,16 @@
     {
       "version": "v1.68.6",
       "date": "2026-10-13",
-      "title": "Cette version supprime l'effet de balayage du planning à la validation d'une commande : seules les journées modifiées sont réaffichées, d'un seul coup. Elle corrige aussi l'erreur « Object must be of type Decimal » qui apparaissait dans la saisie des devis à l'ajout d'une quantité.",
+      "title": "Cette version supprime l'effet de balayage du planning à la validation d'une commande : seules les journées modifiées sont réaffichées, d'un seul coup. Elle corrige aussi l'erreur « Object must be of type Decimal » qui apparaissait dans la saisie des devis à l'ajout d'une quantité. L'écran Commandes affiche désormais le total des ML et des M² des commandes listées, et son filtre permet de choisir une période de date de départ.",
       "changes": [
+        {
+          "type": "added",
+          "text": "Filtre de date de départ des commandes : La fenêtre de filtre de l'écran Commandes (bouton entonnoir) propose, à côté des états, un calendrier pour choisir un jour ou une période (en faisant glisser la souris sur les jours) : seules les commandes dont la date de départ est dans cette période sont listées. La liste se met à jour dès que la période est choisie, sans attendre la fermeture de la fenêtre. Le bouton « Sans date » retire le filtre de date ; à l'ouverture de l'application, aucune date n'est filtrée. La période choisie est rappelée au-dessus du calendrier et dans l'infobulle du bouton de filtre, qui compte un filtre de plus."
+        },
+        {
+          "type": "added",
+          "text": "Total des ML et M² des commandes : Dans l'écran Commandes, la barre du bas affiche, centré sous la liste des commandes, le total des ML à produire et des M² de tous les articles des commandes affichées. Il tient compte des filtres (client sélectionné, états, recherche) et se met à jour à chaque rechargement de la liste, y compris lors de l'actualisation automatique. Il n'apparaît que sur l'écran Commandes."
+        },
         {
           "type": "fixed",
           "text": "Ajout d'une quantité dans un devis : L'ajout ou la modification d'une quantité dans le tableau des propositions ne provoque plus l'erreur « Object must be of type Decimal ». Elle survenait lorsque le tableau avait été recalculé auparavant (changement de matière, de dorure, d'aplats, de traits, de changements de clichés ou de couleurs, ou de laize matière) : le tri des propositions par quantité échouait. Les propositions restent triées par quantité croissante."
