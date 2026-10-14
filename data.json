@@ -1,6 +1,29 @@
 {
   "changelog": [
     {
+      "version": "v1.68.7",
+      "date": "2026-10-14",
+      "title": "Cette version conserve l'historique des fiches articles : chaque création ou modification d'un article indique qui l'a faite, quand, et quels champs ont changé. Une ancienne version peut être rechargée dans la fiche pour corriger une erreur. Elle corrige aussi trois pertes de données à l'enregistrement d'un article : le commentaire, l'initiale et le nombre de jours de production ne sont plus effacés, la grande palette n'est plus remplacée par la petite, et le PA HT/1000 garde ses centimes.",
+      "changes": [
+        {
+          "type": "added",
+          "text": "Historique des fiches articles : Chaque création d'article et chaque modification enregistrée depuis la fiche article est conservée : utilisateur connecté (et session Windows), date et heure, champs modifiés avec leur valeur avant et après, et une copie complète de l'article. Un enregistrement sans changement n'ajoute rien à l'historique. À la première modification d'un article déjà existant, son état d'avant est conservé (« État initial ») pour pouvoir y revenir. Dans la fiche d'un article existant, le bouton « Historique » (en bas à gauche) liste les enregistrements, du plus récent au plus ancien ; en sélectionner un affiche le détail des champs modifiés, avec les libellés de la fiche (format, matière, client… et non leur numéro). Le bouton « Charger cette version dans la fiche » remplit la fiche avec les valeurs de la version choisie : rien n'est enregistré tant que l'on n'a pas cliqué sur « Modifier l'article », et cet enregistrement apparaît dans l'historique comme une « Restauration ». Nécessite l'exécution du script scripts/article_historique.sql sur la base avant installation."
+        },
+        {
+          "type": "fixed",
+          "text": "Enregistrement d'un article : La modification d'un article depuis la fiche article n'efface plus son commentaire, ses initiales et son nombre de jours de production, qui ne sont pas saisis dans la fiche."
+        },
+        {
+          "type": "fixed",
+          "text": "Grande palette des articles : La fiche article affiche les valeurs « PAL de » et « Carton de » de la grande palette, et non plus celles de la petite palette, qui remplaçaient celles de la grande à chaque enregistrement de l'article. L'écran Commandes et la saisie de commande affichent eux aussi la bonne palette. Les articles enregistrés avant cette version gardent la grande palette recopiée depuis la petite : à vérifier et corriger dans la fiche si besoin."
+        },
+        {
+          "type": "fixed",
+          "text": "PA HT/1000 des articles : Le PA HT/1000 est enregistré avec ses décimales à la création et à la modification d'un article (il était transmis comme un nombre entier)."
+        }
+      ]
+    },
+    {
       "version": "v1.68.6",
       "date": "2026-10-14",
       "title": "Cette version supprime l'effet de balayage du planning à la validation d'une commande : seules les journées modifiées sont réaffichées, d'un seul coup. Elle corrige aussi l'erreur « Object must be of type Decimal » qui pouvait apparaître dans la saisie des devis lors de l'ajout ou de la modification d'une quantité. L'écran Commandes affiche désormais le total des ML et des M² des commandes listées, et son filtre permet de choisir une période de date de départ. Les devis conservent désormais l'historique de leurs versions : chaque enregistrement d'un devis modifié crée une nouvelle version (2026-012-V2…), et l'on peut consulter les versions précédentes et choisir celle à utiliser.",
