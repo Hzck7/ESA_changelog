@@ -3,8 +3,12 @@
     {
       "version": "v1.68.6",
       "date": "2026-10-14",
-      "title": "Cette version supprime l'effet de balayage du planning à la validation d'une commande : seules les journées modifiées sont réaffichées, d'un seul coup. Elle corrige aussi l'erreur « Object must be of type Decimal » qui pouvait apparaître dans la saisie des devis lors de l'ajout ou de la modification d'une quantité. L'écran Commandes affiche désormais le total des ML et des M² des commandes listées, et son filtre permet de choisir une période de date de départ.",
+      "title": "Cette version supprime l'effet de balayage du planning à la validation d'une commande : seules les journées modifiées sont réaffichées, d'un seul coup. Elle corrige aussi l'erreur « Object must be of type Decimal » qui pouvait apparaître dans la saisie des devis lors de l'ajout ou de la modification d'une quantité. L'écran Commandes affiche désormais le total des ML et des M² des commandes listées, et son filtre permet de choisir une période de date de départ. Les devis conservent désormais l'historique de leurs versions : chaque enregistrement d'un devis modifié crée une nouvelle version (2026-012-V2…), et l'on peut consulter les versions précédentes et choisir celle à utiliser.",
       "changes": [
+        {
+          "type": "added",
+          "text": "Historique des versions de devis : L'enregistrement d'un devis existant dont le contenu a changé (client, contact, dimensions, matière, machine, couleurs, dorure, frais, propositions…) ne l'écrase plus : il crée une nouvelle version, numérotée dans l'application avec le suffixe -V2, -V3… (2026-012-V2), qui devient la version utilisée. La version précédente et ses propositions restent consultables. Un enregistrement sans changement, ou avec un simple changement de statut, ne crée pas de version. Dans la saisie du devis, la liste à côté du n° de devis affiche toutes les versions avec leur date (la version utilisée est marquée « active ») : choisir une version l'affiche, et le bouton « Utiliser cette version » en fait la version active, celle listée dans le suivi des devis, imprimée et envoyée par mail. Une ancienne version peut aussi être modifiée : son enregistrement crée une nouvelle version (ex. V4 à partir de la V2). Le n° de version n'apparaît que dans l'application : le document Word/PDF garde le n° de devis habituel (2026-012), daté du jour de la version, et chaque version a son propre fichier. Le suivi des devis n'affiche que la version active de chaque devis, avec le nombre de versions. Supprimer un devis depuis le suivi supprime toutes ses versions et leurs propositions. Nécessite l'exécution du script scripts/devis_versions.sql sur la base avant installation."
+        },
         {
           "type": "added",
           "text": "Filtre de date de départ des commandes : La fenêtre de filtre de l'écran Commandes (bouton entonnoir) propose, à côté des états, un calendrier pour choisir un jour ou une période (en faisant glisser la souris sur les jours) : seules les commandes dont la date de départ est dans cette période sont listées. La liste se met à jour dès que la période est choisie, sans attendre la fermeture de la fenêtre. Le bouton « Sans date » retire le filtre de date ; à l'ouverture de l'application, aucune date n'est filtrée. La période choisie est rappelée au-dessus du calendrier et dans l'infobulle du bouton de filtre, qui compte un filtre de plus."
@@ -12,6 +16,14 @@
         {
           "type": "added",
           "text": "Total des ML et M² des commandes : Dans l'écran Commandes, la barre du bas affiche, centré sous la liste des commandes, le total des ML à produire et des M² de tous les articles des commandes affichées. Il tient compte des filtres (client sélectionné, états, recherche) et se met à jour à chaque rechargement de la liste, y compris lors de l'actualisation automatique. Il n'apparaît que sur l'écran Commandes."
+        },
+        {
+          "type": "fixed",
+          "text": "Enregistrement d'un nouveau devis : Un nouveau devis enregistré une seconde fois sans fermer la fenêtre n'est plus créé en double sous un autre numéro : le second enregistrement crée sa V2 s'il a été modifié. Le numéro d'un nouveau devis est le suivant du plus grand numéro de l'année (et non plus celui du dernier devis enregistré)."
+        },
+        {
+          "type": "fixed",
+          "text": "Forme « Autre » des devis : À la réouverture d'un devis enregistré avec la forme « Autre », la case est de nouveau cochée (elle restait vide et l'enregistrement demandait de choisir une forme)."
         },
         {
           "type": "fixed",
