@@ -3,8 +3,12 @@
     {
       "version": "v1.68.8",
       "date": "2026-10-16",
-      "title": "Cette version rend la fenêtre de gestion des cylindres (Z) par machine plus claire : on voit d'un coup d'œil ce qui est modifiable, comment ajouter ou supprimer un Z, et si les modifications sont enregistrées. Les modifications ne sont plus perdues en changeant de machine ou en fermant la fenêtre, et l'enregistrement ne réécrit plus les cylindres non modifiés.",
+      "title": "Cette version rend la fenêtre de gestion des cylindres (Z) par machine plus claire : on voit d'un coup d'œil ce qui est modifiable, comment ajouter ou supprimer un Z, et si les modifications sont enregistrées. Les modifications ne sont plus perdues en changeant de machine ou en fermant la fenêtre, et l'enregistrement ne réécrit plus les cylindres non modifiés. Les listes déroulantes avec recherche peuvent être vidées d'un clic, et la fenêtre de stock ouverte depuis les commandes affiche désormais un stock à jour.",
       "changes": [
+        {
+          "type": "added",
+          "text": "Listes déroulantes avec recherche : Une croix apparaît à gauche de la flèche lorsque le champ contient une valeur ; un clic dessus vide le champ."
+        },
         {
           "type": "changed",
           "text": "Gestion des cylindres (Z) par machine : La fenêtre affiche un titre au-dessus de chaque liste (« 1. Machine », « 2. Cylindres de … (modifiables) ») et une aide sous la liste des cylindres. Seul le nombre de dents est modifiable, un simple clic suffit pour le saisir et le curseur de texte apparaît au survol ; les colonnes non modifiables (développé) sont grisées. La dernière ligne affiche « + Nouveau Z… » pour ajouter un cylindre. Le bouton « Supprimer la ligne » retire le cylindre sélectionné (la touche Suppr fonctionne toujours). Le bouton « Valider » devient « Enregistrer » et n'est actif que s'il y a des modifications : le message « Modifications non enregistrées » s'affiche à côté et la machine concernée est marquée d'un astérisque, puis « Modifications enregistrées » après l'enregistrement. Changer de machine ou fermer la fenêtre avec des modifications en cours demande s'il faut les enregistrer (Oui / Non / Annuler)."
@@ -16,6 +20,14 @@
         {
           "type": "fixed",
           "text": "Enregistrement des cylindres : Seuls les cylindres ajoutés, modifiés ou supprimés sont écrits en base : les autres ne sont plus supprimés puis recréés à chaque enregistrement et gardent leurs informations (développé…)."
+        },
+        {
+          "type": "fixed",
+          "text": "Liste outil : Les champs de saisie sont alignés sur la largeur des colonnes de la liste dès l'ouverture de l'écran, et non plus seulement après un redimensionnement."
+        },
+        {
+          "type": "fixed",
+          "text": "Stock depuis les commandes : La fenêtre Stock ouverte depuis l'écran des commandes relit le stock en base à chaque ouverture (les réservations des articles enregistrés juste avant pouvaient manquer) et est mise à jour par l'actualisation automatique."
         }
       ]
     },
