@@ -1,6 +1,21 @@
 {
   "changelog": [
     {
+      "version": "v1.68.9",
+      "date": "2026-10-16",
+      "title": "Cette version améliore les listes déroulantes avec recherche : la liste ouverte s'ajuste à son contenu (jusqu'à 10 lignes, largeur du libellé le plus long). La croix qui vide le champ ne masque plus la fin des libellés longs, et le texte ne déborde plus autour de la zone de saisie pendant une recherche.",
+      "changes": [
+        {
+          "type": "changed",
+          "text": "Taille des listes déroulantes avec recherche : La liste ouverte n'est pas plus haute que nécessaire et affiche au plus 10 lignes, avec une barre de défilement au-delà. Elle est assez large pour afficher en entier le libellé le plus long, même si elle déborde du champ, et garde cette largeur pendant la recherche. Elle s'ouvre sous le champ, ou au-dessus s'il y a plus de place au-dessus quand elle ne tient pas en dessous."
+        },
+        {
+          "type": "fixed",
+          "text": "Texte des listes déroulantes avec recherche : Un libellé trop long pour tenir sur une ligne (ex. « Thermal Top FIT PH ») passe à la ligne avant la croix au lieu d'être en partie masqué par celle-ci. Pendant la saisie d'une recherche, seul le texte de la zone de saisie est affiché : les lignes du libellé précédent n'apparaissent plus au-dessus et en dessous."
+        }
+      ]
+    },
+    {
       "version": "v1.68.8",
       "date": "2026-10-16",
       "title": "Cette version rend la fenêtre de gestion des cylindres (Z) par machine plus claire : on voit d'un coup d'œil ce qui est modifiable, comment ajouter ou supprimer un Z, et si les modifications sont enregistrées. Les modifications ne sont plus perdues en changeant de machine ou en fermant la fenêtre, et l'enregistrement ne réécrit plus les cylindres non modifiés. Les listes déroulantes avec recherche peuvent être vidées d'un clic, et la fenêtre de stock ouverte depuis les commandes affiche désormais un stock à jour.",
