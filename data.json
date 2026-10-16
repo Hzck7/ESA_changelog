@@ -1,6 +1,25 @@
 {
   "changelog": [
     {
+      "version": "v1.68.8",
+      "date": "2026-10-16",
+      "title": "Cette version rend la fenêtre de gestion des cylindres (Z) par machine plus claire : on voit d'un coup d'œil ce qui est modifiable, comment ajouter ou supprimer un Z, et si les modifications sont enregistrées. Les modifications ne sont plus perdues en changeant de machine ou en fermant la fenêtre, et l'enregistrement ne réécrit plus les cylindres non modifiés.",
+      "changes": [
+        {
+          "type": "changed",
+          "text": "Gestion des cylindres (Z) par machine : La fenêtre affiche un titre au-dessus de chaque liste (« 1. Machine », « 2. Cylindres de … (modifiables) ») et une aide sous la liste des cylindres. Seul le nombre de dents est modifiable, un simple clic suffit pour le saisir et le curseur de texte apparaît au survol ; les colonnes non modifiables (développé) sont grisées. La dernière ligne affiche « + Nouveau Z… » pour ajouter un cylindre. Le bouton « Supprimer la ligne » retire le cylindre sélectionné (la touche Suppr fonctionne toujours). Le bouton « Valider » devient « Enregistrer » et n'est actif que s'il y a des modifications : le message « Modifications non enregistrées » s'affiche à côté et la machine concernée est marquée d'un astérisque, puis « Modifications enregistrées » après l'enregistrement. Changer de machine ou fermer la fenêtre avec des modifications en cours demande s'il faut les enregistrer (Oui / Non / Annuler)."
+        },
+        {
+          "type": "fixed",
+          "text": "Saisie des cylindres : Un nombre de dents vide, non entier, négatif ou déjà présent pour la machine est refusé avec un message clair (Échap pour annuler la saisie), au lieu de l'erreur du tableau ou d'une erreur à l'enregistrement. Une ligne d'ajout laissée vide est ignorée."
+        },
+        {
+          "type": "fixed",
+          "text": "Enregistrement des cylindres : Seuls les cylindres ajoutés, modifiés ou supprimés sont écrits en base : les autres ne sont plus supprimés puis recréés à chaque enregistrement et gardent leurs informations (développé…)."
+        }
+      ]
+    },
+    {
       "version": "v1.68.7",
       "date": "2026-10-14",
       "title": "Cette version conserve l'historique des fiches articles : chaque création ou modification d'un article indique qui l'a faite, quand, et quels champs ont changé. Une ancienne version peut être rechargée dans la fiche pour corriger une erreur. Elle corrige aussi trois pertes de données à l'enregistrement d'un article : le commentaire, l'initiale et le nombre de jours de production ne sont plus effacés, la grande palette n'est plus remplacée par la petite, et le PA HT/1000 garde ses centimes. Les devis conservent aussi l'historique de leurs versions : chaque enregistrement d'un devis modifié crée une nouvelle version (2026-012-V2…), et l'on peut consulter les versions précédentes et choisir celle à utiliser.",
