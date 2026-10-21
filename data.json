@@ -3,7 +3,7 @@
     {
       "version": "v1.68.9",
       "date": "2026-10-16",
-      "title": "Cette version améliore les listes déroulantes avec recherche : la liste ouverte s'ajuste à son contenu (jusqu'à 10 lignes, largeur du libellé le plus long). La croix qui vide le champ ne masque plus la fin des libellés longs, et le texte ne déborde plus autour de la zone de saisie pendant une recherche. Le commentaire ajouté à une matière depuis l'écran Stock s'affiche dès son enregistrement.",
+      "title": "Cette version améliore les listes déroulantes avec recherche : la liste ouverte s'ajuste à son contenu (jusqu'à 10 lignes, largeur du libellé le plus long). La croix qui vide le champ ne masque plus la fin des libellés longs, et le texte ne déborde plus autour de la zone de saisie pendant une recherche. Le commentaire ajouté à une matière depuis l'écran Stock s'affiche dès son enregistrement. L'écran Commandes affiche le ML à produire enregistré de chaque article au lieu de le recalculer, et la modification d'une fiche article met à jour le ML de toutes ses commandes en cours. Les commandes envoyées dans EBP sont datées de leur date de départ.",
       "changes": [
         {
           "type": "changed",
@@ -16,6 +16,18 @@
         {
           "type": "fixed",
           "text": "Commentaire du stock : Le commentaire saisi en double-cliquant sur une matière de l'écran Stock apparaît dans la liste dès la validation, sans attendre l'actualisation automatique ni cliquer sur « Rafraîchir ». Il est toujours écrit sur la matière modifiée, même lorsque la fenêtre Stock des commandes est aussi ouverte (il pouvait s'afficher sur la matière sélectionnée dans cette autre fenêtre)."
+        },
+        {
+          "type": "fixed",
+          "text": "ML à produire des commandes : Dans l'écran Commandes, l'article sélectionné affiche le ML à produire enregistré sur la commande, et non plus une valeur recalculée à partir du format et des poses en laize actuels. Enregistrer l'article d'une commande ne remplace donc plus son ML sans qu'on l'ait demandé. Si le calcul actuel donne une autre valeur (format ou poses modifiés depuis), le ML s'affiche en orange et son infobulle indique le calcul actuel ; ressaisir la quantité recalcule le ML. Le m², le temps de production et la pastille de stock s'appuient sur le ML affiché."
+        },
+        {
+          "type": "fixed",
+          "text": "ML après modification d'un article : L'enregistrement d'une fiche article recalcule le ML à produire de toutes les commandes en cours de cet article, et non plus seulement celle affichée dans l'écran Commandes : le planning et le stock réservé en tiennent compte. Les commandes terminées gardent leur ML."
+        },
+        {
+          "type": "fixed",
+          "text": "Date des commandes envoyées dans EBP : La commande créée dans EBP porte la date de départ de la commande, et non plus la date du jour de l'envoi. Si la commande n'a pas de date de départ, la date du jour est envoyée ; la fenêtre d'envoi indique la date utilisée."
         }
       ]
     },
