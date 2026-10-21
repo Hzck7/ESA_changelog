@@ -3,7 +3,7 @@
     {
       "version": "v1.68.9",
       "date": "2026-10-16",
-      "title": "Cette version améliore les listes déroulantes avec recherche : la liste ouverte s'ajuste à son contenu (jusqu'à 10 lignes, largeur du libellé le plus long). La croix qui vide le champ ne masque plus la fin des libellés longs, et le texte ne déborde plus autour de la zone de saisie pendant une recherche.",
+      "title": "Cette version améliore les listes déroulantes avec recherche : la liste ouverte s'ajuste à son contenu (jusqu'à 10 lignes, largeur du libellé le plus long). La croix qui vide le champ ne masque plus la fin des libellés longs, et le texte ne déborde plus autour de la zone de saisie pendant une recherche. Le commentaire ajouté à une matière depuis l'écran Stock s'affiche dès son enregistrement.",
       "changes": [
         {
           "type": "changed",
@@ -12,6 +12,10 @@
         {
           "type": "fixed",
           "text": "Texte des listes déroulantes avec recherche : Un libellé trop long pour tenir sur une ligne (ex. « Thermal Top FIT PH ») passe à la ligne avant la croix au lieu d'être en partie masqué par celle-ci. Pendant la saisie d'une recherche, seul le texte de la zone de saisie est affiché : les lignes du libellé précédent n'apparaissent plus au-dessus et en dessous."
+        },
+        {
+          "type": "fixed",
+          "text": "Commentaire du stock : Le commentaire saisi en double-cliquant sur une matière de l'écran Stock apparaît dans la liste dès la validation, sans attendre l'actualisation automatique ni cliquer sur « Rafraîchir ». Il est toujours écrit sur la matière modifiée, même lorsque la fenêtre Stock des commandes est aussi ouverte (il pouvait s'afficher sur la matière sélectionnée dans cette autre fenêtre)."
         }
       ]
     },
