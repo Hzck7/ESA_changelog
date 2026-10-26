@@ -1,6 +1,17 @@
 {
   "changelog": [
     {
+      "version": "v1.70.0",
+      "date": "2026-10-26",
+      "title": "Cette version affiche un message clair lorsque le serveur de connexion d'EBP est hors service, au lieu d'une erreur technique laissant penser que la connexion à EBP est perdue. Aucune reconnexion n'est demandée dans ce cas : la connexion enregistrée est conservée pour le retour du service.",
+      "changes": [
+        {
+          "type": "changed",
+          "text": "Serveur de connexion EBP indisponible : Lorsque le serveur de connexion d'EBP ne répond pas (page introuvable, erreur du serveur, serveur injoignable), l'application affiche « Le serveur d'authentification EBP est indisponible : la connexion à EBP est impossible pour le moment. Réessayez plus tard ; si le problème persiste, contactez le support EBP. » au lieu de « Refresh token failed » suivi d'une page HTML. Le navigateur ne s'ouvre plus pour une reconnexion qui échouerait de toute façon, et la connexion enregistrée n'est pas utilisée : elle reste disponible pour le retour du service. Le bouton « Reconnexion » de l'écran EBP affiche le même message."
+        }
+      ]
+    },
+    {
       "version": "v1.68.9",
       "date": "2026-10-16",
       "title": "Cette version améliore les listes déroulantes avec recherche : la liste ouverte s'ajuste à son contenu (jusqu'à 10 lignes, largeur du libellé le plus long). La croix qui vide le champ ne masque plus la fin des libellés longs, et le texte ne déborde plus autour de la zone de saisie pendant une recherche. Le commentaire ajouté à une matière depuis l'écran Stock s'affiche dès son enregistrement. L'écran Commandes affiche le ML à produire enregistré de chaque article au lieu de le recalculer, et la modification d'une fiche article met à jour le ML de toutes ses commandes en cours. Les commandes envoyées dans EBP sont datées de leur date de départ.",
