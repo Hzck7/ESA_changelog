@@ -3,11 +3,19 @@
     {
       "version": "v1.70.0",
       "date": "2026-10-26",
-      "title": "Cette version affiche un message clair lorsque le serveur de connexion d'EBP est hors service, au lieu d'une erreur technique laissant penser que la connexion à EBP est perdue. Aucune reconnexion n'est demandée dans ce cas : la connexion enregistrée est conservée pour le retour du service.",
+      "title": "Cette version affiche un message clair lorsque le serveur de connexion d'EBP est hors service, au lieu d'une erreur technique laissant penser que la connexion à EBP est perdue. Aucune reconnexion n'est demandée dans ce cas : la connexion enregistrée est conservée pour le retour du service. Les commandes envoyées dans EBP sont de nouveau datées de leur date de saisie, et leur date de départ est envoyée comme date de livraison. Lorsqu'EBP plante en renvoyant le résultat de l'envoi d'une commande, l'application vérifie dans EBP si elle a été créée au lieu d'annoncer à tort un échec.",
       "changes": [
         {
           "type": "changed",
           "text": "Serveur de connexion EBP indisponible : Lorsque le serveur de connexion d'EBP ne répond pas (page introuvable, erreur du serveur, serveur injoignable), l'application affiche « Le serveur d'authentification EBP est indisponible : la connexion à EBP est impossible pour le moment. Réessayez plus tard ; si le problème persiste, contactez le support EBP. » au lieu de « Refresh token failed » suivi d'une page HTML. Le navigateur ne s'ouvre plus pour une reconnexion qui échouerait de toute façon, et la connexion enregistrée n'est pas utilisée : elle reste disponible pour le retour du service. Le bouton « Reconnexion » de l'écran EBP affiche le même message."
+        },
+        {
+          "type": "fixed",
+          "text": "Dates des commandes envoyées dans EBP : La commande créée dans EBP porte la date de saisie de la commande (date « Création » de la fiche commande), ou la date du jour si elle n'est pas renseignée, et non plus sa date de départ. La date de départ est envoyée comme date de livraison de la commande EBP ; elle reste vide si la commande n'a pas de date de départ. La fenêtre d'envoi indique les deux dates utilisées."
+        },
+        {
+          "type": "fixed",
+          "text": "Résultat de l'envoi d'une commande dans EBP illisible : Lorsqu'EBP renvoie une erreur interne de son serveur au lieu du résultat de l'import, la commande n'est plus déclarée « non créée » sans vérification : l'application la recherche dans EBP. Si elle y est, son numéro est reporté dans « N° Lot CM » comme après un envoi normal, et la fenêtre d'envoi invite à vérifier ses articles et ses dates dans EBP. Sinon, la fenêtre indique qu'EBP n'a pas fourni le résultat et qu'il faut vérifier dans EBP que la commande n'a pas été créée avant de la renvoyer, pour éviter un doublon. Le bandeau rouge de la fenêtre d'envoi titre désormais « L'import dans EBP n'a pas abouti »."
         }
       ]
     },
