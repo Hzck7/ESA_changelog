@@ -10,12 +10,20 @@
           "text": "Serveur de connexion EBP indisponible : Lorsque le serveur de connexion d'EBP ne répond pas (page introuvable, erreur du serveur, serveur injoignable), l'application affiche « Le serveur d'authentification EBP est indisponible : la connexion à EBP est impossible pour le moment. Réessayez plus tard ; si le problème persiste, contactez le support EBP. » au lieu de « Refresh token failed » suivi d'une page HTML. Le navigateur ne s'ouvre plus pour une reconnexion qui échouerait de toute façon, et la connexion enregistrée n'est pas utilisée : elle reste disponible pour le retour du service. Le bouton « Reconnexion » de l'écran EBP affiche le même message."
         },
         {
+          "type": "changed",
+          "text": "Code article des étiquettes carton : Sur les étiquettes carton, la taille du texte « Code Article » diminue lorsque le code est long (jusqu'à 5 pt), pour que le code reste affiché en entier au lieu de disparaître. Les codes courts gardent la taille habituelle (10 pt)."
+        },
+        {
           "type": "fixed",
           "text": "Dates des commandes envoyées dans EBP : La commande créée dans EBP porte la date de saisie de la commande (date « Création » de la fiche commande), ou la date du jour si elle n'est pas renseignée, et non plus sa date de départ. La date de départ est envoyée comme date de livraison de la commande EBP ; elle reste vide si la commande n'a pas de date de départ. La fenêtre d'envoi indique les deux dates utilisées."
         },
         {
           "type": "fixed",
           "text": "Résultat de l'envoi d'une commande dans EBP illisible : Lorsqu'EBP renvoie une erreur interne de son serveur au lieu du résultat de l'import, la commande n'est plus déclarée « non créée » sans vérification : l'application la recherche dans EBP. Si elle y est, son numéro est reporté dans « N° Lot CM » comme après un envoi normal, et la fenêtre d'envoi invite à vérifier ses articles et ses dates dans EBP. Sinon, la fenêtre indique qu'EBP n'a pas fourni le résultat et qu'il faut vérifier dans EBP que la commande n'a pas été créée avant de la renvoyer, pour éviter un doublon. Le bandeau rouge de la fenêtre d'envoi titre désormais « L'import dans EBP n'a pas abouti »."
+        },
+        {
+          "type": "fixed",
+          "text": "Recherche dans la liste des articles de devis : Saisir un texte qui n'est pas un nombre (ex. un code article ou une matière) dans la recherche de la liste des articles de devis ne provoque plus d'erreur « Cannot perform '=' operation on System.Double and System.String ». La largeur et la hauteur ne sont comparées que lorsque la saisie est un nombre (12, 12,5 ou 12.5). La référence client de l'article est trouvée dès qu'elle contient le texte saisi, sans avoir à la saisir en entier."
         }
       ]
     },
