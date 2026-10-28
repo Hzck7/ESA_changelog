@@ -1,6 +1,17 @@
 {
   "changelog": [
     {
+      "version": "v1.70.1",
+      "date": "2026-10-28",
+      "title": "Cette version permet d'exporter la liste outil au format Excel, avec les filtres de recherche appliqués.",
+      "changes": [
+        {
+          "type": "added",
+          "text": "Export Excel de la liste outil : Dans la boîte à outils, un bouton Excel, à gauche du bouton « + », exporte la liste affichée dans un fichier .xlsx (enregistré dans C:\\temp puis ouvert automatiquement). Seuls les outils affichés sont exportés : les recherches par laize et par développé et le filtre « Commandé ? » sont pris en compte. Le fichier reprend les colonnes de la liste, dans le même ordre et avec les mêmes titres. Les nombres restent des nombres dans Excel, avec les mêmes décimales qu'à l'écran, et « Commandé ? » vaut « Oui » ou « Non ». La ligne de titres est en gras, figée, et propose les filtres automatiques d'Excel."
+        }
+      ]
+    },
+    {
       "version": "v1.70.0",
       "date": "2026-10-26",
       "title": "Cette version affiche un message clair lorsque le serveur de connexion d'EBP est hors service, au lieu d'une erreur technique laissant penser que la connexion à EBP est perdue. Aucune reconnexion n'est demandée dans ce cas : la connexion enregistrée est conservée pour le retour du service. Les commandes envoyées dans EBP sont de nouveau datées de leur date de saisie, et leur date de départ est envoyée comme date de livraison. Lorsqu'EBP plante en renvoyant le résultat de l'envoi d'une commande, l'application vérifie dans EBP si elle a été créée au lieu d'annoncer à tort un échec. Sur les étiquettes carton, le code article reste affiché en entier même lorsqu'il est long, et la recherche de la liste des articles de devis ne provoque plus d'erreur sur une saisie qui n'est pas un nombre.",
