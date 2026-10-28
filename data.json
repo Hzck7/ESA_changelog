@@ -3,7 +3,7 @@
     {
       "version": "v1.70.1",
       "date": "2026-10-28",
-      "title": "Cette version permet d'exporter la liste outil au format Excel, avec les filtres de recherche appliqués. La liste des devis affiche le montant de chaque devis.",
+      "title": "Cette version permet d'exporter la liste outil au format Excel, avec les filtres de recherche appliqués. La liste des devis affiche le montant de chaque devis. Les commandes envoyées dans EBP ne sont plus créées en double lorsqu'EBP ne répond pas correctement : l'application vérifie dans EBP si la commande existe déjà avant de l'envoyer, et ne présente plus comme un échec un envoi dont elle ne connaît pas le résultat.",
       "changes": [
         {
           "type": "added",
@@ -12,6 +12,18 @@
         {
           "type": "added",
           "text": "Montant des devis : La liste des devis affiche une colonne « Montant devis », après « NB Proposition », reprenant le CA HT du devis. Lorsque le devis a plusieurs propositions, la plus petite valeur est affichée, et l'infobulle de la cellule liste le CA HT de chaque proposition avec sa quantité. La colonne se trie par montant ; elle reste vide pour un devis sans proposition."
+        },
+        {
+          "type": "added",
+          "text": "Commande déjà présente dans EBP : Avant d'envoyer une commande, l'application cherche dans EBP une commande récente de même référence et du même client, qui ne soit pas déjà rattachée à une autre commande. Si elle en trouve une, elle demande : « Oui » rattache cette commande EBP (son numéro est reporté dans « N° Lot CM ») sans rien renvoyer, « Non » crée quand même une nouvelle commande, « Annuler » ne fait rien. Une commande ne peut plus être envoyée par deux postes en même temps : le second est prévenu qu'elle est en cours d'envoi. ⚠️ Exécuter le script `scripts/commande_ebp_import.sql` sur la base avant d'installer cette version."
+        },
+        {
+          "type": "fixed",
+          "text": "Commandes créées en double dans EBP : Une fois le fichier de la commande reçu par EBP, une erreur pendant l'attente du résultat n'est plus présentée comme « la commande n'a pas été créée dans EBP ». C'est le cas d'une connexion EBP expirée, du serveur de connexion EBP indisponible, d'une coupure réseau ou d'un import non terminé au bout de 30 secondes. L'application recherche alors la commande dans EBP et reporte son numéro si elle la trouve. Sinon, la fenêtre d'envoi indique que le résultat est inconnu et qu'il ne faut pas recréer la commande à la main. Au clic suivant sur « Importation EBP », l'application vérifie d'abord ce qu'est devenu l'envoi précédent : s'il est encore en cours chez EBP, elle demande de réessayer plus tard ; si la commande a été créée, elle propose de la rattacher au lieu de la renvoyer. La connexion EBP est renouvelée deux minutes avant son expiration, et l'envoi du fichier n'est jamais répété automatiquement. Le journal de l'envoi affiche « Fichier à envoyer » au lieu de « Fichier envoyé »."
+        },
+        {
+          "type": "fixed",
+          "text": "Commandes fournisseur au résultat inconnu : Lorsque le résultat de l'envoi d'une commande fournisseur dans EBP est inconnu et qu'elle n'y est pas retrouvée, elle reste « envoi en cours » au lieu de passer en échec : ses matières comptent toujours en commande et ne sont pas recommandées en double. La fenêtre d'envoi invite à vérifier dans EBP, et à annuler la commande d'achat dans l'application si elle n'y a pas été créée."
         }
       ]
     },
