@@ -3,11 +3,15 @@
     {
       "version": "v1.70.1",
       "date": "2026-10-28",
-      "title": "Cette version permet d'exporter la liste outil au format Excel, avec les filtres de recherche appliqués.",
+      "title": "Cette version permet d'exporter la liste outil au format Excel, avec les filtres de recherche appliqués. La liste des devis affiche le montant de chaque devis.",
       "changes": [
         {
           "type": "added",
           "text": "Export Excel de la liste outil : Dans la boîte à outils, un bouton Excel, à gauche du bouton « + », exporte la liste affichée dans un fichier .xlsx (enregistré dans C:\\temp puis ouvert automatiquement). Seuls les outils affichés sont exportés : les recherches par laize et par développé et le filtre « Commandé ? » sont pris en compte. Le fichier reprend les colonnes de la liste, dans le même ordre et avec les mêmes titres. Les nombres restent des nombres dans Excel, avec les mêmes décimales qu'à l'écran, et « Commandé ? » vaut « Oui » ou « Non ». La ligne de titres est en gras, figée, et propose les filtres automatiques d'Excel."
+        },
+        {
+          "type": "added",
+          "text": "Montant des devis : La liste des devis affiche une colonne « Montant devis », après « NB Proposition », reprenant le CA HT du devis. Lorsque le devis a plusieurs propositions, la plus petite valeur est affichée, et l'infobulle de la cellule liste le CA HT de chaque proposition avec sa quantité. La colonne se trie par montant ; elle reste vide pour un devis sans proposition."
         }
       ]
     },
