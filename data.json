@@ -3,7 +3,7 @@
     {
       "version": "v1.70.1",
       "date": "2026-10-28",
-      "title": "Cette version permet d'exporter la liste outil au format Excel, avec les filtres de recherche appliqués. La liste des devis affiche le montant de chaque devis. Les commandes envoyées dans EBP ne sont plus créées en double lorsqu'EBP ne répond pas correctement : l'application vérifie dans EBP si la commande existe déjà avant de l'envoyer, et ne présente plus comme un échec un envoi dont elle ne connaît pas le résultat.",
+      "title": "Cette version permet d'exporter la liste outil au format Excel, avec les filtres de recherche appliqués. La liste des devis affiche le montant de chaque devis. La fiche technique client affiche le code article. Les commandes envoyées dans EBP ne sont plus créées en double lorsqu'EBP ne répond pas correctement : l'application vérifie dans EBP si la commande existe déjà avant de l'envoyer, et ne présente plus comme un échec un envoi dont elle ne connaît pas le résultat.",
       "changes": [
         {
           "type": "added",
@@ -12,6 +12,10 @@
         {
           "type": "added",
           "text": "Montant des devis : La liste des devis affiche une colonne « Montant devis », après « NB Proposition », reprenant le CA HT du devis. Lorsque le devis a plusieurs propositions, la plus petite valeur est affichée, et l'infobulle de la cellule liste le CA HT de chaque proposition avec sa quantité. La colonne se trie par montant ; elle reste vide pour un devis sans proposition."
+        },
+        {
+          "type": "added",
+          "text": "Code article sur la fiche technique client : La fiche technique client affiche le code article, sous la date et au-dessus de « Votre réf. ». Il apparaît aussi bien sur une fiche imprimée seule que sur les fiches de l'export groupé."
         },
         {
           "type": "added",
