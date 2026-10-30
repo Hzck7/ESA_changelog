@@ -3,7 +3,7 @@
     {
       "version": "v1.70.2",
       "date": "2026-10-30",
-      "title": "Cette version améliore la lecture de la liste des devis : le montant est centré dans sa colonne et affiché en bleu, et un nouveau bouton permet de choisir les colonnes à afficher.",
+      "title": "Cette version améliore la lecture de la liste des devis : le montant est centré dans sa colonne et affiché en bleu, et un nouveau bouton permet de choisir les colonnes à afficher. Le ML à produire d'un article ajouté à une commande est désormais calculé, au lieu de reprendre une valeur parfois périmée de la fiche article.",
       "changes": [
         {
           "type": "changed",
@@ -12,6 +12,14 @@
         {
           "type": "changed",
           "text": "Choix des colonnes de la liste des devis : Un bouton filtre, à gauche du bouton « + », ouvre la liste des colonnes : seules les colonnes cochées sont affichées. Le choix est conservé d'une ouverture à l'autre, propre à chaque poste. Toutes les colonnes restent affichées tant qu'aucun choix n'a été fait, et la case à cocher des devis (envoi par mail, suppression) reste toujours visible."
+        },
+        {
+          "type": "fixed",
+          "text": "ML à produire des articles : Le ML affiché par la fiche article est recalculé dès son ouverture et à chaque changement des poses en laize, sans avoir à cliquer dans la quantité, et il est recalculé à l'enregistrement. Un article ajouté à une commande reçoit un ML calculé sur son format, sa quantité et ses poses en laize, et non plus le ML enregistré sur sa fiche, qui pouvait dater d'anciennes poses (ex. 2240 ML au lieu de 960)."
+        },
+        {
+          "type": "fixed",
+          "text": "Écart de ML dans l'écran Commandes : L'orange signalant que le ML enregistré diffère du calcul actuel est aussi visible lorsque le champ est grisé, c'est-à-dire tant que l'article n'est pas en modification."
         }
       ]
     },
