@@ -15,7 +15,7 @@
         },
         {
           "type": "fixed",
-          "text": "Matière coupée sur la fiche technique ESA : Sur la fiche technique ESA imprimée, la matière s'affiche en entier : plus son nom est long, plus la police est petite (de 9 pt jusqu'à 5 pt au minimum), et un nom très long passe sur deux lignes. Les autres zones de la fiche ne bougent pas et la fiche tient toujours sur une page."
+          "text": "Matière coupée sur la fiche technique ESA : Sur la fiche technique ESA imprimée, la matière s'affiche en entier : plus son nom est long, plus la police est petite (de 9 pt jusqu'à 5 pt au minimum), et un nom très long passe à la ligne. La fiche tient toujours sur une page."
         }
       ]
     },
