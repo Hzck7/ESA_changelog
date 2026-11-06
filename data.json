@@ -1,6 +1,17 @@
 {
   "changelog": [
     {
+      "version": "v1.70.4",
+      "date": "2026-11-06",
+      "title": "Cette version ajoute une recherche globale, ouverte par Ctrl+K depuis n'importe quelle fenêtre de l'application : elle permet d'ouvrir directement un écran, une commande, un devis, un client ou un article.",
+      "changes": [
+        {
+          "type": "added",
+          "text": "Recherche globale (Ctrl+K) : Le raccourci Ctrl+K, ou le bouton « Rechercher… » en haut de l'accueil, ouvre une zone de recherche. Elle propose les écrans de l'application (Stock, Planning, Devis, Paramètres…) et, à partir de deux caractères saisis, les commandes (n° de commande, n° de lot, client), les devis (n° de devis, référence, client), les clients (nom, code client) et les articles (désignation, référence, n° de cliché, client), six au maximum par catégorie, les plus récents en premier. Les flèches ↑ ↓ choisissent un résultat, Entrée ou un clic l'ouvre, Échap ferme la recherche. Une commande ouvre sa fiche d'informations, un devis le formulaire du devis, un client sa fiche, un article sa fiche en modification. Seuls les écrans autorisés pour le profil connecté sont proposés, et le raccourci est sans effet lorsqu'une fenêtre est déjà ouverte par-dessus l'accueil (paramètres, fiche client…)."
+        }
+      ]
+    },
+    {
       "version": "v1.70.3",
       "date": "2026-11-06",
       "title": "Cette version permet de filtrer la liste des devis par largeur, hauteur et laize matière. Elle corrige aussi le planning de l'atelier, qui affichait les commandes sur les jours où leur machine est fermée, et la fiche technique ESA, qui coupait les noms de matière un peu longs.",
