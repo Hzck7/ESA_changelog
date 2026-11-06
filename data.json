@@ -1,6 +1,17 @@
 {
   "changelog": [
     {
+      "version": "v1.70.3",
+      "date": "2026-11-06",
+      "title": "Cette version corrige le planning de l'atelier, qui affichait les commandes sur les jours où leur machine est fermée.",
+      "changes": [
+        {
+          "type": "fixed",
+          "text": "Jours fermés dans le planning atelier : Lorsqu'une machine est fermée certains jours (horaires saisis comme fermés), le planning de l'atelier n'affiche plus ces jours-là les commandes de cette machine qui s'étendent sur plusieurs jours, comme le planning de planification. Les autres jours de la commande restent affichés, et les commandes des autres machines restent visibles les jours fermés."
+        }
+      ]
+    },
+    {
       "version": "v1.70.2",
       "date": "2026-10-30",
       "title": "Cette version améliore la lecture de la liste des devis : le montant est centré dans sa colonne et affiché en bleu, et un nouveau bouton permet de choisir les colonnes à afficher. Le ML à produire d'un article ajouté à une commande est désormais calculé, au lieu de reprendre une valeur parfois périmée de la fiche article.",
