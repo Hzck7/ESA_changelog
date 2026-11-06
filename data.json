@@ -6,6 +6,10 @@
       "title": "Cette version améliore la lecture de la liste des devis : le montant est centré dans sa colonne et affiché en bleu, et un nouveau bouton permet de choisir les colonnes à afficher. Le ML à produire d'un article ajouté à une commande est désormais calculé, au lieu de reprendre une valeur parfois périmée de la fiche article.",
       "changes": [
         {
+          "type": "added",
+          "text": "Nombre d'étiquettes stock à imprimer : Dans l'impression des étiquettes stock, vous pouvez maintenant saisir le nombre d'étiquettes à imprimer."
+        },
+        {
           "type": "changed",
           "text": "Montant de la liste des devis : La colonne « Montant devis » est centrée et son texte est affiché en bleu. Sur la ligne sélectionnée, le montant reste en blanc pour rester lisible sur le fond vert."
         },
