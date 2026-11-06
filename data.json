@@ -3,11 +3,19 @@
     {
       "version": "v1.70.3",
       "date": "2026-11-06",
-      "title": "Cette version corrige le planning de l'atelier, qui affichait les commandes sur les jours où leur machine est fermée.",
+      "title": "Cette version permet de filtrer la liste des devis par largeur, hauteur et laize matière. Elle corrige aussi le planning de l'atelier, qui affichait les commandes sur les jours où leur machine est fermée, et la fiche technique ESA, qui coupait les noms de matière un peu longs.",
       "changes": [
+        {
+          "type": "added",
+          "text": "Filtres par dimensions dans la liste des devis : Dans le suivi des devis, trois nouvelles zones de recherche, à droite de « Département », filtrent la liste par « Largeur », « Hauteur » et « Laize matière ». Seuls les devis ayant exactement la valeur saisie sont affichés (ex. 50, 50,5 ou 50.5) ; une saisie qui n'est pas un nombre n'affiche aucun devis. Ces filtres se combinent avec les autres (commercial, statut, client, numéro de devis, département) et sont vidés par le bouton de remise à zéro des filtres."
+        },
         {
           "type": "fixed",
           "text": "Jours fermés dans le planning atelier : Lorsqu'une machine est fermée certains jours (horaires saisis comme fermés), le planning de l'atelier n'affiche plus ces jours-là les commandes de cette machine qui s'étendent sur plusieurs jours, comme le planning de planification. Les autres jours de la commande restent affichés, et les commandes des autres machines restent visibles les jours fermés."
+        },
+        {
+          "type": "fixed",
+          "text": "Matière coupée sur la fiche technique ESA : Sur la fiche technique ESA imprimée, la matière s'affiche en entier : plus son nom est long, plus la police est petite (de 9 pt jusqu'à 5 pt au minimum), et un nom très long passe sur deux lignes. Les autres zones de la fiche ne bougent pas et la fiche tient toujours sur une page."
         }
       ]
     },
