@@ -8,6 +8,10 @@
         {
           "type": "added",
           "text": "Recherche globale (Ctrl+K) : Le raccourci Ctrl+K, ou un clic dans la zone « Rechercher… » au centre de la barre du haut de l'accueil, ouvre la recherche. Elle propose les écrans de l'application (Stock, Planning, Devis, Paramètres…) et, à partir de deux caractères saisis, les commandes (n° de commande, n° de lot, client), les devis (n° de devis, référence, client), les clients (nom, code client) et les articles (désignation, référence, n° de cliché, client), six au maximum par catégorie, les plus récents en premier. Les flèches ↑ ↓ choisissent un résultat, Entrée ou un clic l'ouvre, Échap ferme la recherche. Une commande ouvre sa fiche d'informations, un devis le formulaire du devis, un client sa fiche, un article sa fiche en modification. Seuls les écrans autorisés pour le profil connecté sont proposés ; pour l'atelier, la recherche se limite aux écrans de son menu (pas de commandes, devis, clients ni articles). Le raccourci est sans effet lorsqu'une fenêtre est déjà ouverte par-dessus l'accueil (paramètres, fiche client…)."
+        },
+        {
+          "type": "fixed",
+          "text": "Mise à jour des prix : Dans la mise à jour des prix, l'ajout d'un pourcentage ou d'un montant partait du prix affiché et le lisait mal : un prix de 1,234 € était pris pour 1 234 €, donc multiplié par 1000. Le calcul part maintenant du prix exact enregistré. Un pourcentage saisi avec une virgule (ex. 5,5) est aussi correctement pris en compte, et le nouveau prix est arrondi à 4 décimales."
         }
       ]
     },
