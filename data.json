@@ -1,6 +1,25 @@
 {
   "changelog": [
     {
+      "version": "v1.70.5",
+      "date": "2026-11-20",
+      "title": "Cette version affiche, dans la fiche de saisie d'une commande, la date et l'heure de chaque étape de production. Elle corrige aussi la laize indiquée dans le bon de commande cliché.",
+      "changes": [
+        {
+          "type": "added",
+          "text": "Dates des étapes de production : Dans la fiche de saisie d'une commande, la date et l'heure de passage s'affichent sous les cases « Production » (début de production), « Fin prod », « Bobinage » (début de bobinage) et « Fin » (fin de bobinage). Rien n'est affiché sous une case jamais cochée."
+        },
+        {
+          "type": "changed",
+          "text": "Stock : Après la suppression du commentaire d'une ligne de stock, la ligne n'est plus laissée sélectionnée."
+        },
+        {
+          "type": "fixed",
+          "text": "Bon de commande cliché : Le fichier Excel du bon de commande cliché indique maintenant la laize mini (cellule D27) au lieu de la laize 2."
+        }
+      ]
+    },
+    {
       "version": "v1.70.4",
       "date": "2026-11-06",
       "title": "Cette version ajoute une recherche globale, ouverte par Ctrl+K depuis n'importe quelle fenêtre de l'application : elle permet d'ouvrir directement un écran, une commande, un devis, un client ou un article.",
