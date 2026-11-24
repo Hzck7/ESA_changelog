@@ -1,6 +1,29 @@
 {
   "changelog": [
     {
+      "version": "v1.70.6",
+      "date": "2026-11-24",
+      "title": "Cette version associe la connexion à EBP à chaque utilisateur : les commandes envoyées dans EBP portent le nom de la personne qui les envoie. Pour l'atelier, la fiche de saisie d'une commande passe en lecture seule, hormis les étapes de production. Elle corrige aussi la saisie du prix de vente dans les devis, qui affichait une erreur lorsqu'il était saisi avec un point (ex. 15.04).",
+      "changes": [
+        {
+          "type": "changed",
+          "text": "Fiche commande en lecture seule pour l'atelier : Avec le profil atelier, les champs, listes et interrupteurs de la fiche de saisie d'une commande ne sont plus modifiables. Seules les cases des étapes de production (Production, Fin prod, Bobinage, Fin) et les boutons restent utilisables."
+        },
+        {
+          "type": "changed",
+          "text": "Connexion EBP propre à chaque utilisateur : Chaque utilisateur a maintenant sa propre connexion à EBP, au lieu d'une connexion partagée par tous les postes. Les commandes envoyées dans EBP sont donc enregistrées au nom de l'utilisateur qui les envoie, et non plus au nom du dernier collègue qui s'est reconnecté à EBP. À la première utilisation, chaque utilisateur doit se connecter une fois à EBP dans le navigateur."
+        },
+        {
+          "type": "changed",
+          "text": "Synchronisation EBP sur le poste atelier : Le poste atelier ne lance plus la synchronisation avec EBP, qui ne le concerne pas. Elle n'est donc plus retardée de 10 minutes pour les autres postes à cause de lui."
+        },
+        {
+          "type": "fixed",
+          "text": "Prix de vente des devis : Dans un devis, le prix de vente et le % de marge peuvent être saisis avec un point ou une virgule (15.04 ou 15,04) : le message « The input string '15.04' was not in a correct format » n'apparaît plus au clic sur « Ajouter ». Si la marge n'est pas renseignée, elle est calculée à partir du prix de vente. Une marge de 100 % (par exemple tant qu'aucune matière n'est choisie) ne provoque plus d'erreur, et la mise en forme automatique des champs prix de vente et marge ne cesse plus de fonctionner après une erreur."
+        }
+      ]
+    },
+    {
       "version": "v1.70.5",
       "date": "2026-11-20",
       "title": "Cette version affiche, dans la fiche de saisie d'une commande, la date et l'heure de chaque étape de production. Elle corrige aussi la laize indiquée dans le bon de commande cliché.",
