@@ -3,11 +3,11 @@
     {
       "version": "v1.70.7",
       "date": "2026-11-26",
-      "title": "Cette version prépare le passage de tous les postes au nouveau planning.",
+      "title": "Cette version prépare le passage de tous les postes à la nouvelle version du Planning.",
       "changes": [
         {
           "type": "changed",
-          "text": "Passage au nouveau planning : Le jour de la bascule, le bouton « Planning » ouvre directement le nouveau planning sur tous les postes, atelier compris, et l'ancien planning n'est plus accessible. Un écran explique le changement à la première ouverture."
+          "text": "Passage à la nouvelle version : Le jour de la bascule, cette application ne s'ouvre plus : au lancement, un écran invite à utiliser la nouvelle version du Planning, puis l'application se ferme."
         }
       ]
     },
