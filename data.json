@@ -1,6 +1,17 @@
 {
   "changelog": [
     {
+      "version": "v1.70.7",
+      "date": "2026-11-26",
+      "title": "Cette version prépare le passage de tous les postes au nouveau planning.",
+      "changes": [
+        {
+          "type": "changed",
+          "text": "Passage au nouveau planning : Le jour de la bascule, le bouton « Planning » ouvre directement le nouveau planning sur tous les postes, atelier compris, et l'ancien planning n'est plus accessible. Un écran explique le changement à la première ouverture."
+        }
+      ]
+    },
+    {
       "version": "v1.70.6",
       "date": "2026-11-24",
       "title": "Cette version associe la connexion à EBP à chaque utilisateur : les commandes envoyées dans EBP portent le nom de la personne qui les envoie. Pour l'atelier, la fiche de saisie d'une commande passe en lecture seule, hormis les étapes de production. Elle corrige aussi la saisie du prix de vente dans les devis, qui affichait une erreur lorsqu'il était saisi avec un point (ex. 15.04).",
